@@ -1,0 +1,145 @@
+body{
+	font-size: 18px;
+	font-family: sans-serif;
+	background-color: #437DA1; 
+}
+.productos{
+	background-color: #232655;
+	color: white;
+	padding: 30px 30px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 320px;
+	height: 320px;
+	position: absolute;
+	border: 5px solid white;
+}
+.buscador{
+	background-color: #232655;
+	color: white;
+	padding: 30px 30px;
+	top: 50%;
+	left: 82%;
+	transform: translate(-50%, -50%);
+	width: 320px;
+	height: 320px;
+	position: absolute;
+	border: 5px solid white;
+}
+.perfil{
+	background-color: #232655;
+	color: white;
+	
+	top: 50%;
+	left: 18%;
+	width: 320px;
+	height: 320px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	padding: 30px 30px;
+	border: 5px solid white;
+
+}
+#img {
+	width: 230px;
+  	height: 230px;
+  	left:14%;
+  	position: relative;
+}
+#img2 {
+	width: 230px;
+  	height: 230px;
+  	left: 14%;
+  	position: relative;
+}
+#boton{
+	border: none;
+  	outline: none;
+  	height: 40px;
+  	width: 255px;
+  	left: 16%;
+  	background: #437DA1;
+  	color: white;
+  	font-size: 18px;
+  	border-radius: 20px;
+  	position: absolute;
+}
+#boton:hover{
+	cursor: pointer;
+  	background: #D4C163;
+  	color: black;
+}
+#boton2 {
+	border: none;
+	outline: none;
+	height: 40px;
+	width: 260px;
+	left: 16%;
+	background: #437DA1;
+	color: white;
+	font-size: 18px;
+	border-radius: 20px;
+	position: absolute;
+}
+#boton2:hover{
+	cursor: pointer;
+  	background: #D4C163;
+  	color: black;
+}
+#home {
+  width: 50px;
+  height: 50px;
+  left: 92.7%;
+  top: 0.5%;
+  position: absolute;
+}
+.icono i {
+  color: #00acee;
+  font-size: 80px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.icono span{
+  position: absolute;
+  width: 120px;
+  background-color: #D4C163;
+  color: black;
+  left: 90.15%;
+  padding: 5px 0px;
+  top: 9%;
+  text-align: center;
+  display: block;
+  border-radius: 8px;
+  margin: auto;
+  opacity: 0;
+  transition: 0.6% opacity;
+}
+
+.icono span:before{
+  content: '';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: -6px;
+  background: #D4C163;
+  z-index: -1px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg) ;
+}
+
+.icono:hover > span{
+  opacity: 1;
+}
+
+span a{
+  text-decoration: none;
+  color: white;
+}
+
+.icono a{
+  text-decoration: none;
+  color: white;
+}

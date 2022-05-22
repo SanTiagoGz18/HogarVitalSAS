@@ -1,0 +1,187 @@
+body {
+	font-size: 22px;
+	font-family: sans-serif;
+	background: #437DA1;
+}
+#titulo {
+	text-align: center;
+	color: white;
+	font-variant: small-caps;
+	margin-top: 5%;
+	position: relative;
+}
+.contenido{
+	background: #232655;
+	top: 30%;
+	left: 22%;
+	padding: 20px 20px;
+	width: 700px;
+	height: 100px;
+	position: absolute;
+	border: 4px solid white;
+}
+.contenido2 {
+	background: #437DA1;
+	padding: 10px 20px;
+	width: 660px;
+	height: 80px;
+	position: relative;
+}
+.buscar {
+	border: none;
+	outline: none;
+	background: transparent;
+	border-bottom: 3px solid #DAC163;
+	width: 83%;
+	height: 38%;
+	top: 22%;
+	position: absolute;
+	color: white;
+	font-size: 20px; 
+}
+.botona {
+	background: #232655;
+	width: 60px;
+	height: 40px;
+	border: 2px solid white;
+	position: relative;
+	padding: 1px;
+	margin: 1.26% 0 0 91.2%;
+}
+.botonao {
+	background: #437DA1;
+	width: 75%;
+	height: 75%;
+	padding: 1px;
+	position:relative;
+	margin: 6% 0 0 11%;
+}
+#boton {
+	width: 20px;
+	margin-top: 12%;
+	margin-left:27%;
+	position: relative;
+}
+::placeholder {
+	color: white;
+}
+
+#home {
+	width: 50px;
+	height: 50px;
+	left: 90%;
+	top: 5%;
+	position: fixed;
+}
+.icono i {
+	color: #00acee;
+	font-size: 80px;
+	display: block;
+	text-align: center;
+	cursor: pointer;
+}
+.icono span{
+	position: fixed;
+	width: 120px;
+	background-color: #D4C163;
+	color: black;
+	left: 87.5%;
+	top: 14%;
+	padding: 5px 0px;
+	text-align: center;
+	display: block;
+	border-radius: 8px;
+	margin: auto;
+	opacity: 0;
+	transition: 0.6% opacity;
+}
+.icono span:before{
+	content: '';
+	width: 10px;
+	height: 10px;
+	position: fixed;
+	top: 13.3%;
+	background: #D4C163;
+	z-index: -1px;
+	left: 91.9%;
+	transform: translate(-50%) rotate(45deg) ;
+}
+.icono:hover > span{
+	opacity: 1;
+}
+span a{
+	text-decoration: none;
+	color: white;
+} 
+.icono a{
+	text-decoration: none;
+	color: white;
+}
+.contenido3 {
+	width: 65%;
+	height: 85%;
+  	left: 12.5%;
+	top: 30%;
+	padding: 40px 50px;
+	background: #232655;
+	position: relative;
+	border: 4px solid white;
+}
+.tabla {
+	background: #437DA1;
+	color: white;
+	width: 100%;
+	height: 80%;
+	left: 20%;
+	top: 20%;
+	border: 4px solid #D4C163;
+	border-collapse: collapse;
+}
+div table tr {
+	text-align: center;
+}
+#t6{
+	position: absolute;
+	left: 7%;
+	top: 4.9%;	
+	color: white;
+	font-variant: small-caps;
+}
+#t1{
+	position: absolute;
+	left: 7%;
+	top: 4.9%;	
+	color: white;
+	font-variant: small-caps;
+}
+#t2{
+	position: absolute;
+	left: 29%;
+	top: 4.9%;
+	color: white;
+	font-variant: small-caps;
+}
+#t3{
+	position: absolute;
+	left: 44.2%;
+	top: 4.9%;
+	color: white;
+	font-variant: small-caps;
+}
+#t4{
+	position: absolute;
+	left: 61.4%;
+	top: 4.9%;
+	color: white;
+	font-variant: small-caps;
+}
+#t5{
+	position: absolute;
+	left: 80%;
+	top: 4.9%;
+	color: white;
+	font-variant: small-caps;
+}
+tr, td{
+	width: 20%;
+}

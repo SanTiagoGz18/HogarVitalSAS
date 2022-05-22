@@ -1,0 +1,195 @@
+	body{
+	font-family: sans-serif;
+	background-color: #437DA1;
+	font-size: 16px;
+	
+}
+.titulo{
+	text-align:center;
+	position: relative;
+	font-size: 20px;
+}
+.contenido{
+	background-color: #232655;
+	color: white;
+	padding: 60px 30px;
+	top: 54%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 600px;
+	height: 360px;
+	position: absolute;
+	border: 4px solid white;
+}
+.input{
+	position: relative;; 
+	padding: 7px;
+	border: none;
+	border-bottom: 4px solid #D4C163;
+	background: transparent;
+	height: 20px;
+	width: 98.94%;
+	color: white;
+}
+.contenido .img{
+	width: 130px;
+  	height: 130px;
+  	border-radius: 50%;
+  	position: absolute;
+  	top: -70px;
+  	left: calc(50% - 62px);
+}
+#opcion {
+	width: 31%;
+	height: 5%;
+	left: 54%;
+	top: 80.9%;
+	background: transparent;
+	border: solid #D4C163;
+	outline: none;
+	color: white;
+}
+#opcion option{
+  color: white;
+  background-color: #437DA1;
+}
+.boton{
+	border: none;
+  	outline: none;
+  	height: 40px;
+  	width: 295px;
+  	background: #437DA1;
+  	color: white;
+  	font-size: 18px;
+  	border-radius: 20px;
+  	position: static;
+}
+.boton:hover{
+	cursor: pointer;
+  	background: #D4C163;
+  	color: black;
+}
+.boton2 {
+	border: none;
+	outline: none;
+	margin-top: 0%;
+	margin-left: 3%;
+	height: 40px;
+	width: 295px;
+	background: #437DA1;
+	color: white;
+	font-size: 18px;
+	border-radius: 20px;
+	position: fixed;
+}
+.boton2:hover{
+	cursor: pointer;
+  	background: #D4C163;
+  	color: black;
+}
+div a{
+	color: white;
+	text-decoration-line: none;
+	text-align: center;
+}
+div a:hover{
+	font-size: 22px;
+	animation: animate 1s;
+}
+@keyframes animate {
+	50%{
+		font-size: 24px;
+		color: #D4C163;
+	}
+}
+.letras:hover{
+	font-size: 18px;
+	animation: animates 1s;
+}
+
+@keyframes animates {
+	50%{
+		font-size: 18.6px;
+		color: #D4C163;
+	}
+}
+#lapellidos{
+	margin-left: 24%;
+}
+#inombres{
+	border: none;
+	outline: none;
+	background: transparent;
+	border-bottom: 4px solid #D4C163;
+	width: 43%;
+	position: absolute;
+}
+#iapellidos{
+	margin-left: 46%; 
+	border: none;
+	outline: none;
+	background: transparent;
+	border-bottom: 4px solid #D4C163;
+	width: 45.8%;
+	position: absolute;
+}
+#lnumero{
+	margin-left: 3%;
+}
+#idocumento{
+	position: absolute;
+	margin-left: 1%;
+	width: 34.1%;
+	border: none;
+	outline: none;
+	background: transparent;
+	border-bottom: 4px solid #D4C163;
+}
+#itelefono{
+	border: none;
+	outline: none;
+	background: transparent;
+	border-bottom: 4px solid #D4C163;
+	width: 43%;
+	position: absolute;
+}
+#idireccion{
+	margin-left: 46%; 
+	border: none;
+	outline: none;
+	background: transparent;
+	border-bottom: 4px solid #D4C163;
+	width: 45.8%;
+	position: absolute;
+}
+#ldireccion{
+	margin-left: 29%;
+}
+#lcontraseña{
+	margin-left: 26%;
+}
+#icorreo{
+	border: none;
+	outline: none;
+	background: transparent;
+	border-bottom: 4px solid #D4C163;
+	width: 43%;
+	position: absolute;
+}
+#icontraseña{
+	margin-left: 46%; 
+	border: none;
+	outline: none;
+	background: transparent;
+	border-bottom: 4px solid #D4C163;
+	width: 45.8%;
+	position: absolute;
+}
+#ifoto{
+	border: 2px solid white;
+	border-radius: 6px;
+	padding: 5px;
+}
+input{
+	color: white;
+}
