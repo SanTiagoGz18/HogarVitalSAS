@@ -18,9 +18,7 @@ include("../Models/conexion.php");
 			<div class="contenido2">
 				<input type="text" name="busqueda" class="buscar" placeholder="Ingrese el producto a buscar...">
 				<div class="botona">
-					<div class="botonao">
-						<a href=""><input type="image" name="enviar" id="boton" src="imagenes/lupa.png"></a>
-					</div>
+						<a href=""><input type="image" name="enviar" id="boton" src="imagenes/lupa2.png"></a>
 				</div>
 			</div>
 		</div>

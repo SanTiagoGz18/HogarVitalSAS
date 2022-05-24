@@ -57,9 +57,9 @@ body {
 	margin: 6% 0 0 11%;
 }
 #boton {
-	width: 20px;
-	margin-top: 12%;
-	margin-left:27%;
+	width: 35px;
+	margin-top: 5%;
+	margin-left:20%;
 	position: relative;
 }
 ::placeholder {

@@ -7,6 +7,7 @@
 .titulo{
 	text-align:center;
 	position: relative;
+	font-variant: small-caps;
 	font-size: 20px;
 }
 .contenido{
