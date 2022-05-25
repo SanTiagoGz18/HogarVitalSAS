@@ -29,10 +29,6 @@ $correo=$_SESSION['correo'];
 	$resultado=mysqli_query($conexion,$select);
 	$filas=mysqli_fetch_array($resultado);
 	if($filas['correo']==$correo){?>
-		<div class="campotexto">
-			<h4 class="texto"><?php echo $filas['nombre_usuario']?></h4>
-			<h4 class="texto2"><?php echo $filas['apellido_usuario']?></h4>
-		<div>
 		<tr class="perfil2">
 			<td id="a1" class="campo1"><?php echo "Documento: "; echo $filas['id_usuario']?></td>
 			<td id="a2" class="campo2"><?php echo "Tipo: "; echo $filas['tipo_documento']?></td>

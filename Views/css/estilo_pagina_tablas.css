@@ -62,8 +62,8 @@ div table tr {
 #home {
   width: 50px;
   height: 50px;
-  left: 109%;
-  top: -97%;
+  left: 92%;
+  top: 3%;
   position: absolute;
 }
 .icono i {
@@ -75,7 +75,7 @@ div table tr {
 }
 
 .icono span{
-  position: absolute;
+  position: fixed;
   width: 120px;
   background-color: #D4C163;
   color: black;

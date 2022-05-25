@@ -15,6 +15,10 @@ session_start();
 		<img src="imagenes/registro.png" class="imgp">
 		<a href="../Views/codigo_registro.php"><input type="submit" id="boton" value="Agregar personal"></a> 
 	</div>
+	<div class="icono">
+			<a href="../Views/Html/pagina_inicial.html"><input type="image" id="home" alt="Volver" src="imagenes/home.png"></a><i class="fab fa-Volver"></i>
+			<span>Volver</span>
+		</div>
 	<h1 class="titulo">empleados</h1>
 	<hr width="50%" size="5" color="white" style="top: 10%; position:relative">
 	<br>
@@ -24,11 +28,6 @@ session_start();
 		<div id="t3"><p>NOMBRES</p></div>
 		<div id="t4"><p>APELLIDOS</p></div>
 		<div id="t5"><p>DETALLES</p></div>
-
-		<div class="icono">
-			<a href="../Views/Html/pagina_inicial.html"><input type="image" id="home" alt="Volver" src="imagenes/home.png"></a><i class="fab fa-Volver"></i>
-			<span>Volver</span>
-		</div>
 </body>
 </html>
 <table border="4" class="tabla">
