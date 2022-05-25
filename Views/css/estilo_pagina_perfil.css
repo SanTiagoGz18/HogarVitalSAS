@@ -18,14 +18,15 @@ body{
 .perfil2{
 	background-color: #437DA1;
 	color: white;
-	top: 70%;
+	top: 50%;
 	left: 17%;
 	width: 310px;
-	height: 250px;
-	position: relative;
+	height: 330px;
+	position: absolute;
 	transform: translate(-50%, -50%);
 	padding: 10px 30px;
 	border: 5px solid white;
+	font-size: 20px;
 }
 #img1 {
 	width: 230px;
