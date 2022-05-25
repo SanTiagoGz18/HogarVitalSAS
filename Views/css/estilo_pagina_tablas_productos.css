@@ -70,11 +70,11 @@ div table tr {
   content: '';
   width: 10px;
   height: 10px;
-  position: fixed;
-  top: 13.3%;
+  position: absolute;
+  top: -11.3%;
   background: #D4C163;
   z-index: -1px;
-  left: 91.9%;
+  left: 52.9%;
   transform: translate(-50%) rotate(45deg) ;
 }
 

@@ -39,10 +39,6 @@ while($fila=mysqli_fetch_array($resultado)){?>
 		</td>
 	</tr>
 	
-	<div class="icono">
-		<a href="../Views/Html/pagina_inicial_producto_director.html"><input type="image" id="home" alt="Volver" src="imagenes/home.png"></a><i class="fab fa-Volver"></i>
-		<span>Volver</span>
-	</div>
 	</div>
 <?php } ?>
 </tbody>

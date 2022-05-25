@@ -18,6 +18,7 @@ session_start();
 	</div>
 	<h1 class="titulo">OFICINA</h1>
 	<hr width="50%" size="5" color="white" style="top: 14%; position:absolute; left: 25%;">
+	<br>
 	<div class="contenido">
     	<div id="t1"><p>CODIGO</p></div>
 		<div id="t2"><p>NOMBRE</p></div>
@@ -38,12 +39,6 @@ while($fila=mysqli_fetch_array($resultado)){?>
 		<td><a href="../Views/Html/pagina_perfil_tabla_empleado.html"><img src="imagenes/detalle_empleado.png" alt="detalles" class="boton"></a></td>
 		</td>
 	</tr>
-	
-	<div class="icono">
-		<a href="../Views/Html/pagina_inicial_producto_director.html"><input type="image" id="home" alt="Volver" src="imagenes/home.png"></a><i class="fab fa-Volver"></i>
-		<span>Volver</span>
-	</div>
-	</div>
 <?php } ?>
 </tbody>
 </table>
