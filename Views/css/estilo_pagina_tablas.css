@@ -75,12 +75,12 @@ div table tr {
 }
 
 .icono span{
-  position: fixed;
+  position: absolute;
   width: 120px;
   background-color: #D4C163;
   color: black;
-  left: 105%;
-  top: -73%;
+  left: 89.4%;
+  top: 11%;
   padding: 5px 0px;
   text-align: center;
   display: block;

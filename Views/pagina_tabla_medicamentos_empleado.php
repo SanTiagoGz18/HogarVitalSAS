@@ -12,17 +12,17 @@ session_start();
 	<link rel="icon" type="imagenes/logo.png" href="imagenes/logo_icon.ico">
 </head>
 <body>
+	<div class="icono">
+		<a href="../Views/Html/pagina_inicial_producto_director.html"><input type="image" id="home" alt="Volver" src="imagenes/home.png"></a><i class="fab fa-Volver"></i>
+		<span>Volver</span>
+	</div>
 	<h1 class="titulo">MEDICAMENTOS</h1>
 	<hr width="50%" size="5" color="white" style="top: 14%; position:absolute; left: 25%;">
-    <div class="contenido">
+	<div class="contenido">
     	<div id="t1"><p>CODIGO</p></div>
 		<div id="t2"><p>NOMBRE</p></div>
 		<div id="t3"><p>CANTIDAD</p></div>
 		<div id="t4"><p>DETALLES</p></div>
-<div class="icono">
-<a href="../Views/Html/pagina_inicial_producto_empleado.html"><input type="image" id="home" alt="Volver" src="imagenes/home.png"></a><i class="fab fa-Volver"></i>
-<span>Volver</span>
-</div>
 </body>
 </html>
 <table border="4" class="tabla">

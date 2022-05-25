@@ -19,7 +19,7 @@ session_start();
 			<a href="../Views/Html/pagina_inicial.html"><input type="image" id="home" alt="Volver" src="imagenes/home.png"></a><i class="fab fa-Volver"></i>
 			<span>Volver</span>
 		</div>
-	<h1 class="titulo">empleados</h1>
+	<h1 class="titulo">Empleados</h1>
 	<hr width="50%" size="5" color="white" style="top: 10%; position:relative">
 	<br>
 	<div class="contenido">
