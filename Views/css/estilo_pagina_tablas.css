@@ -9,6 +9,12 @@
   left: 0.5%;
   position: relative;
 }
+.imgp1 {
+	width: 60px;
+	height: 60px;
+  left: 16%;
+  position: relative;
+}
 .titulo{
 	color: white;
 	font-variant: small-caps;
@@ -55,6 +61,24 @@ div table tr {
   position: absolute;
 }
 #boton:hover{
+  cursor: pointer;
+  background: #D4C163;
+  color: black;
+}
+#boton3 {
+	border: none;
+  outline: none;
+  height: 40px;
+  width: 190px;
+  left: 27%;
+  top: 2.5%;
+  background: #232655;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+  position: absolute;
+}
+#boton3:hover{
   cursor: pointer;
   background: #D4C163;
   color: black;
