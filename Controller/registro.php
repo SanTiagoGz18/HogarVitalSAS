@@ -9,7 +9,7 @@ if (isset($_POST['enviar'])){
 		$nombre_usuario=$_POST["nombre_usuario"];
 		$apellido_usuario=$_POST["apellido_usuario"];
 		$correo=$_POST["correo"];
-		$contraseña=$_POST["contraseña"];
+		$contrasena=$_POST["contrasena"];
 		$telefono=$_POST["telefono"];
 		$direccion=$_POST["direccion"];
 
@@ -20,7 +20,7 @@ if (isset($_POST['enviar'])){
 			exit();
 		}
 
-		$insert="INSERT INTO usuarios (id_usuario,tipo_documento,nombre_usuario,apellido_usuario,correo,contraseña,telefono,direccion) VALUES ('$id_usuario','$tipo_documento','$nombre_usuario','$apellido_usuario','$correo','$contraseña','$telefono','$direccion')";
+		$insert="INSERT INTO usuarios (id_usuario,tipo_documento,nombre_usuario,apellido_usuario,correo,contrasena,telefono,direccion) VALUES ('$id_usuario','$tipo_documento','$nombre_usuario','$apellido_usuario','$correo','$contrasena','$telefono','$direccion')";
 
 
 		$respuesta=mysqli_query($conexion,$insert);

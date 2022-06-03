@@ -6,7 +6,7 @@ if($_SESSION['correo']==null || empty($_SESSION)){
 $correo=$_POST['correo'];
 $password=$_POST['password'];
 
-$consulta="SELECT * FROM usuarios where correo='$correo' and contraseña='$password'";
+$consulta="SELECT * FROM usuarios where correo='$correo' and contrasena='$password'";
 $resultado=mysqli_query($conexion,$consulta);
 $filas=mysqli_fetch_array($resultado);
 
