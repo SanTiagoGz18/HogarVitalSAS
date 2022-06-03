@@ -6,7 +6,7 @@ include("../Models/conexion.php");
 <html>
 <head>
 	<title>Perfil - Hogar Vital</title>
-	 <link rel="stylesheet" href="../Views/css/estilo_pagina_perfil1.css">
+	 <link rel="stylesheet" href="../Views/css/estilo_pagina_perfil.css">
     <link rel="icon" type="imagenes/png" href="../Views/imagenes/logo_icon.ico">
     <meta charset="utf-8">
 </head>
@@ -17,8 +17,10 @@ include("../Models/conexion.php");
 <div class="perfil1">
 	<div class="info"></div>
 	<div class="boy"><a href="pagina_editar_perfil_tabla_empleado.php"><input type="submit" value="Editar Perfil" class="boton3"></a></div>
-	<div class="boy2"><a href="../Views/pagina_tabla_empleado.php"><input type="submit" value="Volver" class="boton3"></a></div>
-</div>
+	<div class="icono">
+			<a href="../Views/pagina_tabla_empleado.php"><input type="image" id="home" alt="Volver" src="imagenes/home.png"></a><i class="fab fa-Volver"></i>
+			<span>Volver</span>
+		</div>
 </div>
 </body>
 </html>
@@ -28,10 +30,7 @@ include("../Models/conexion.php");
 	$select="SELECT * FROM usuarios";
 	$resultado=mysqli_query($conexion,$select);
 	$filas=mysqli_fetch_array($resultado);?>
-		<div class="campotexto">
-			<h4 class="texto"><?php echo $filas['nombre_usuario']?></h4>
-			<h4 class="texto2"><?php echo $filas['apellido_usuario']?></h4>
-		<div>
+		
 		<tr class="perfil2">
 			<td id="a1" class="campo1"><?php echo "Documento: "; echo $filas['id_usuario']?></td>
 			<td id="a2" class="campo2"><?php echo "Tipo: "; echo $filas['tipo_documento']?></td>

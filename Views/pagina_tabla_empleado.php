@@ -14,6 +14,8 @@ session_start();
 	<div>
 		<img src="imagenes/registro.png" class="imgp">
 		<a href="../Views/codigo_registro.php"><input type="submit" id="boton" value="Agregar personal"></a> 
+		<img src="imagenes/registro.png" class="imgp1">
+		<a href="../Views/codigo_registro.php"><input type="submit" id="boton3" value="Agregar Administrador"></a> 
 	</div>
 	<div class="icono">
 			<a href="../Views/Html/pagina_inicial.html"><input type="image" id="home" alt="Volver" src="imagenes/home.png"></a><i class="fab fa-Volver"></i>
@@ -32,6 +34,9 @@ session_start();
 </html>
 <table border="4" class="tabla">
 <tbody>
+	<br>
+	<br>
+	<br>
 <?php 
 $select="SELECT * FROM usuarios";
 $resultado=mysqli_query($conexion,$select);
