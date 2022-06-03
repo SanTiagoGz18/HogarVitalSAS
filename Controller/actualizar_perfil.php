@@ -10,8 +10,9 @@ if (isset($_POST['enviar'])){
         $correo=$_POST["correo"];
         $telefono=$_POST["telefono"];
         $direccion=$_POST["direccion"];
+        $fecha_actualizacion_usuario=$_POST["yy-m-d h:i:s a"];
 
-		$update="UPDATE usuarios SET nombre_usuario = '".$nombre_usuario."', apellido_usuario = '".$apellido_usuario."', correo = '".$correo."', telefono = '".$telefono."', direccion = '".$direccion."' WHERE id_usuario = '".$id_usuario."'";
+		$update="UPDATE usuarios SET nombre_usuario = '".$nombre_usuario."', apellido_usuario = '".$apellido_usuario."', correo = '".$correo."', telefono = '".$telefono."', direccion = '".$direccion."', fecha_actualizacion_usuario='".$fecha_actualizacion_usuario."' WHERE id_usuario = '".$id_usuario."'";
 
         $respuesta=mysqli_query($conexion,$update);
             
