@@ -37,7 +37,7 @@ include("../Models/conexion.php");
 	<b><label for="contraseña" id="lcontraseña">Contraseña: </label></b>
 	<br>
 	<input type="email" name="correo" placeholder="example63@hotmail.com..." id="icorreo" required="@">
-	<input type="password" name="contraseña" placeholder="Ingrese su contraseña..." id="icontraseña" required="">
+	<input type="password" name="contrasena" placeholder="Ingrese su contraseña..." id="icontraseña" required="">
 	<br>
 	<br>
 	<br>

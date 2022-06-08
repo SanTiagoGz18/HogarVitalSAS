@@ -31,12 +31,13 @@ $correo=$_SESSION['correo'];
 	if($filas['correo']==$correo){?>
 		<tr class="perfil2">
 			<td id="a1" class="campo1"><?php echo "Documento: "; echo $filas['id_usuario']?></td>
-			<td id="a2" class="campo2"><?php echo "Tipo: "; echo $filas['tipo_documento']?></td>
+			<td id="a2" class="campo2"><?php echo "Tipo de documento: "; echo $filas['tipo_documento']?></td>
 			<td id="a3" class="campo3"><?php echo "Nombres: "; echo $filas['nombre_usuario']?></td>
 			<td id="a4" class="campo4"><?php echo "Apellidos: "; echo $filas['apellido_usuario']?></td>
 			<td id="a5" class="campo5"><?php echo "correo: "; echo $filas['correo']?></td>
-			<td id="a6" class="campo6"><?php echo "telefono: "; echo $filas['telefono']?></td>
+			<td id="a6" class="campo6"><?php echo "telefono/Celular: "; echo $filas['telefono']?></td>
 			<td id="a7" class="campo7"><?php echo "dirección: "; echo $filas['direccion']?></td>
+			<td id="a8" class="campo8">cargo: Empleado</td>
 		</tr>
 <?php } ?>
 </tbody>

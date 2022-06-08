@@ -2,6 +2,8 @@
 
 include("../Models/conexion.php");
 
+$timestamp=strtotime('now');
+
 if (isset($_POST['enviar'])){
 	if(isset($_POST['correo']) && (isset($_POST['contraseña']))){
 		$id_usuario=$_POST["id_usuario"];
@@ -12,8 +14,10 @@ if (isset($_POST['enviar'])){
 		$contrasena=$_POST["contrasena"];
 		$telefono=$_POST["telefono"];
 		$direccion=$_POST["direccion"];
-		$fecha_registro_usuario=$_POST["yy-m-d h:i:s a"];
-		$fecha_actualizacion_usuario=$_POST["yy-m-d h:i:s a"];
+		$cargo_id=$_POST["cargo_id"];
+		$fecha_registro_usuario=date('yy-m-d h:i:s', $timestamp);
+		$fecha_actualizacion_usuario=date('yy-m-d h:i:s', $timestamp);
+
 
 		$verificar_documento_correo=mysqli_query($conexion, "SELECT * FROM usuarios WHERE id_usuario='$id_usuario' or correo='$correo'");
 
@@ -22,7 +26,8 @@ if (isset($_POST['enviar'])){
 			exit();
 		}
 
-		$insert="INSERT INTO usuarios (id_usuario,tipo_documento,nombre_usuario,apellido_usuario,correo,contrasena,telefono,direccion, cargo_id) VALUES ('$id_usuario','$tipo_documento','$nombre_usuario','$apellido_usuario','$correo','$contrasena','$telefono','$direccion', 2, '$fecha_registro_usuario', '$fecha_actualizacion_usuario')";
+		$insert="INSERT INTO usuarios (id_usuario ,tipo_documento ,nombre_usuario ,apellido_usuario ,correo ,contrasena ,telefono ,direccion, cargo_id, fecha_registro_usuario, fecha_modificacion_usuario) 
+		VALUES ('$id_usuario','$tipo_documento','$nombre_usuario','$apellido_usuario','$correo','$contrasena','$telefono','$direccion', 2, '$fecha_registro_usuario', '$fecha_actualizacion_usuario')";
 
 
 		$respuesta=mysqli_query($conexion,$insert);
