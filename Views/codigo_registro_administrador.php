@@ -12,8 +12,8 @@ include("../Models/conexion.php");
 <body>
 <div class="contenido">
 <img src="../Views/imagenes/logo.jpeg" class="img">
-<div  class="titulo"><h2>Registrar empleados</h2></div>
-<form action="../Controller/registro.php" method="post">
+<div  class="titulo"><h2>Registrar administrador</h2></div>
+<form action="../Controller/registro_administrador.php" method="post">
 	<b><label for="tipo_documento">Documento: </label></b>
 	<select id="opcion" name="tipo_documento">
 		<option value="CC">Cedula de ciudadania</option>
@@ -22,7 +22,7 @@ include("../Models/conexion.php");
 		<option value="NIT">numero de identificacion tributaria</option>
 	</select>
 	<b><label for="id_usuario"  id="lnumero">Numero: </label></b>
-	<input type="text" name="id_usuario" placeholder="Numero de documento..." id="idocumento" required="">
+	<input type="text" name="id_usuario" pattern="[0-9]{8-10}" minlength="6" maxlength="10" placeholder="Numero de documento..." id="idocumento" required="">
 	<br>
 	<br>
 	<b><label for="nombre">Nombres Completos: </label></b>
@@ -49,11 +49,11 @@ include("../Models/conexion.php");
 	<br>
 	<br>
 	<br>
-	<input type="submit" value="Registrar" class="boton" name="enviar">
+	<input type="submit" value="Registrar" class="boton" name="enviar2">
 </form>
 <center><a href="../Views/pagina_tabla_empleado.php"><input type="submit" value="Volver"  name="volver "class="boton2" style="margin-top:-6%"></a></center>
 <?php
-include("../Controller/registro.php");
+include("../Controller/registro_administrador.php");
 ?>
 	
 	

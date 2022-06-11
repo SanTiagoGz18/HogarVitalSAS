@@ -1,6 +1,5 @@
 <?php
 include ("../Models/conexion.php"); 
-session_start();
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -15,7 +14,7 @@ session_start();
 		<img src="imagenes/registro.png" class="imgp">
 		<a href="../Views/codigo_registro.php"><input type="submit" id="boton" value="Agregar personal"></a> 
 		<img src="imagenes/registro.png" class="imgp1">
-		<a href="../Views/codigo_registro.php"><input type="submit" id="boton3" value="Agregar Administrador"></a> 
+		<a href="../Views/codigo_registro_administrador.php"><input type="submit" id="boton3" value="Agregar Administrador"></a> 
 	</div>
 	<div class="icono">
 			<a href="../Views/Html/pagina_inicial.html"><input type="image" id="home" alt="Volver" src="imagenes/home.png"></a><i class="fab fa-Volver"></i>
@@ -29,7 +28,14 @@ session_start();
 		<div id="t2"><p>TIPO</p></div>
 		<div id="t3"><p>NOMBRES</p></div>
 		<div id="t4"><p>APELLIDOS</p></div>
-		<div id="t5"><p>DETALLES</p></div>
+		<div id="t5"><p>CORREO ELECTRONICO</p></div>
+		<div id="t6"><p>TELEFONO</p></div>
+		<div id="t7"><p>DIRECCIÓN</p></div>
+		<div id="t8"><p>CARGO</p></div>
+		<div id="t9"><p>FECHA</p></div>
+		<div id="t91"><p>REGISTRO</p></div>
+		<div id="t10"><p>FECHA</p></div>
+		<div id="t101"><p>ACTUALIZADO</p></div>
 </body>
 </html>
 <table border="4" class="tabla">
@@ -38,7 +44,7 @@ session_start();
 	<br>
 	<br>
 <?php 
-$select="SELECT * FROM usuarios";
+$select="SELECT * FROM usuarios INNER JOIN cargo ON usuarios.cargo_id=cargo.id_cargo";
 $resultado=mysqli_query($conexion,$select);
 while($fila=mysqli_fetch_array($resultado)){?>
 	<tr>
@@ -46,7 +52,12 @@ while($fila=mysqli_fetch_array($resultado)){?>
 		<td><?php echo $fila['tipo_documento']?></td>
 		<td><?php echo $fila['nombre_usuario']?> </td>
 		<td><?php echo $fila['apellido_usuario']?> </td>
-		<td><a href="../Views/pagina_perfil_tabla_empleado.php"><img src="imagenes/detalle_empleado.png" alt="detalles" class="boton"></a></td>
+		<td><?php echo $fila['correo']?> </td>
+		<td><?php echo $fila['telefono']?> </td>
+		<td><?php echo $fila['direccion']?> </td>
+		<td><?php echo $fila['nombre_cargo']?> </td>
+		<td><?php echo $fila['fecha_registro_usuario']?> </td>
+		<td><?php echo $fila['fecha_actualizacion_usuario']?> </td>
 		</td>
 	</tr>
 	</div>

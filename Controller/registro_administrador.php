@@ -3,7 +3,7 @@
 include("../Models/conexion.php");
 
 
-if (isset($_POST['enviar'])){
+if (isset($_POST['enviar2'])){
 	if(isset($_POST['correo']) && (isset($_POST['contrasena']))){
 		$id_usuario=$_POST["id_usuario"];
 		$tipo_documento=$_POST["tipo_documento"];
@@ -21,13 +21,13 @@ if (isset($_POST['enviar'])){
 			exit();
 		}
 
-		$insert="INSERT INTO usuarios (id_usuario ,tipo_documento ,nombre_usuario ,apellido_usuario ,correo ,contrasena ,telefono ,direccion, cargo_id, fecha_registro_usuario, fecha_actualizacion_usuario) 
-		VALUES ('$id_usuario','$tipo_documento','$nombre_usuario','$apellido_usuario','$correo','$contrasena','$telefono','$direccion', 2, NOW(), NOW())";
+		$insert2="INSERT INTO usuarios (id_usuario ,tipo_documento ,nombre_usuario ,apellido_usuario ,correo ,contrasena ,telefono ,direccion, cargo_id, fecha_registro_usuario, fecha_actualizacion_usuario) 
+		VALUES ('$id_usuario','$tipo_documento','$nombre_usuario','$apellido_usuario','$correo','$contrasena','$telefono','$direccion', 1, NOW(), NOW())";
 
 
-		$respuesta=mysqli_query($conexion,$insert);
+		$respuesta2=mysqli_query($conexion,$insert2);
 
-		if ($respuesta) {
+		if ($respuesta2) {
 			header('Location:../Views/Html/correcto_registro.html');
 		}
 	}
