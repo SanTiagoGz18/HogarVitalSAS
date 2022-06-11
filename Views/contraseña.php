@@ -17,9 +17,9 @@
         <input name="id_usuario" type="text" placeholder="Ingrese su documento" class="campos">
       
         <label for="password">Contraseña nueva</label>
-        <input name="contraseña" type="password" placeholder="Ingrese Contraseña Nueva" class="campos" required="">
+        <input name="contrasena" type="password" placeholder="Ingrese Contraseña Nueva" class="campos" required="">
         <label for="password">Confirmar Contraseña nueva</label>
-        <input name="ncontraseña" type="password" placeholder="Confirmar Contraseña Nueva" class="campos" required="">
+        <input name="ncontrasena" type="password" placeholder="Confirmar Contraseña Nueva" class="campos" required="">
         <a href="../Html/correcto.html"><input name="cambiar" type="submit" value="Cambiar Contraseña" class="boton"></a>
         </form>
         <br>

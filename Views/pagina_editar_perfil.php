@@ -18,10 +18,7 @@ $correo=$_SESSION['correo'];
 </head>
 <body>
 <div class="perfil">
-	<img src="imagenes/perfil.png" id="img1">
-</div>
-<div class="perfil1">
-	<div class="info">
+	<div class="info"> 
 		<div class="info2">
 		<form action="../Controller/actualizar_perfil.php" method="post">
 			<label for="documento">Numero Documento: </label>
@@ -45,7 +42,7 @@ $correo=$_SESSION['correo'];
 			<br>
 			<br>
 			<label for="Correo electronico">Correo electronico: </label>
-			<input type="text" name="correo" class="input5" value="<?php echo $filas['correo']?>">
+			<input type="text" name="correo" class="input5" value="<?php echo $filas['correo']?>" disabled>
 			<br>
 			<br>
 			<br>
@@ -54,7 +51,7 @@ $correo=$_SESSION['correo'];
 			<br>
 			<br>
 			<br>
-			<label for="direccion">Dirección: </label>
+			<label for="direccion" class="ldireccion">Dirección: </label>
 			<input type="text" name="direccion" class="input5" value="<?php echo $filas['direccion']?>">
 			<input type="submit" name="enviar" value="Guardar" class="boton4">
 			</form>
@@ -66,18 +63,15 @@ $correo=$_SESSION['correo'];
 </html>
 <table>
 <tbody>
-		<tr class="campotexto">
-			<td class="texto"><?php echo $filas['nombre_usuario']?></td>
-			<td class="texto2"><?php echo $filas['apellido_usuario']?></td>
-		</tr>
 		<tr class="perfil2">
-			<td id="a1" class="campo1"><?php echo "Documento: "; echo $filas['id_usuario']?></td>
-			<td id="a2" class="campo2"><?php echo "Tipo: "; echo $filas['tipo_documento']?></td>
+		<td id="a1" class="campo1"><?php echo "Documento: "; echo $filas['id_usuario']?></td>
+			<td id="a2" class="campo2"><?php echo "Tipo de documento: "; echo $filas['tipo_documento']?></td>
 			<td id="a3" class="campo3"><?php echo "Nombres: "; echo $filas['nombre_usuario']?></td>
 			<td id="a4" class="campo4"><?php echo "Apellidos: "; echo $filas['apellido_usuario']?></td>
 			<td id="a5" class="campo5"><?php echo "correo: "; echo $filas['correo']?></td>
 			<td id="a6" class="campo6"><?php echo "telefono/Celular: "; echo $filas['telefono']?></td>
 			<td id="a7" class="campo7"><?php echo "dirección: "; echo $filas['direccion']?></td>
+			<td id="a8" class="campo8">cargo: Administrador</td>
 		</tr>
 		</div>
 <?php } ?>

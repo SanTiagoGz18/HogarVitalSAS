@@ -6,23 +6,10 @@ body{
 .perfil{
 	background-color: #232655;
 	color: white;
-	top: 23%;
-	left: 17%;
-	width: 330px;
-	height: 250px;
-	position: absolute;
-	transform: translate(-50%, -50%);
-	padding: 10px 30px;
-	border: 5px solid white;
-
-}
-.perfil1{
-	background-color: #232655;
-	color: white;
-	top: 70%;
-	left: 17%;
-	width: 330px;
-	height: 280px;
+	top: 50%;
+	left: 20%;
+	width: 400px;
+	height: 500px;
 	position: absolute;
 	transform: translate(-50%, -50%);
 	padding: 10px 30px;
@@ -31,30 +18,79 @@ body{
 .perfil2{
 	background-color: #437DA1;
 	color: white;
-	top: 70%;
-	left: 17%;
-	width: 310px;
-	height: 250px;
+	top: 50%;
+	left: 20%;
+	width: 380px;
+	height: 470px;
 	position: absolute;
 	transform: translate(-50%, -50%);
 	padding: 10px 30px;
 	border: 5px solid white;
+	font-size: 20px;
 }
-#img1 {
-	width: 230px;
-  	height: 200px;
-  	border-radius: 50%;
-  	left: 11%;
-  	position: relative;
-  	top: 2%;
+.campos1{
+	color:white;
+	margin-left:-13%;
+	top: 10%;
+	position: absolute;
+	padding: 10px;
+}
+.campos2{
+	color:white;
+	margin-left:-13%;
+	top: 20%;
+	position: absolute;
+	padding: 10px;
+}
+.campos3{
+	color:white;
+	margin-left:-13%;
+	top: 30.5%;
+	position: absolute;
+	padding: 10px;
+}
+.campos4{
+	color:white;
+	margin-left:-13%;
+	top: 40.5%;
+	position: absolute;
+	padding: 10px;
+}
+.campos5{
+	color:white;
+	margin-left:-13%;
+	top: 50.5%;
+	position: absolute;
+	padding: 10px;
+}
+.campos6{
+	color:white;
+	margin-left:-13%;
+	top: 60.5%;
+	position: absolute;
+	padding: 10px;
+}
+.campos7{
+	color:white;
+	margin-left:-13%;
+	top: 70.5%;
+	position: absolute;
+	padding: 10px;
+}
+.campos8{
+	color:white;
+	margin-left:-13%;
+	top: 80.5%;
+	position: absolute;
+	padding: 10px;
 }
 .info{
 	background-color: #232655;
 	color: white;
-	top: 1.5%;
-	left: 220%;
-	width: 700px;
-	height: 570px;
+	top: 50%;
+	left: 190%;
+	width: 680px;
+	height: 500px;
 	position: absolute;
 	transform: translate(-50%, -50%);
 	padding: 10px 30px;
@@ -65,184 +101,118 @@ body{
 	color: white;
 	top: 50%;
 	left: 50%;
-	width: 600px;
-	height: 500px;
+	width: 660px;
+	height: 470px;
 	position: absolute;
 	transform: translate(-50%, -50%);
 	padding: 10px 30px;
 	border: 5px solid white;
 }
-.campos1{
-	color:white;
-	margin-left:-13%;
-	top: 8%;
-	position: absolute;
-	padding: 10px;
-}
-.campos2{
-	color:white;
-	margin-left:-13%;
-	top: 19%;
-	position: absolute;
-	padding: 10px;
-}
-.campos3{
-	color:white;
-	margin-left:-13%;
-	top: 29.5%;
-	position: absolute;
-	padding: 10px;
-}
-.campos4{
-	color:white;
-	margin-left:-13%;
-	top: 39.5%;
-	position: absolute;
-	padding: 10px;
-}
-.campos5{
-	color:white;
-	margin-left:-13%;
-	top: 49.5%;
-	position: absolute;
-	padding: 10px;
-}
-.campos6{
-	color:white;
-	margin-left:-13%;
-	top: 59.5%;
-	position: absolute;
-	padding: 10px;
-}
-.campos7{
-	color:white;
-	margin-left:-13%;
-	top: 69.5%;
-	position: absolute;
-	padding: 10px;
-}
 #a1{
 	border-bottom:2px	solid	white;
-	top: 6%;
+	top: 4%;
 	position: absolute;
-	width: 350px;
+	width: 420px;
 	left: 1%;
 }
 #a2{
 	border-bottom:2px	solid	white;
-	top: 19%;
+	top: 15%;
 	position: absolute;
-	width: 350px;
+	width: 420px;
 	left: 1%;
 	
 }
 #a3{
 	border-bottom:2px	solid	white;
-	top: 31%;
+	top: 27%;
 	position: absolute;
-	width: 350px;
+	width: 420px;
 	left: 1%;
 	
 }
 
 #a4{
 	border-bottom:2px	solid	white;
-	top: 44%;
+	top: 39%;
 	position: absolute;
-	width: 350px;
+	width: 420px;
 	left: 1%;
 	
 }
 #a5{
 	border-bottom:2px	solid	white;
-	top: 57%;
+	top: 51%;
 	position: absolute;
-	width: 350px;
+	width: 420px;
 	left: 1%;
 	
 }
 #a6{
 	border-bottom:2px	solid	white;
-	top: 70%;
+	top: 64%;
 	position: absolute;
-	width: 350px;
+	width: 420px;
 	left: 1%;
 	
 }
 #a7{
 	border-bottom:2px	solid	white;
-	top: 83%;
+	top: 77%;
 	position: absolute;
-	width: 350px;
+	width: 420px;
+	left: 1%;
+	
+}
+#a8{
+	border-bottom:2px	solid	white;
+	top: 90%;
+	position: absolute;
+	width: 420px;
 	left: 1%;
 	
 }
 .boton3 {
-	border: none;
-	outline: none;
-	margin-left: 50%;
-	height: 40px;
-	width: 225px;
-	background: #232655;
-	color: white;
-	border-radius: 30px;
-	font-size: 25px;
-	position: absolute;
-	top: 90%;
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 230px;
+  left: 55%;
+  top: 90%;
+  background: #232655;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+  position: absolute;
 }
 .boton3:hover{
-	cursor: pointer;
-  	background: #D4C163;
-  	color: black;
- }
+  cursor: pointer;
+  background: #D4C163;
+  color: black;
+}
 .boton4 {
-	border: none;
-	outline: none;
-	margin-left: -5%;
-	height: 40px;
-	width: 225px;
-	background: #232655;
-	color: white;
-	border-radius: 30px;
-	font-size: 25px;
-	position: absolute;
-	top: 90%;
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 230px;
+  left: 16%;
+  top: 90%;
+  background: #232655;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+  position: absolute;
 }
 .boton4:hover{
-	cursor: pointer;
-  	background: #D4C163;
-  	color: black;
- }
-.boy{
-	background-color:#437DA1;
-	color: white;
-	top: -53%;
-	left: 220%;
-	width: 540px;
-	height: 60px;
-	position: absolute;
-	transform: translate(-50%, -50%);
-	padding: 10px 30px;
-	border: 5px solid white;
-}
-
-.boy2{
- 	background-color:#437DA1;
-	color: white;
-	top: 20%;
-	left: 220%;
-	width: 540px;
-	height: 60px;
-	position: absolute;
-	transform: translate(-50%, -50%);
-	padding: 10px 30px;
-	border: 5px solid white;
+  cursor: pointer;
+  background: #D4C163;
+  color: black;
 }
 .input{
 	width: 70%;
-	height: 5%;
+	height: 6%;
 	background: white;
-	left: 1.7%;
+	left: 5%;
 	position: relative;
 	border: none;
 	border-radius: 5px;
@@ -250,9 +220,9 @@ body{
 }
 .input2{
 	width: 70%;
-	height: 5%;
+	height: 6%;
 	background: white;
-	left: 1%;
+	left: 4.3%;
 	position: relative;
 	border: none;
 	border-radius: 5px;
@@ -260,9 +230,9 @@ body{
 }
 .input4{
 	width: 70%;
-	height: 5%;
+	height: 6%;
 	background: white;
-	left: 2.4%;
+	left: 5.3%;
 	position: relative;
 	border: none;
 	border-radius: 5px;
@@ -316,4 +286,8 @@ body{
 	cursor: pointer;
   	background: #D4C163;
   	color: black;
+}
+.ldireccion{
+	top: 74%;
+	position: absolute;
 }

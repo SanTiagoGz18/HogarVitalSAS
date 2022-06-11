@@ -14,7 +14,11 @@ include ("../Models/conexion.php");
 		<img src="imagenes/registro.png" class="imgp">
 		<a href="../Views/codigo_registro.php"><input type="submit" id="boton" value="Agregar personal"></a> 
 		<img src="imagenes/registro.png" class="imgp1">
-		<a href="../Views/codigo_registro_administrador.php"><input type="submit" id="boton3" value="Agregar Administrador"></a> 
+		<a href="../Views/codigo_registro_administrador.php"><input type="submit" id="boton3" value="Agregar Administrador"></a>
+		<img src="imagenes/eliminar_usuario.png" class="imgp2">
+		<a href="../Views/codigo_registro_administrador.php"><input type="submit" id="boton2" value="Eliminar Personal"></a> 
+		<img src="imagenes/editar_usuario.png" class="imgp3">
+		<a href="../Views/codigo_registro_administrador.php"><input type="submit" id="boton4" value="Modificar Personal"></a> 
 	</div>
 	<div class="icono">
 			<a href="../Views/Html/pagina_inicial.html"><input type="image" id="home" alt="Volver" src="imagenes/home.png"></a><i class="fab fa-Volver"></i>

@@ -12,7 +12,20 @@
 .imgp1 {
 	width: 60px;
 	height: 60px;
-  left: 16%;
+  left: 17%;
+  position: relative;
+}
+.imgp2 {
+	width: 60px;
+	height: 60px;
+  left: 34%;
+  position: relative;
+}
+.imgp3 {
+	width: 60px;
+	height: 60px;
+  left: 50%;
+  top: -1%;
   position: relative;
 }
 .titulo{
@@ -65,12 +78,30 @@ div table tr {
   background: #D4C163;
   color: black;
 }
+#boton2 {
+	border: none;
+  outline: none;
+  height: 40px;
+  width: 180px;
+  left: 49.5%;
+  top: 2.5%;
+  background: #232655;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+  position: absolute;
+}
+#boton2:hover{
+  cursor: pointer;
+  background: #D4C163;
+  color: black;
+}
 #boton3 {
 	border: none;
   outline: none;
   height: 40px;
   width: 190px;
-  left: 26.5%;
+  left: 27.5%;
   top: 2.5%;
   background: #232655;
   color: white;
@@ -83,11 +114,29 @@ div table tr {
   background: #D4C163;
   color: black;
 }
+#boton4 {
+	border: none;
+  outline: none;
+  height: 40px;
+  width: 190px;
+  left: 70.5%;
+  top: 2.5%;
+  background: #232655;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+  position: absolute;
+}
+#boton4:hover{
+  cursor: pointer;
+  background: #D4C163;
+  color: black;
+}
 #home {
   width: 50px;
   height: 50px;
   left: 92%;
-  top: 3%;
+  top: 1.5%;
   position: absolute;
 }
 .icono i {
@@ -103,8 +152,8 @@ div table tr {
   width: 120px;
   background-color: #D4C163;
   color: black;
-  left: 89.4%;
-  top: 11%;
+  left: 89.1%;
+  top: 10%;
   padding: 5px 0px;
   text-align: center;
   display: block;

@@ -3,12 +3,12 @@
 include("../Models/conexion.php");
 
 if (isset($_POST['cambiar'])){
-	if(isset($_POST['id_usuario']) && (isset($_POST['contraseña']))){
+	if(isset($_POST['id_usuario']) && (isset($_POST['contrasena']))){
         $id_usuario=$_POST["id_usuario"];
-		$contraseña=$_POST["contraseña"];
-		$ncontraseña=$_POST["ncontraseña"];
+		$contrasena=$_POST["contrasena"];
+		$ncontrasena=$_POST["ncontrasena"];
 
-		$update="update usuarios set contraseña = '".$contraseña."' where id_usuario = '".$id_usuario."'";
+		$update="UPDATE usuarios SET contrasena = '".$contrasena."' WHERE id_usuario = '".$id_usuario."'";
 
 		$respuesta=mysqli_query($conexion,$update);
 

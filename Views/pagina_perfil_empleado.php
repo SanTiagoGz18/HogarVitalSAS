@@ -14,7 +14,7 @@ session_start();
 <body>
 <div class="perfil">
 	<div class="info"></div>
-	<div class="boy"><a href="../Views/"><input type="submit" value="Editar Perfil" class="boton3"></a></div>
+	<div class="boy"><a href="../Views/pagina_editar_perfil_empleado.php"><input type="submit" value="Editar Perfil" class="boton3"></a></div>
 	<div class="boy2"><a href="../Views/Html/pagina_inicial_empleado.html"><input type="submit" value="Volver al Inicio" class="boton3"></a></div>
 </div>
 </div>
