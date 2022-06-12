@@ -49,7 +49,6 @@ include ("../Models/conexion.php");
 <tbody>
 	<br>
 	<br>
-	<br>
 <?php 
 $select="SELECT * FROM usuarios INNER JOIN cargo ON usuarios.cargo_id=cargo.id_cargo";
 $resultado=mysqli_query($conexion,$select);
