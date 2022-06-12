@@ -10,6 +10,13 @@ if (isset($_POST['modificado'])){
         $telefono=$_POST["telefono"];
         $direccion=$_POST["direccion"];
 
+        $verificar_documento=mysqli_query($conexion, "SELECT * FROM usuarios WHERE id_usuario='$id_usuario'");
+
+		if(mysqli_num_rows($verificar_documento)<1){
+			header("location:../Views/Html/no_existe.html");
+			exit();
+		}
+
 		$update="UPDATE usuarios SET nombre_usuario = '".$nombre_usuario."', apellido_usuario = '".$apellido_usuario."', telefono = '".$telefono."', direccion = '".$direccion."', fecha_actualizacion_usuario = NOW() WHERE id_usuario = '".$id_usuario."'";
 
         $respuesta=mysqli_query($conexion,$update);

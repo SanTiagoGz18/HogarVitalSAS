@@ -7,16 +7,23 @@ if (isset($_POST['eliminar'])){
         
         $id_usuario=$_POST["id_usuario"];
 
-        $verificar_documento=mysqli_query($conexion, "SELECT * FROM usuarios WHERE id_usuario='$id_usuario' or correo='$correo'");
+        $verificar_documento=mysqli_query($conexion, "SELECT * FROM usuarios WHERE id_usuario='$id_usuario'");
 
 		if(mysqli_num_rows($verificar_documento)<1){
 			header("location:../Views/Html/no_existe.html");
 			exit();
 		}
 
-		$update="DELETE FROM usuarios WHERE id_usuario = '".$id_usuario."'";
+        $verificar_admin=mysqli_query($conexion, "SELECT * FROM usuarios WHERE cargo_id=1");
+
+		if(mysqli_num_rows($verificar_admin)>1){
+			header("location:../Views/Html/eliminar_admin.html");
+			exit();
+		}
+
+		$delete="DELETE FROM usuarios WHERE id_usuario = '".$id_usuario."'";
         
-        $respuesta=mysqli_query($conexion,$update);
+        $respuesta=mysqli_query($conexion,$delete);
             
         if ($respuesta) {{}
             header("location:../Views/Html/correcto_eliminar_personal.html");
