@@ -18,7 +18,7 @@ include ("../Models/conexion.php");
 		<a href="../Views/codigo_registro_administrador.php"><input type="submit" id="boton3" value="Agregar Administrador"></a>
 		
 		<img src="imagenes/eliminar_usuario.png" class="imgp3">
-		<a href="../Views/codigo_registro_administrador.php"><input type="submit" id="boton4" value="Eliminar Personal"></a> 
+		<a href="../Views/eliminar_personal_confirm.php"><input type="submit" id="boton4" value="Eliminar Personal"></a> 
 
 		<img src="imagenes/editar_usuario.png" class="imgp2">
 		<a href="../Views/modificar_personal_confirm.php"><input type="submit" id="boton2" value="Modificar Personal"></a> 

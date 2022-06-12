@@ -11,16 +11,15 @@
   <body>
 
     <div class="contenedor">
-      <h1>Modificación de Personal</h1>
-      <form action="modificar_personal_form.php" method="post">
+      <h1>Eliminar Personal</h1>
+      <form action="../Controller/eliminar_personal.php" method="post">
         <b><p>Confirme el numero de documento</p></b>
         <br>
         <br>
         <label for="usuario">Documento:</label>
         <input name="id_usuario" type="text" placeholder="Ingrese el numero documento" class="campos" required>
-        <input name="modificar" type="submit" value="Modificar el empleado" class="boton">
+        <input name="eliminar" type="submit" value="Eliminar el empleado" class="boton">
         </form>
-        <br>
         <a href="pagina_tabla_empleado.php"><input type="submit" value="Volver" class="boton2"></a>
     </div>
   </body>

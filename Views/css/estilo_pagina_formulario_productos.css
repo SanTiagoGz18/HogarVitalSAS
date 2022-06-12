@@ -93,20 +93,24 @@ div form label{
 	color: white;
 	background-color: #437DA1;
 }
+#opcion2 {
+	width: 43%;
+	height: 5%;
+	top: 80.9%;
+	position: absolute;
+	background: transparent;
+	border: solid #D4C163;
+	outline: none;
+	color: white;
+}
+#opcion2 option{
+  color: white;
+  background-color: #437DA1;
+}
 #lcategoria{
 	position: absolute;
 	top: 77.5%;
 	left: 56%;
-}
-#imarca{
-	border: none;
-	outline: none;
-	width: 45%;
-	border-bottom: 4px solid #D4C163;
-	background: transparent;
-	position: absolute;
-	color: white;
-	padding: 5px;
 }
 #lfecha{
 	margin-left: 26%;
