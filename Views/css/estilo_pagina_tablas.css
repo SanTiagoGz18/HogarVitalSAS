@@ -207,96 +207,96 @@ span a{
 }
 #t1{
   position: absolute;
-  left: 4%;
-  top: 5%;
+  left: 4.6%;
+  top: 6%;
   font-size: 16px;
   color: white;
 	font-variant: small-caps;
 }
 #t2{
   position: absolute;
-  left: 14.5%;
-  top: 4.9%;
+  left: 14%;
+  top: 6%;
   font-size: 16px;
   color: white;
 	font-variant: small-caps;
 }
 #t3{
   position: absolute;
-  left: 20.5%;
-  top: 4.9%;
+  left: 28.7%;
+  top: 6%;
   font-size: 16px;
   color: white;
 	font-variant: small-caps;
 }
 #t4{
   position: absolute;
-  left: 28.5%;
-  top: 4.9%;
+  left: 41%;
+  top: 10%;
   font-size: 16px;
   color: white;
 	font-variant: small-caps;
 }
 #t5{
   position: absolute;
-  left: 38.5%;
-  top: 4.9%;
+  left: 40%;
+  top: 17%;
   font-size: 16px;
   color: white;
 	font-variant: small-caps;
 }
 #t6{
   position: absolute;
-  left: 56.5%;
-  top: 4.9%;
+  left: 54%;
+  top: 10%;
   font-size: 16px;
   color: white;
 	font-variant: small-caps;
 }
 #t7{
   position: absolute;
-  left: 65%;
-  top: 4.9%;
+  left: 52%;
+  top: 17%;
   font-size: 16px;
   color: white;
 	font-variant: small-caps;
 }
 #t8{
   position: absolute;
-  left: 74%;
-  top: 4.9%;
+  left: 64.5%;
+  top: 14%;
   font-size: 16px;
   color: white;
 	font-variant: small-caps;
 }
 #t9{
   position: absolute;
-  left: 82.5%;
-  top: 3.5%;
-  font-size: 16px;
-  color: white;
-	font-variant: small-caps;
-}
-#t91{
-  position: absolute;
-  left: 81.5%;
-  top: 6.5%;
+  left: 77%;
+  top: 14%;
   font-size: 16px;
   color: white;
 	font-variant: small-caps;
 }
 #t10{
   position: absolute;
-  left: 90.5%;
-  top: 3.5%;
+  left: 87%;
+  top: 10%;
   font-size: 16px;
   color: white;
 	font-variant: small-caps;
 }
-#t101{
+#t11{
   position: absolute;
-  left: 88.5%;
-  top: 6.5%;
+  left: 87.8%;
+  top: 17%;
+  font-size: 16px;
+  color: white;
+	font-variant: small-caps;
+}
+#t12{
+  position: absolute;
+  left: 87.8%;
+  top: 17%;
   font-size: 16px;
   color: white;
 	font-variant: small-caps;

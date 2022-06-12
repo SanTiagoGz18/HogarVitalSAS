@@ -40,9 +40,9 @@ include ("../Models/conexion.php");
 		<div id="t7"><p>DIRECCIÓN</p></div>
 		<div id="t8"><p>CARGO</p></div>
 		<div id="t9"><p>FECHA</p></div>
-		<div id="t91"><p>REGISTRO</p></div>
-		<div id="t10"><p>FECHA</p></div>
-		<div id="t101"><p>ACTUALIZADO</p></div>
+		<div id="t10"><p>REGISTRO</p></div>
+		<div id="t11"><p>FECHA</p></div>
+		<div id="t12"><p>ACTUALIZADO</p></div>
 </body>
 </html>
 <table border="4" class="tabla">
