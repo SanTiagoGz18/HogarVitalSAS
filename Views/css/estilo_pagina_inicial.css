@@ -43,6 +43,30 @@ body {
 	position: absolute;
 	border: 5px solid white;
 }
+.proveedor{
+  background-color: #232655;
+	color: white;
+	padding: 20px 10px;
+	top: 50%;
+	left: 83%;
+	transform: translate(-50%, -50%);
+	width: 350px;
+	height: 320px;
+	position: absolute;
+	border: 5px solid white;
+}
+.marca{
+  background-color: #232655;
+	color: white;
+	padding: 20px 10px;
+	top: 50%;
+	left: 83%;
+	transform: translate(-50%, -50%);
+	width: 350px;
+	height: 320px;
+	position: absolute;
+	border: 5px solid white;
+}
 #boton {
 	border: none;
   outline: none;
@@ -129,6 +153,42 @@ body {
   position: absolute;
 }
 #boton5:hover{
+  cursor: pointer;
+  background: #D4C163;
+  color: black;
+}
+#boton6 {
+	border: none;
+  outline: none;
+  height: 40px;
+  width: 255px;
+  left: 15%;
+  top: 80%;
+  background: #437DA1;
+  color: white;
+  font-size: 18px;
+  border-radius: 20px;
+  position: absolute;
+}
+#boton6:hover{
+  cursor: pointer;
+  background: #D4C163;
+  color: black;
+}
+#boton7 {
+	border: none;
+  outline: none;
+  height: 40px;
+  width: 255px;
+  left: 15%;
+  top: 80%;
+  background: #437DA1;
+  color: white;
+  font-size: 18px;
+  border-radius: 20px;
+  position: absolute;
+}
+#boton7:hover{
   cursor: pointer;
   background: #D4C163;
   color: black;
