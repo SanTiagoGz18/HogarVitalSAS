@@ -45,7 +45,14 @@ include ("../Models/conexion.php");
 	<b><label for="">Marca: </label></b>
 	<b><label id="lcategoria">Categoria: </label></b>
 	<br>
-	<input type="text" name="marca" placeholder="Ingrese la marca del producto..." id="imarca" required="">
+	<select name="marca" id="opcion2">
+	<?php 
+	$marca="SELECT * FROM marca";
+	$resultado=mysqli_query($conexion,$marca);
+	while($fila=mysqli_fetch_array($resultado)){
+		echo "<option value='nombre_marca'>".$fila['nombre_marca']."</option>";
+	} ?>
+	</select>
 	<select id="opcion" name="tipo_producto">
         <option value="enseres">Enseres</option>
 		<option value="medicamentos">Medicamentos</option>

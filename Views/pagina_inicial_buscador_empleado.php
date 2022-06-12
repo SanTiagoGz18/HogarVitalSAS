@@ -39,7 +39,7 @@ include("../Models/conexion.php");
 	<div id="t2"><p>TIPO</p></div>
 	<div id="t3"><p>NOMBRES</p></div>
 	<div id="t4"><p>APELLIDOS</p></div>
-	<div id="t5"><p>DETALLES</p></div>
+	<div id="t5"><p>MODIFICAR</p></div>
 <table border="4" class="tabla">
 	<div class="icono">
 	<a href="../Views/Html/pagina_buscador_productos_director.html"><input type="image" id="home" alt="Volver" src="imagenes/home.png"></a><i class="fab fa-Volver"></i>
@@ -52,22 +52,22 @@ include("../Models/conexion.php");
 
 if(isset($_POST['busqueda'])){
 	$busqueda=$_POST['busqueda'];
-	$resultado=mysqli_query($conexion,"SELECT * FROM usuarios WHERE nombre_usuario LIKE '%$busqueda%'");
+	$resultado=mysqli_query($conexion,"SELECT * FROM usuarios WHERE id_usuario LIKE '%$busqueda%' OR nombre_usuario LIKE '%$busqueda%' OR apellido_usuario LIKE '%$busqueda%'");
 	
 	while($fila=mysqli_fetch_array($resultado)){
 		
-		$id = $fila['id_usuario'];
-		$tipo = $fila['tipo_documento'];
-		$nombre  = $fila['nombre_usuario'];
-		$cantidad = $fila['apellido_usuario'];
+		$id_usuario = $fila['id_usuario'];
+		$tipo_documento = $fila['tipo_documento'];
+		$nombre_usuario  = $fila['nombre_usuario'];
+		$apellido_usuario = $fila['apellido_usuario'];
 
 		?>
 		<tr>
-			<td><?php echo $id?> </td>
-			<td><?php echo $tipo?> </td>
-			<td><?php echo $nombre?></td>
-			<td><?php echo $cantidad?></td>
-			<td><a href="../Views/Html/pagina_productos_detalle.html"><img src="imagenes/detalles.png" alt="detalles" class="boton"></a></td>
+			<td><?php echo $id_usuario?> </td>
+			<td><?php echo $tipo_documento?> </td>
+			<td><?php echo $nombre_usuario?></td>
+			<td><?php echo $apellido_usuario?></td>
+			<td><a href="modificar_personal_confirm_buscar.php"><img src="imagenes/detalle_empleado.png" alt="detalles" class="botonad"></a></td>
 		</tr>
 		<div class="icono">
 			<a href="../Views/Html/pagina_buscador_productos_director.html"><input type="image" id="home" alt="Volver" src="imagenes/home.png"></a><i class="fab fa-Volver"></i>
