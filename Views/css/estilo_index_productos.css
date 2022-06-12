@@ -94,10 +94,9 @@ body{
 }
 #img2 {
 	width: 200px;
-  	height: 140px;
-  	
-  	left: 8%;
-  	position: relative;
+  height: 140px;
+  left: 8%;
+  position: relative;
 }
 #boton{
 	border: none;
