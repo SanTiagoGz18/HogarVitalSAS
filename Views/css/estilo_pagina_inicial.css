@@ -3,10 +3,12 @@ body {
 	font-size: 18px;
 	background: #437DA1;
 }
+
 .imgp {
 	width: 50px;
 	height: 50px;
 }
+
 .empleado {
 	background-color: #232655;
 	color: white;
@@ -19,6 +21,7 @@ body {
 	position: absolute;
 	border: 5px solid white;
 }
+
 .producto {
 	background-color: #232655;
 	color: white;
@@ -31,6 +34,7 @@ body {
 	position: absolute;
 	border: 5px solid white;
 }
+
 .buscar {
 	background-color: #232655;
 	color: white;
@@ -43,6 +47,7 @@ body {
 	position: absolute;
 	border: 5px solid white;
 }
+
 .proveedor{
   background-color: #232655;
 	color: white;
@@ -55,6 +60,7 @@ body {
 	position: absolute;
 	border: 5px solid white;
 }
+
 .marca{
   background-color: #232655;
 	color: white;
@@ -67,6 +73,7 @@ body {
 	position: absolute;
 	border: 5px solid white;
 }
+
 #boton {
 	border: none;
   outline: none;
@@ -80,11 +87,13 @@ body {
   border-radius: 10px;
   position: absolute;
 }
+
 #boton:hover{
   cursor: pointer;
   background: #D4C163;
   color: black;
 }
+
 #boton2 {
 	border: none;
   outline: none;
@@ -98,11 +107,13 @@ body {
   border-radius: 20px;
   position: absolute;
 }
+
 #boton2:hover{
   cursor: pointer;
   background: #D4C163;
   color: black;
 }
+
 #boton3 {
 	border: none;
   outline: none;
@@ -116,11 +127,13 @@ body {
   border-radius: 20px;
   position: absolute;
 }
+
 #boton3:hover{
   cursor: pointer;
   background: #D4C163;
   color: black;
 }
+
 #boton4 {
 	border: none;
   outline: none;
@@ -134,11 +147,13 @@ body {
   border-radius: 20px;
   position: absolute;
 }
+
 #boton4:hover{
   cursor: pointer;
   background: #D4C163;
   color: black;
 }
+
 #boton5 {
   border: none;
   outline: none;
@@ -152,11 +167,13 @@ body {
   border-radius: 10px;
   position: absolute;
 }
+
 #boton5:hover{
   cursor: pointer;
   background: #D4C163;
   color: black;
 }
+
 #boton6 {
 	border: none;
   outline: none;
@@ -170,11 +187,13 @@ body {
   border-radius: 20px;
   position: absolute;
 }
+
 #boton6:hover{
   cursor: pointer;
   background: #D4C163;
   color: black;
 }
+
 #boton7 {
 	border: none;
   outline: none;
@@ -188,11 +207,13 @@ body {
   border-radius: 20px;
   position: absolute;
 }
+
 #boton7:hover{
   cursor: pointer;
   background: #D4C163;
   color: black;
 }
+
 .img {
 	width: 230px;
  	height: 230px;
@@ -200,6 +221,7 @@ body {
 	left:20%;
   position: relative;
 }
+
 .img2 {
 	width: 230px;
  	height: 230px;
@@ -207,6 +229,7 @@ body {
 	left:17%;
   position: relative;
 }
+
 #home {
   width: 50px;
   height: 50px;
@@ -214,6 +237,7 @@ body {
   top: 0.5%;
   position: absolute;
 }
+
 .icono i {
   color: #00acee;
   font-size: 80px;
