@@ -25,7 +25,7 @@ session_start();
 <?php
 
 $correo=$_SESSION['correo'];
-	$select="SELECT * FROM usuarios where correo='$correo'";
+$select="SELECT * FROM usuarios inner join cargo on usuarios.cargo_id=cargo.id_cargo where correo='$correo'";
 	$resultado=mysqli_query($conexion,$select);
 	$filas=mysqli_fetch_array($resultado);
 	if($filas['correo']==$correo){?>
@@ -37,7 +37,7 @@ $correo=$_SESSION['correo'];
 			<td id="a5" class="campo5"><?php echo "correo: "; echo $filas['correo']?></td>
 			<td id="a6" class="campo6"><?php echo "telefono/Celular: "; echo $filas['telefono']?></td>
 			<td id="a7" class="campo7"><?php echo "dirección: "; echo $filas['direccion']?></td>
-			<td id="a8" class="campo8">cargo: Empleado</td>
+			<td id="a8" class="campo8"><?php echo "cargo: "; echo $filas['nombre_cargo']?></td>
 		</tr>
 <?php } ?>
 </tbody>
