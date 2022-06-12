@@ -12,12 +12,12 @@ body {
 .empleado {
 	background-color: #232655;
 	color: white;
-	padding: 20px 10px;
-	top: 50%;
-	left: 18%;
+	padding: 30px 30px;
+	top: 30%;
+	left: 20%;
 	transform: translate(-50%, -50%);
-	width: 350px;
-	height: 320px;
+	width: 220px;
+	height: 190px;
 	position: absolute;
 	border: 5px solid white;
 }
@@ -25,12 +25,12 @@ body {
 .producto {
 	background-color: #232655;
 	color: white;
-	padding: 20px 10px;
-	top: 50%;
+	padding: 30px 30px;
+	top: 30%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 350px;
-	height: 320px;
+  width: 220px;
+	height: 190px;
 	position: absolute;
 	border: 5px solid white;
 }
@@ -38,12 +38,12 @@ body {
 .buscar {
 	background-color: #232655;
 	color: white;
-	padding: 20px 10px;
-	top: 50%;
-	left: 83%;
+	padding: 30px 30px;
+	top: 30%;
+	left: 78%;
 	transform: translate(-50%, -50%);
-	width: 350px;
-	height: 320px;
+  width: 220px;
+	height: 190px;
 	position: absolute;
 	border: 5px solid white;
 }
@@ -51,12 +51,12 @@ body {
 .proveedor{
   background-color: #232655;
 	color: white;
-	padding: 20px 10px;
-	top: 50%;
-	left: 83%;
+	padding: 30px 30px;
+	top: 75%;
+	left: 35%;
 	transform: translate(-50%, -50%);
-	width: 350px;
-	height: 320px;
+	width: 220px;
+	height: 190px;
 	position: absolute;
 	border: 5px solid white;
 }
@@ -64,12 +64,12 @@ body {
 .marca{
   background-color: #232655;
 	color: white;
-	padding: 20px 10px;
-	top: 50%;
-	left: 83%;
+	padding: 30px 30px;
+	top: 75%;
+	left: 65%;
 	transform: translate(-50%, -50%);
-	width: 350px;
-	height: 320px;
+	width: 220px;
+	height: 190px;
 	position: absolute;
 	border: 5px solid white;
 }
@@ -96,124 +96,39 @@ body {
 
 #boton2 {
 	border: none;
-  outline: none;
-  height: 40px;
-  width: 255px;
-  left: 15%;
+	outline: none;
+	height: 40px;
+	width: 260px;
+	left: 5%;
   top: 80%;
-  background: #437DA1;
-  color: white;
-  font-size: 18px;
-  border-radius: 20px;
-  position: absolute;
+	background: #437DA1;
+	color: white;
+	font-size: 18px;
+	border-radius: 20px;
+	position: absolute;
 }
-
 #boton2:hover{
-  cursor: pointer;
-  background: #D4C163;
-  color: black;
+	cursor: pointer;
+  	background: #D4C163;
+  	color: black;
 }
-
 #boton3 {
-	border: none;
-  outline: none;
-  height: 40px;
-  width: 255px;
-  left: 15%;
-  top: 80%;
-  background: #437DA1;
-  color: white;
-  font-size: 18px;
-  border-radius: 20px;
-  position: absolute;
-}
-
-#boton3:hover{
-  cursor: pointer;
-  background: #D4C163;
-  color: black;
-}
-
-#boton4 {
-	border: none;
-  outline: none;
-  height: 40px;
-  width: 255px;
-  left: 15%;
-  top: 80%;
-  background: #437DA1;
-  color: white;
-  font-size: 18px;
-  border-radius: 20px;
-  position: absolute;
-}
-
-#boton4:hover{
-  cursor: pointer;
-  background: #D4C163;
-  color: black;
-}
-
-#boton5 {
   border: none;
   outline: none;
   height: 40px;
-  width: 100px;
+  width: 190px;
   left: 5%;
-  top: 1.75%;
   background: #232655;
   color: white;
   font-size: 18px;
   border-radius: 10px;
   position: absolute;
 }
-
-#boton5:hover{
+#boton3:hover{
   cursor: pointer;
-  background: #D4C163;
-  color: black;
+    background: #D4C163;
+    color: black;
 }
-
-#boton6 {
-	border: none;
-  outline: none;
-  height: 40px;
-  width: 255px;
-  left: 15%;
-  top: 80%;
-  background: #437DA1;
-  color: white;
-  font-size: 18px;
-  border-radius: 20px;
-  position: absolute;
-}
-
-#boton6:hover{
-  cursor: pointer;
-  background: #D4C163;
-  color: black;
-}
-
-#boton7 {
-	border: none;
-  outline: none;
-  height: 40px;
-  width: 255px;
-  left: 15%;
-  top: 80%;
-  background: #437DA1;
-  color: white;
-  font-size: 18px;
-  border-radius: 20px;
-  position: absolute;
-}
-
-#boton7:hover{
-  cursor: pointer;
-  background: #D4C163;
-  color: black;
-}
-
 .img {
 	width: 230px;
  	height: 230px;
@@ -221,12 +136,11 @@ body {
 	left:20%;
   position: relative;
 }
-
 .img2 {
-	width: 230px;
- 	height: 230px;
- 
-	left:17%;
+	width: 200px;
+  height: 160px;
+  left: 8%;
+  top: -2%;
   position: relative;
 }
 
