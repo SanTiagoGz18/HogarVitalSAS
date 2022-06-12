@@ -4,6 +4,14 @@ include("../Models/conexion.php");
 if(isset($_POST['modificar'])){
 
     $id_usuario=$_POST['id_usuario'];
+
+    $verificar_documento=mysqli_query($conexion, "SELECT * FROM usuarios WHERE id_usuario='$id_usuario'");
+
+		if(mysqli_num_rows($verificar_documento)<1){
+			header("location:../Views/Html/no_existe_modificar.html");
+			exit();
+		}
+
     $resultado=mysqli_query($conexion, "SELECT * FROM usuarios inner join cargo on usuarios.cargo_id=cargo.id_cargo where id_usuario='$id_usuario'");
     $filas=mysqli_fetch_array($resultado);
         if($filas['id_usuario']==$id_usuario){?>
