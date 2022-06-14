@@ -19,18 +19,23 @@ session_start();
 	<h1 class="titulo">MEDICAMENTOS</h1>
 	<hr width="50%" size="5" color="white" style="top: 14%; position:absolute; left: 25%;">
 	<div class="contenido">
-		<div id="t1"><p>CODIGO</p></div>
-		<div id="t2"><p>NOMBRE</p></div>
-		<div id="t3"><p>CANTIDAD</p></div>
-		<div id="t4"><p>FECHA</p></div>
-		<div id="t5"><p>REGISTRO</p></div>
-		<div id="t6"><p>FECHA</p></div>
-		<div id="t7"><p>ACTUALIZADO</p></div>
-		<div id="t8"><p>CATEGORIA</p></div>
-		<div id="t9"><p>MARCA</p></div>
-		<div id="t10"><p>MODIFICAR/</p></div>
-		<div id="t11"><p>ELIMINAR</p></div>
-
+		<div id="t12"><p>CODIGO</p></div>
+		<div id="t22"><p>NOMBRE</p></div>
+		<div id="t32"><p>CANTIDAD</p></div>
+		<div id="t42"><p>FECHA</p></div>
+		<div id="t52"><p>REGISTRO</p></div>
+		<div id="t62"><p>FECHA</p></div>
+		<div id="t72"><p>ACTUALIZADO</p></div>
+		<div id="t82"><p>CATEGORIA</p></div>
+		<div id="t92"><p>MARCA</p></div>
+		<div id="t102"><p>PROVEEDOR</p></div>
+		<div id="t112"><p>FECHA</p></div>
+		<div id="t122"><p>RECEPCIÓN</p></div>
+		<div id="t132"><p>FECHA</p></div>
+		<div id="t142"><p>VENCIMIENTO</p></div>
+		<div id="t152"><p>LOTE</p></div>
+		<div id="t162"><p>MODIFICAR/</p></div>
+		<div id="t172"><p>ELIMINAR</p></div>
 </body>
 </html>
 <table border="4" class="tabla">
