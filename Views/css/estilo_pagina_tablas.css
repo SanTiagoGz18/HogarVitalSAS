@@ -28,6 +28,13 @@
   top: -1%;
   position: relative;
 }
+.imgmarca{
+  width: 60px;
+	height: 60px;
+  left: 34%;
+  top: -1%;
+  position: relative;
+}
 .titulo{
 	color: white;
 	font-variant: small-caps;
@@ -38,6 +45,15 @@
 	width: 91%;
 	height: 85%;
   left: 0.5%;
+	padding: 40px 50px;
+	background: #232655;
+	position: relative;
+	border: 4px solid white;
+}
+.contenido2 {
+	width: 40%;
+	height: 50%;
+  left: 25%;
 	padding: 40px 50px;
 	background: #232655;
 	position: relative;
