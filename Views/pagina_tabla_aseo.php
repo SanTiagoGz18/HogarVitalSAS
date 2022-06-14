@@ -49,9 +49,7 @@ while($fila=mysqli_fetch_array($resultado)){?>
 		<td><?php echo $fila['nombre_categoria']?></td>
 		<td><?php echo $fila['nombre_marca']?></td>
 		<td><a href="../Views/Html/pagina_perfil_tabla_empleado.html"><img src="imagenes/detalles.png" alt="detalles" class="boton"></a></td>
-		</td>
 	</tr>
-	
 	</div>
 <?php } ?>
 </tbody>

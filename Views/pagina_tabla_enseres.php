@@ -34,18 +34,22 @@ session_start();
 </html>
 <table border="4" class="tabla">
 <tbody>
+	<br>
+	<br>
 <?php 
-$select="SELECT * FROM productos WHERE id_tipo_producto='1'";
+$select="SELECT * FROM ((productos INNER JOIN categoria ON productos.categoria_id=categoria.id_categoria)INNER JOIN marca ON productos.marca_id=marca.id_marca)WHERE categoria_id='4'";
 $resultado=mysqli_query($conexion,$select);
 while($fila=mysqli_fetch_array($resultado)){?>
 	<tr>
 		<td><?php echo $fila['id_producto']?> </td>
 		<td><?php echo $fila['nombre_producto']?></td>
 		<td><?php echo $fila['cantidad_producto']?></td>
-		<td><a href="../Views/Html/pagina_perfil_tabla_empleado.html"><img src="imagenes/detalle_empleado.png" alt="detalles" class="boton"></a></td>
-		</td>
+		<td><?php echo $fila['fecha_registro_producto']?></td>
+		<td><?php echo $fila['fecha_actualizacion_producto']?></td>
+		<td><?php echo $fila['nombre_categoria']?></td>
+		<td><?php echo $fila['nombre_marca']?></td>
+		<td><a href="../Views/Html/pagina_perfil_tabla_empleado.html"><img src="imagenes/detalles.png" alt="detalles" class="boton"></a></td>
 	</tr>
-	
 	</div>
 <?php } ?>
 </tbody>
