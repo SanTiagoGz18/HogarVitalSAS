@@ -11,13 +11,13 @@ include ("../Models/conexion.php");
 </head>
 <body>
 	<div>
-		<img src="imagenes/registro.png" class="imgp">
+		<img src="imagenes/agregar_proveedor.png" class="imgp">
 		<a href="../Views/codigo_registro_proveedor.php"><input type="submit" id="boton" value="Agregar Proveedor"></a> 
 		
-		<img src="imagenes/editar_usuario.png" class="imgp1">
+		<img src="imagenes/editar_proveedor.png" class="imgp1">
 		<a href="../Views/modificar_proveedor_confirm.php"><input type="submit" id="boton3" value="Modificar Proveedor"></a>
 
-		<img src="imagenes/eliminar_usuario.png" class="imgmarca">
+		<img src="imagenes/eliminar_proveedor.png" class="imgmarca">
 		<a href="../Views/eliminar_proveedor_confirm.php"><input type="submit" id="boton2" value="Eliminar Proveedor"></a>
 	</div>
 	<div class="icono">

@@ -11,13 +11,13 @@ include ("../Models/conexion.php");
 </head>
 <body>
 	<div>
-		<img src="imagenes/registro.png" class="imgp">
+		<img src="imagenes/agregar_marca.png" class="imgp">
 		<a href="../Views/codigo_registro_marca.php"><input type="submit" id="boton" value="Agregar Marca"></a> 
 		
-		<img src="imagenes/editar_usuario.png" class="imgp1">
+		<img src="imagenes/editar_marca.png" class="imgp1">
 		<a href="../Views/codigo_registro_administrador.php"><input type="submit" id="boton3" value="Modificar Marca"></a>
 
-		<img src="imagenes/eliminar_usuario.png" class="imgmarca">
+		<img src="imagenes/eliminar_marca	.png" class="imgmarca">
 		<a href="../Views/modificar_personal_confirm.php"><input type="submit" id="boton2" value="Eliminar Marca"></a> 
 	</div>
 	<div class="icono">
