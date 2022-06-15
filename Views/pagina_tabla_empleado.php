@@ -31,24 +31,22 @@ include ("../Models/conexion.php");
 	<hr width="50%" size="5" color="white" style="top: 10%; position:relative">
 	<br>
 	<div class="contenido">
-		<div id="t1"><p>DOCUMENTO</p></div>
-		<div id="t2"><p>TIPO</p></div>
-		<div id="t3"><p>NOMBRES</p></div>
-		<div id="t4"><p>APELLIDOS</p></div>
-		<div id="t5"><p>CORREO ELECTRONICO</p></div>
-		<div id="t6"><p>TELEFONO</p></div>
-		<div id="t7"><p>DIRECCIÓN</p></div>
-		<div id="t8"><p>CARGO</p></div>
-		<div id="t9"><p>FECHA</p></div>
-		<div id="t10"><p>REGISTRO</p></div>
-		<div id="t11"><p>FECHA</p></div>
-		<div id="t12"><p>ACTUALIZADO</p></div>
 </body>
 </html>
 <table border="4" class="tabla">
 <tbody>
-	<br>
-	<br>
+<tr class="tr">
+		<td>DOCUMENTO</td>
+		<td>TIPO</td>
+		<td>NOMBRES</td>
+		<td>APELLIDOS</td>
+		<td>CORREO ELECTRONICO</td>
+		<td>TELEFONO</td>
+		<td>DIRECCIÓN</td>
+		<td>CARGO</td>
+		<td>FECHA REGISTRO</td>
+		<td>FECHA ACTUALIZADO</td>
+	</tr>
 <?php 
 $select="SELECT * FROM usuarios INNER JOIN cargo ON usuarios.cargo_id=cargo.id_cargo";
 $resultado=mysqli_query($conexion,$select);
