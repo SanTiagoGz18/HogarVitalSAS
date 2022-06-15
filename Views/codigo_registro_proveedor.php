@@ -13,8 +13,8 @@ include("../Models/conexion.php");
 <div class="contenido2">
 <img src="../Views/imagenes/logo.jpeg" class="img">
 <div  class="titulo"><h2>Registrar Proveedores</h2></div>
-<form action="../Controller/registro.php" method="post">
-	<b><label for="marca" id="lproveedor">Nombre del proveedor: </label></b>
+<form action="../Controller/registro_proveedor.php" method="post">
+	<b><label for="proveedor" id="lproveedor">Nombre del proveedor: </label></b>
 	<br>
 	<input type="text" name="nombre_proveedor" placeholder="Ingrese el nombre del proveedor..." id="iproveedor" required="">
 	<br>
@@ -25,7 +25,7 @@ include("../Models/conexion.php");
 </form>
 <center><a href="../Views/pagina_tabla_proveedor.php"><input type="submit" value="Volver"  name="volver "class="boton2" style="margin-top:-6%"></a></center>
 <?php
-include("../Controller/registro.php");
+include("../Controller/registro_proveedor.php");
 ?>
 </div>
 </body>
