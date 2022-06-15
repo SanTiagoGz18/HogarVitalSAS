@@ -95,31 +95,31 @@ span a{
 }
 #t1{
   position: absolute;
-  left: 2.7%;
-  top: 6%;
+  left: 6%;
+  top: 8%;
   font-size: 16px;
   color: white;
 	font-variant: small-caps;
 }
 #t2{
   position: absolute;
-  left: 13.3%;
-  top: 6%;
+  left: 17.5%;
+  top: 8%;
   font-size: 16px;
   color: white;
 	font-variant: small-caps;
 }
 #t3{
   position: absolute;
-  left: 18.8%;
-  top: 6%;
+  left: 29.3%;
+  top: 8%;
   font-size: 16px;
   color: white;
 	font-variant: small-caps;
 }
 #t4{
   position: absolute;
-  left: 26.8%;
+  left: 42.5%;
   top: 6%;
   font-size: 16px;
   color: white;
@@ -127,15 +127,15 @@ span a{
 }
 #t5{
   position: absolute;
-  left: 38%;
-  top: 6%;
+  left: 41.5%;
+  top: 13%;
   font-size: 16px;
   color: white;
 	font-variant: small-caps;
 }
 #t6{
   position: absolute;
-  left: 57.5%;
+  left: 54.5%;
   top: 6%;
   font-size: 16px;
   color: white;
@@ -143,48 +143,40 @@ span a{
 }
 #t7{
   position: absolute;
-  left: 65.7%;
-  top: 6%;
+  left: 52.3%;
+  top: 13%;
   font-size: 16px;
   color: white;
 	font-variant: small-caps;
 }
 #t8{
   position: absolute;
-  left: 75.5%;
-  top: 6%;
+  left: 65%;
+  top: 8%;
   font-size: 16px;
   color: white;
 	font-variant: small-caps;
 }
 #t9{
   position: absolute;
-  left: 84.5%;
-  top: 4%;
+  left: 78.3%;
+  top: 8%;
   font-size: 16px;
   color: white;
 	font-variant: small-caps;
 }
 #t10{
   position: absolute;
-  left: 83.5%;
-  top: 8%;
+  left: 89.1%;
+  top: 6%;
   font-size: 16px;
   color: white;
 	font-variant: small-caps;
 }
 #t11{
   position: absolute;
-  left: 92.5%;
-  top: 4%;
-  font-size: 16px;
-  color: white;
-	font-variant: small-caps;
-}
-#t12{
-  position: absolute;
-  left: 90.3%;
-  top: 8%;
+  left: 89.7%;
+  top: 13%;
   font-size: 16px;
   color: white;
 	font-variant: small-caps;
