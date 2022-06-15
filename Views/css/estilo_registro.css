@@ -22,6 +22,18 @@
 	position: absolute;
 	border: 4px solid white;
 }
+.contenido2{
+	background-color: #232655;
+	color: white;
+	padding: 60px 30px;
+	top: 54%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 600px;
+	height: 200px;
+	position: absolute;
+	border: 4px solid white;
+}
 .input{
 	position: relative;; 
 	padding: 7px;
@@ -33,6 +45,14 @@
 	color: white;
 }
 .contenido .img{
+	width: 130px;
+  	height: 130px;
+  	border-radius: 50%;
+  	position: absolute;
+  	top: -70px;
+  	left: calc(50% - 62px);
+}
+.contenido2 .img{
 	width: 130px;
   	height: 130px;
   	border-radius: 50%;
@@ -193,4 +213,33 @@ div a:hover{
 }
 input{
 	color: white;
+} 
+#imarca{
+	margin-left: 29%; 
+	border: none;
+	outline: none;
+	background: transparent;
+	border-bottom: 4px solid #D4C163;
+	width: 60%;
+	position: absolute;
+}
+#lmarca{
+	margin-left: 4%;
+	top:52%;
+	position: absolute;
+}
+
+#iproveedor{
+	margin-left: 29%; 
+	border: none;
+	outline: none;
+	background: transparent;
+	border-bottom: 4px solid #D4C163;
+	width: 60%;
+	position: absolute;
+}
+#lproveedor{
+	margin-left: 4%;
+	top:52%;
+	position: absolute;
 }

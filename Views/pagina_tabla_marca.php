@@ -12,7 +12,7 @@ include ("../Models/conexion.php");
 <body>
 	<div>
 		<img src="imagenes/registro.png" class="imgp">
-		<a href="../Views/codigo_registro.php"><input type="submit" id="boton" value="Agregar Marca"></a> 
+		<a href="../Views/codigo_registro_marca.php"><input type="submit" id="boton" value="Agregar Marca"></a> 
 		
 		<img src="imagenes/editar_usuario.png" class="imgp1">
 		<a href="../Views/codigo_registro_administrador.php"><input type="submit" id="boton3" value="Modificar Marca"></a>

@@ -12,18 +12,18 @@ include("../Models/conexion.php");
 <body>
 <div class="contenido2">
 <img src="../Views/imagenes/logo.jpeg" class="img">
-<div  class="titulo"><h2>Registrar Marcas</h2></div>
+<div  class="titulo"><h2>Registrar Proveedores</h2></div>
 <form action="../Controller/registro.php" method="post">
-	<b><label for="marca" id="lmarca">Nombre de la Marca: </label></b>
+	<b><label for="marca" id="lproveedor">Nombre del proveedor: </label></b>
 	<br>
-	<input type="text" name="nombre_marca" placeholder="Ingrese el nombre de la marca..." id="imarca" required="">
+	<input type="text" name="nombre_proveedor" placeholder="Ingrese el nombre del proveedor..." id="iproveedor" required="">
 	<br>
 	<br>
 	<br>
 	<br>
 	<input type="submit" value="Registrar" class="boton" name="enviar">
 </form>
-<center><a href="../Views/pagina_tabla_marca.php"><input type="submit" value="Volver"  name="volver "class="boton2" style="margin-top:-6%"></a></center>
+<center><a href="../Views/pagina_tabla_proveedor.php"><input type="submit" value="Volver"  name="volver "class="boton2" style="margin-top:-6%"></a></center>
 <?php
 include("../Controller/registro.php");
 ?>
