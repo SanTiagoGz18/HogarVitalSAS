@@ -17,7 +17,7 @@
         <br>
         <br>
         <label for="usuario">Id del proveedor:</label>
-        <input name="id_proveedor" type="text" placeholder="Ingrese id de proveedor" class="campos" required>
+        <input name="id_proveedor" type="text" placeholder="Ingrese el id del proveedor" class="campos" required>
         <input name="modificar" type="submit" value="Modificar el proveedor" class="boton">
         </form>
         <br>

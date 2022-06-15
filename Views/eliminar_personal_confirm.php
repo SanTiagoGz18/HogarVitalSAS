@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Modificar personal - Hogar Vital</title>
+    <title>Eliminar Personal - Hogar Vital</title>
     <link rel="stylesheet" href="../Views/css/estilo_modificar.css">
     <link rel="icon" type="imagenes/png" href="imagenes/logo_icon.ico">
   </head>

@@ -28,6 +28,31 @@ body{
 	border: 5px solid white;
 	font-size: 20px;
 }
+.perfilP{
+	background-color: #232655;
+	color: white;
+	top: 50%;
+	left: 20%;
+	width: 400px;
+	height: 180px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	padding: 10px 30px;
+	border: 5px solid white;
+}
+.perfil2P{
+	background-color: #437DA1;
+	color: white;
+	top: 50%;
+	left: 20%;
+	width: 380px;
+	height: 150px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	padding: 10px 30px;
+	border: 5px solid white;
+	font-size: 20px;
+}
 .campos1{
 	color:white;
 	margin-left:-13%;
@@ -108,6 +133,30 @@ body{
 	padding: 10px 30px;
 	border: 5px solid white;
 }
+.infoP{
+	background-color: #232655;
+	color: white;
+	top: 50%;
+	left: 190%;
+	width: 680px;
+	height: 180px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	padding: 10px 30px;
+	border: 5px solid white;
+}
+.info2P{
+	background-color: #437DA1;
+	color: white;
+	top: 50%;
+	left: 50%;
+	width: 660px;
+	height: 150px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	padding: 10px 30px;
+	border: 5px solid white;
+}
 #a1{
 	border-bottom:2px	solid	white;
 	top: 4%;
@@ -131,7 +180,6 @@ body{
 	left: 1%;
 	
 }
-
 #a4{
 	border-bottom:2px	solid	white;
 	top: 39%;
@@ -290,4 +338,78 @@ body{
 .ldireccion{
 	top: 79.5%;
 	position: absolute;
+}
+#a1P{
+	border-bottom:2px	solid	white;
+	top: 20%;
+	position: absolute;
+	width: 420px;
+	left: 1%;
+}
+#a2P{
+	border-bottom:2px	solid	white;
+	top: 60%;
+	position: absolute;
+	width: 420px;
+	left: 1%;
+	
+}
+.campos1{
+	color:white;
+	margin-left:-13%;
+	top: 20%;
+	position: absolute;
+	padding: 10px;
+}
+.campos2{
+	color:white;
+	margin-left:-13%;
+	top: 60%;
+	position: absolute;
+	padding: 10px;
+}
+.boton3P {
+	border: none;
+	outline: none;
+	height: 40px;
+	width: 230px;
+	left: 55%;
+	top: 69%;
+	background: #232655;
+	color: white;
+	font-size: 18px;
+	border-radius: 10px;
+	position: absolute;
+  }
+  .boton3P:hover{
+	cursor: pointer;
+	background: #D4C163;
+	color: black;
+  }
+  .boton4P {
+	border: none;
+	outline: none;
+	height: 40px;
+	width: 230px;
+	left: 16%;
+	top: 69%;
+	background: #232655;
+	color: white;
+	font-size: 18px;
+	border-radius: 10px;
+	position: absolute;
+  }
+  .boton4P:hover{
+	cursor: pointer;
+	background: #D4C163;
+	color: black;
+  }
+  .input4P{
+	width: 70%;
+	height: 6%;
+	background: white;
+	position: relative;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
 }

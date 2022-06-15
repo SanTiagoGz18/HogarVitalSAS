@@ -18,7 +18,7 @@ include ("../Models/conexion.php");
 		<a href="../Views/modificar_proveedor_confirm.php"><input type="submit" id="boton3" value="Modificar Proveedor"></a>
 
 		<img src="imagenes/eliminar_usuario.png" class="imgmarca">
-		<a href="../Views/modificar_personal_confirm.php"><input type="submit" id="boton2" value="Eliminar Proveedor"></a>
+		<a href="../Views/eliminar_proveedor_confirm.php"><input type="submit" id="boton2" value="Eliminar Proveedor"></a>
 	</div>
 	<div class="icono">
 			<a href="../Views/Html/pagina_inicial.html"><input type="image" id="home" alt="Volver" src="imagenes/home.png"></a><i class="fab fa-Volver"></i>
