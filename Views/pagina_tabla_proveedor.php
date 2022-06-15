@@ -28,21 +28,21 @@ include ("../Models/conexion.php");
 	<hr width="50%" size="5" color="white" style="top: 10%; position:relative">
 	<br>
 	<div class="contenido2">
-		<div id="t1"><p>ID</p></div>
-		<div id="t2"><p>NOMBRE</p></div>
 </body>
 </html>
 <table border="4" class="tabla">
 <tbody>
-	<br>
-	<br>
+	<tr class="tr">
+		<td>CODIGO</td>
+		<td>NOMBRE DE LA MARCA</td>
+	</tr>
 <?php 
-$select="SELECT * FROM usuarios INNER JOIN cargo ON usuarios.cargo_id=cargo.id_cargo";
+$select="SELECT * FROM proveedores";
 $resultado=mysqli_query($conexion,$select);
 while($fila=mysqli_fetch_array($resultado)){?>
 	<tr>
-		<td><?php echo $fila['id_usuario'];?> </td>
-		<td><?php echo $fila['tipo_documento']?></td>
+		<td><?php echo $fila['id_proveedor'];?> </td>
+		<td><?php echo $fila['nombre_proveedor']?></td>
 		</td>
 	</tr>
 	</div>
