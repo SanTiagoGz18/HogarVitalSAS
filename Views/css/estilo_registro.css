@@ -230,7 +230,7 @@ input{
 }
 
 #iproveedor{
-	margin-left: 29%; 
+	margin-left: 30%; 
 	border: none;
 	outline: none;
 	background: transparent;
@@ -239,7 +239,7 @@ input{
 	position: absolute;
 }
 #lproveedor{
-	margin-left: 4%;
-	top:52%;
+	margin-left: 2%;
+	top:51%;
 	position: absolute;
 }
