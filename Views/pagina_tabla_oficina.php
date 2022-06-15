@@ -20,23 +20,20 @@ session_start();
 	<hr width="50%" size="5" color="white" style="top: 14%; position:absolute; left: 25%;">
 	<br>
 	<div class="contenido">
-		<div id="t1"><p>CODIGO</p></div>
-		<div id="t2"><p>NOMBRE</p></div>
-		<div id="t3"><p>CANTIDAD</p></div>
-		<div id="t4"><p>FECHA</p></div>
-		<div id="t5"><p>REGISTRO</p></div>
-		<div id="t6"><p>FECHA</p></div>
-		<div id="t7"><p>ACTUALIZADO</p></div>
-		<div id="t8"><p>CATEGORIA</p></div>
-		<div id="t9"><p>MARCA</p></div>
-		<div id="t10"><p>MODIFICAR/</p></div>
-		<div id="t11"><p>ELIMINAR</p></div>
 </body>
 </html>
 <table border="4" class="tabla">
 <tbody>
-	<br>
-	<br>
+	<tr class="tr">
+		<td>CODIGO</td>
+		<td>NOMBRE</td>
+		<td>CANTIDAD</td>
+		<td>FECHA REGISTRO</td>
+		<td>FECHA EDITADO</td>
+		<td>CATEGORIA</td>
+		<td>MARCA</td>
+		<td>MODIFICAR ELIMINAR</td>
+	</tr>
 <?php 
 $select="SELECT * FROM ((productos INNER JOIN categoria ON productos.categoria_id=categoria.id_categoria)INNER JOIN marca ON productos.marca_id=marca.id_marca)WHERE categoria_id='4'";
 $resultado=mysqli_query($conexion,$select);
