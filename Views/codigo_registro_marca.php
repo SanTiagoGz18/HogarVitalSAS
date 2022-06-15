@@ -13,7 +13,7 @@ include("../Models/conexion.php");
 <div class="contenido2">
 <img src="../Views/imagenes/logo.jpeg" class="img">
 <div  class="titulo"><h2>Registrar Marcas</h2></div>
-<form action="../Controller/registro.php" method="post">
+<form action="../Controller/registro_marca.php" method="post">
 	<b><label for="marca" id="lmarca">Nombre de la Marca: </label></b>
 	<br>
 	<input type="text" name="nombre_marca" placeholder="Ingrese el nombre de la marca..." id="imarca" required="">
@@ -25,7 +25,7 @@ include("../Models/conexion.php");
 </form>
 <center><a href="../Views/pagina_tabla_marca.php"><input type="submit" value="Volver"  name="volver "class="boton2" style="margin-top:-6%"></a></center>
 <?php
-include("../Controller/registro.php");
+include("../Controller/registro_marca.php");
 ?>
 </div>
 </body>

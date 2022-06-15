@@ -34,7 +34,7 @@ include ("../Models/conexion.php");
 <tbody>
 	<tr class="tr">
 		<td>CODIGO</td>
-		<td>NOMBRE DE LA MARCA</td>
+		<td>NOMBRE DEL PROVEEDOR</td>
 	</tr>
 <?php 
 $select="SELECT * FROM proveedores";
