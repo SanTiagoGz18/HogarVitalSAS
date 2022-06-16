@@ -17,18 +17,86 @@ body{
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 450px;
-	height: 445px;
+	height: 425px;
 	position: absolute;
 	border: 4px solid white;
 }
-.input{
-	position: relative;; 
-	padding: 7px;
+.icodigo{
 	border: none;
-	border-bottom: 4px solid #D4C163;
+	outline: none;
 	background: transparent;
-	height: 10px;
-	width: 100%;
+	margin-left: 0.1%;
+	margin-top: 1%;
+	border-bottom: 4px solid #D4C163;
+	width: 42.2%;
+	color: white;
+	position: absolute;
+}
+.icodigo::placeholder{
+	color: white;
+}
+#lnombre{
+	position: absolute;
+	left: 56%;
+}
+.inombre{
+	border: none;
+	outline: none;
+	background: transparent;
+	margin-left: 48.1%;
+	margin-top: 1%;
+	border-bottom: 4px solid #D4C163;
+	width: 42.2%;
+	color: white;
+	position: absolute;
+}
+.inombre::placeholder{
+	color: white;
+}
+.icantidad{
+	border: none;
+	outline: none;
+	background: transparent;
+	margin-left: 0.1%;
+	margin-top: 1%;
+	border-bottom: 4px solid #D4C163;
+	width: 42.2%;
+	color: white;
+	position: absolute;
+}
+.icantidad::placeholder{
+	color: white;
+}
+#lfechaven{
+	position: absolute;
+	left: 56%;
+}
+#ifechaven{
+	border: none;
+	outline: none;
+	background: transparent;
+	margin-left: 48.1%;
+	margin-top: 0.8%;
+	border-bottom: 4px solid #D4C163;
+	width: 42.2%;
+	color: white;
+	position: absolute;
+}
+#ifechaven::placeholder{
+	color: white;
+}
+#ifecharec{
+	border: none;
+	outline: none;
+	background: transparent;
+	margin-left: 0.1%;
+	margin-top: 1%;
+	border-bottom: 4px solid #D4C163;
+	width: 42.2%;
+	color: white;
+	position: absolute;
+}
+#ifecharec::placeholder{
 	color: white;
 }
 .contenido .img{
@@ -48,7 +116,7 @@ body{
   	color: white;
   	font-size: 18px;
   	border-radius: 20px;
-  	top: 90%;
+  	margin-top: 11%;
   	position: absolute;
 }
 .boton:hover{
@@ -66,7 +134,7 @@ body{
 	color: white;
 	font-size: 18px;
 	border-radius: 20px;
-	top: 90%;
+	margin-top: 11%;
 	position: absolute;
 }
 .boton2:hover{
@@ -82,7 +150,7 @@ div form label{
   	width: 43%;
   	height: 5%;
   	left: 54%;
-  	top: 80.9%;
+	margin-top: 1%;
   	position: absolute;
   	background: transparent;
   	border: solid #D4C163;
@@ -96,7 +164,7 @@ div form label{
 #opcion2 {
 	width: 43%;
 	height: 5%;
-	top: 80.9%;
+	margin-top: 1%;
 	position: absolute;
 	background: transparent;
 	border: solid #D4C163;
@@ -107,28 +175,58 @@ div form label{
   color: white;
   background-color: #437DA1;
 }
+#opcion3 {
+	width: 43%;
+	height: 5%;
+	left: 54%;
+  margin-top: 1%;
+	position: absolute;
+	background: transparent;
+	border: solid #D4C163;
+	outline: none;
+	color: white;
+}
+#opcion3 option{
+  color: white;
+  background-color: #437DA1;
+}
+#opcion4 {
+  width: 43%;
+  height: 5%;
+  margin-top: 1%;
+  position: absolute;
+  background: transparent;
+  border: solid #D4C163;
+  outline: none;
+  color: white;
+}
+#opcion4 option{
+color: white;
+background-color: #437DA1;
+}
 #lcategoria{
 	position: absolute;
-	top: 77.5%;
 	left: 56%;
 }
-#lfecha{
-	margin-left: 26%;
-}
-#ifechain{
-	border: none;
-	outline: none;
-	background: transparent;
-	border-bottom: 4px solid #D4C163;
-	width: 40%;
+#llotem{
 	position: absolute;
+	left: 56%;
 }
-#ifechaven{
-	margin-left: 46%; 
-	border: none;
-	outline: none;
-	background: transparent;
-	border-bottom: 4px solid #D4C163;
-	width: 42.3%;
+#lmarca{
 	position: absolute;
+	left: 56%;
+}
+#imarca {
+	width: 43%;
+	height: 5%;
+	left: 54%;
+	position: absolute;
+	background: transparent;
+	border: solid #D4C163;
+	outline: none;
+	color: white;
+}
+#imarca option{
+  color: white;
+  background-color: #437DA1;
 }
