@@ -14,7 +14,7 @@ include("../Models/conexion.php");
 <img src="../Views/imagenes/logo.jpeg" class="img">
 <div  class="titulo"><h2>Registrar Marcas</h2></div>
 <form action="../Controller/registro_marca.php" method="post">
-	<b><label for="marca" id="lmarca">Nombre de la Marca: </label></b>
+	<b><label for="marca" id="lmarca">Nombre de la marca: </label></b>
 	<br>
 	<input type="text" name="nombre_marca" placeholder="Ingrese el nombre de la marca..." id="imarca" required="">
 	<br>

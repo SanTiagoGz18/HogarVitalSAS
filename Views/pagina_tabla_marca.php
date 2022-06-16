@@ -15,10 +15,8 @@ include ("../Models/conexion.php");
 		<a href="../Views/codigo_registro_marca.php"><input type="submit" id="boton" value="Agregar Marca"></a> 
 		
 		<img src="imagenes/editar_marca.png" class="imgp1">
-		<a href="../Views/codigo_registro_administrador.php"><input type="submit" id="boton3" value="Modificar Marca"></a>
+		<a href="../Views/modificar_marca_confirm.php"><input type="submit" id="boton3" value="Modificar Marca"></a>
 
-		<img src="imagenes/eliminar_marca	.png" class="imgmarca">
-		<a href="../Views/modificar_personal_confirm.php"><input type="submit" id="boton2" value="Eliminar Marca"></a> 
 	</div>
 	<div class="icono">
 			<a href="../Views/Html/pagina_inicial.html"><input type="image" id="home" alt="Volver" src="imagenes/home.png"></a><i class="fab fa-Volver"></i>
