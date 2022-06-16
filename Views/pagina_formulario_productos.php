@@ -31,7 +31,7 @@ include ("../Models/conexion.php");
 	<br>
 	<br>
 	<br>
-	<b><label for=""> * Fehca Recepción: </label></b>
+	<b><label for=""> * Fecha Recepción: </label></b>
 	<b><label for="" id="lmarca">* Marca: </label></b>
 	<br>
 	<input type="date" name="fecha_vencimiento" id="ifecharec" required="">
@@ -46,7 +46,7 @@ include ("../Models/conexion.php");
 	<br>
 	<br>
 	<br>
-	<b><label for="" id="lproveedor">* Proveedor: </label></b>
+	<b><label for="">* Proveedor: </label></b>
 	<b><label id="lcategoria">* Categoria: </label></b>
 	<br>
 	<select name="nombre_proveedor" id="opcion2" required>
@@ -63,13 +63,13 @@ include ("../Models/conexion.php");
 		<option value="lavanderia">Lavanderia</option>
 		<option value="oficina">Oficina</option>
         <option value="aseo">Aseo</option>
-		<option value="comida">Comida</option>
+		<option value="comida">Alimento</option>
     </select>
     <br>
     <br>
 	<br>
-	<b><label for="" id="lproveedor">Lote Alimento: </label></b>
-	<b><label id="lcategoria">Lote Medicamento: </label></b>
+	<b><label for="">Lote Alimento: </label></b>
+	<b><label id="llotem">Lote Medicamento: </label></b>
 	<br>
 	<select name="loteA" id="opcion3">
 		<option value="nombre_loteA">No Aplica</option>

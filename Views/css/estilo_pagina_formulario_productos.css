@@ -17,7 +17,7 @@ body{
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 450px;
-	height: 445px;
+	height: 425px;
 	position: absolute;
 	border: 4px solid white;
 }
@@ -116,7 +116,7 @@ body{
   	color: white;
   	font-size: 18px;
   	border-radius: 20px;
-  	top: 90%;
+  	margin-top: 11%;
   	position: absolute;
 }
 .boton:hover{
@@ -134,7 +134,7 @@ body{
 	color: white;
 	font-size: 18px;
 	border-radius: 20px;
-	top: 90%;
+	margin-top: 11%;
 	position: absolute;
 }
 .boton2:hover{
@@ -205,6 +205,10 @@ color: white;
 background-color: #437DA1;
 }
 #lcategoria{
+	position: absolute;
+	left: 56%;
+}
+#llotem{
 	position: absolute;
 	left: 56%;
 }
