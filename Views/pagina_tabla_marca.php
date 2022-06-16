@@ -11,7 +11,7 @@ include ("../Models/conexion.php");
 </head>
 <body>
 	<div>
-		<img src="imagenes/agregar_marca.png" class="imgp">
+		<img src="imagenes/agregar_marca.png" class="imgp"> 
 		<a href="../Views/codigo_registro_marca.php"><input type="submit" id="boton" value="Agregar Marca"></a> 
 		
 		<img src="imagenes/editar_marca.png" class="imgp1">
