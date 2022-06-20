@@ -1,5 +1,5 @@
 <?php
-include("../Models/conexion.php");
+include("../../../../../Models/conexion.php");
 
 if(isset($_POST['modificar'])){
 
@@ -8,7 +8,7 @@ if(isset($_POST['modificar'])){
     $verificar_documento=mysqli_query($conexion, "SELECT * FROM usuarios WHERE id_usuario='$id_usuario'");
 
 		if(mysqli_num_rows($verificar_documento)<1){
-			header("location:../Views/Html/no_existe_modificar.html");
+			header("location:../../../../Html/Verifications/VerificationsEmployee/no_existe_modificar.html");
 			exit();
 		}
 
@@ -20,15 +20,15 @@ if(isset($_POST['modificar'])){
 <html>
 <head>
 	<title>Modificar Personal - Hogar Vital</title>
-	 <link rel="stylesheet" href="css/estilo_pagina_editar_perfil.css">
-    <link rel="icon" type="imagenes/png" href="imagenes/logo_icon.ico">
+	 <link rel="stylesheet" href="../../../../css/estilo_pagina_editar_perfil.css">
+    <link rel="icon" type="imagenes/png" href="../../../../imagenes/logo_icon.ico">
     <meta charset="utf-8">
 </head>
 <body>
 <div class="perfil">
 	<div class="info"> 
 		<div class="info2">
-		<form action="../Controller/modificar_personal.php" method="post">
+		<form action="../../../../../Controller/Update/Admin/modificar_personal.php" method="post">
 			<label for="documento">Numero Documento: </label>
 			<input type="text" name="id_usuario" class="input" value="<?php echo $filas['id_usuario']?>">
 			<br>
@@ -63,7 +63,7 @@ if(isset($_POST['modificar'])){
 			<input type="text" name="direccion" class="input5" value="<?php echo $filas['direccion']?>">
 			<input type="submit" name="modificado" value="Guardar" class="boton4">
 			</form>
-			<a href="../Views/pagina_tabla_empleado.php"><input type="submit" value="Cancelar" class="boton3"></a>
+			<a href="../../../Tables/Admin/pagina_tabla_empleado.php"><input type="submit" value="Cancelar" class="boton3"></a>
 		</div>
 	</div>
 </div>

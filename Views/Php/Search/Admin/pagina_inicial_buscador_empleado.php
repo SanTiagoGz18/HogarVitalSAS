@@ -1,5 +1,5 @@
 <?php
-include("../Models/conexion.php");
+include("../../../../Models/conexion.php");
 ?>
 
 <!DOCTYPE html>
@@ -7,8 +7,8 @@ include("../Models/conexion.php");
 <head>
 	<title>Buscador empleado - Hogar Vital</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/estilo_pagina_inicial_buscador.css">
-	<link rel="icon" type="imagenes/logo.png" href="imagenes/logo_icon.ico">
+	<link rel="stylesheet" type="text/css" href="../../../css/estilo_pagina_inicial_buscador.css">
+	<link rel="icon" type="imagenes/logo.png" href="../../../imagenes/logo_icon.ico">
 </head>
 <body>
 	<h1 id="titulo">Buscador de empleados</h1>
@@ -18,7 +18,7 @@ include("../Models/conexion.php");
 			<div class="contenido2">
 				<input type="text" name="busqueda" class="buscar" placeholder="Ingrese el empleado a buscar...">
 				<div class="botona">
-						<a href=""><input type="image" name="enviar" id="boton" src="imagenes/lupa2.png"></a>
+						<a href=""><input type="image" name="enviar" id="boton" src="../../../imagenes/lupa2.png"></a>
 				</div>
 			</div>
 		</div>
@@ -42,7 +42,7 @@ include("../Models/conexion.php");
 	<div id="t5"><p>MODIFICAR</p></div>
 <table border="4" class="tabla">
 	<div class="icono">
-	<a href="../Views/Html/pagina_buscador_productos_director.html"><input type="image" id="home" alt="Volver" src="imagenes/home.png"></a><i class="fab fa-Volver"></i>
+	<a href="../../../Html/pagina_buscador_productos_director.html"><input type="image" id="home" alt="Volver" src="../../../imagenes/home.png"></a><i class="fab fa-Volver"></i>
 	<span>Volver</span>
 </div>
 </body>
@@ -67,12 +67,8 @@ if(isset($_POST['busqueda'])){
 			<td><?php echo $tipo_documento?> </td>
 			<td><?php echo $nombre_usuario?></td>
 			<td><?php echo $apellido_usuario?></td>
-			<td><a href="modificar_personal_confirm_buscar.php"><img src="imagenes/detalle_empleado.png" alt="detalles" class="botonad"></a></td>
+			<td><a href="../../Update/Admin/Confirms/modificar_personal_confirm_buscar.php"><img src="../../../imagenes/detalle_empleado.png" alt="detalles" class="botonad"></a></td>
 		</tr>
-		<div class="icono">
-			<a href="../Views/Html/pagina_buscador_productos_director.html"><input type="image" id="home" alt="Volver" src="imagenes/home.png"></a><i class="fab fa-Volver"></i>
-			<span>Volver</span>
-		</div>
 	</div>
 	</div>
 <?php }} ?>

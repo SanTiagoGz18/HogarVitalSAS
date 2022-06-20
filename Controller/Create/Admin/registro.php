@@ -17,7 +17,7 @@ if (isset($_POST['enviar'])){
 		$verificar_documento_correo=mysqli_query($conexion, "SELECT * FROM usuarios WHERE id_usuario='$id_usuario' or correo='$correo'");
 
 		if(mysqli_num_rows($verificar_documento_correo)>0){
-			header("location:../Views/Html/repetido.html");
+			header("location:../../../Views/Html/Verifications/VerificationsEmployee/repetido.html");
 			exit();
 		}
 
@@ -28,7 +28,7 @@ if (isset($_POST['enviar'])){
 		$respuesta=mysqli_query($conexion,$insert);
 
 		if ($respuesta) {
-			header('Location:../Views/Html/correcto_registro.html');
+			header('Location:../../../Views/Html/Verifications/correcto_registro.html');
 		}
 	}
 	

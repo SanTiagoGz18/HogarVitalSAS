@@ -18,13 +18,13 @@ include ("../../../../Models/conexion.php");
 		<a href="../../Registers/Persons/codigo_registro_administrador.php"><input type="submit" id="boton3" value="Agregar Administrador"></a>
 		
 		<img src="../../../imagenes/eliminar_usuario.png" class="imgp3">
-		<a href="../Views/eliminar_personal_confirm.php"><input type="submit" id="boton4" value="Eliminar Personal"></a> 
+		<a href="../../Delete/eliminar_personal_confirm.php"><input type="submit" id="boton4" value="Eliminar Personal"></a> 
 
 		<img src="../../../imagenes/editar_usuario.png" class="imgp2">
-		<a href="../Views/modificar_personal_confirm.php"><input type="submit" id="boton2" value="Modificar Personal"></a> 
+		<a href="../../Update/Admin/Confirms/modificar_personal_confirm.php"><input type="submit" id="boton2" value="Modificar Personal"></a> 
 	</div>
 	<div class="icono">
-			<a href="../Views/Html/pagina_inicial.html"><input type="image" id="home" alt="Volver" src="../../../imagenes/home.png"></a><i class="fab fa-Volver"></i>
+			<a href="../../../Html/pagina_inicial.html"><input type="image" id="home" alt="Volver" src="../../../imagenes/home.png"></a><i class="fab fa-Volver"></i>
 			<span>Volver</span>
 		</div>
 	<h1 class="titulo">Empleados</h1>

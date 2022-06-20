@@ -1,18 +1,18 @@
-<?php include ("../Models/conexion.php");
+<?php include ("../../../../../Models/conexion.php");
 ?>
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>Modificar personal - Hogar Vital</title>
-    <link rel="stylesheet" href="../Views/css/estilo_modificar.css">
-    <link rel="icon" type="imagenes/png" href="imagenes/logo_icon.ico">
+    <link rel="stylesheet" href="../../../../css/estilo_modificar.css">
+    <link rel="icon" type="imagenes/png" href="../../../../imagenes/logo_icon.ico">
   </head>
   <body>
 
     <div class="contenedor">
       <h1>Modificación de Personal</h1>
-      <form action="modificar_personal_form_buscar.php" method="post">
+      <form action="../Forms/modificar_personal_form_buscar.php" method="post">
         <b><p>Confirme el numero de documento</p></b>
         <br>
         <br>
@@ -21,7 +21,7 @@
         <input name="modificar" type="submit" value="Modificar el empleado" class="boton">
         </form>
         <br>
-        <a href="pagina_inicial_buscador_empleado.php"><input type="submit" value="Volver" class="boton2"></a>
+        <a href="../../../Search/Admin/pagina_inicial_buscador_empleado.php"><input type="submit" value="Volver" class="boton2"></a>
     </div>
   </body>
 </html>
