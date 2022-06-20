@@ -1,6 +1,6 @@
 <?php
 
-include("../Models/conexion.php");
+include("../../Models/conexion.php");
 
 if (isset($_POST['cambiar'])){
 	if(isset($_POST['id_usuario']) && (isset($_POST['contrasena']))){
@@ -13,7 +13,7 @@ if (isset($_POST['cambiar'])){
 		$respuesta=mysqli_query($conexion,$update);
 
 		if ($respuesta) {
-			header("location:../Views/Html/correcto.html");
+			header("location:../../Views/Html/Verifications/correcto.html");
 		}
 	}
 }

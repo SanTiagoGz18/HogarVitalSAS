@@ -1,19 +1,19 @@
 <?php
-include("../Models/conexion.php");
+include("../../../../Models/conexion.php");
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Registrar - Hogar Vital</title>
-	<link rel="stylesheet" type="text/css" href="css/estilo_registro.css">
-	<link rel="icon" type="imagenes/png" href="../Views/imagenes/logo_icon.ico">
+	<link rel="stylesheet" type="text/css" href="../../../css/estilo_registro.css">
+	<link rel="icon" type="imagenes/png" href="../../../imagenes/logo_icon.ico">
 	<meta charset="utf-8">
 </head>
 <body>
 <div class="contenido">
-<img src="../Views/imagenes/logo.jpeg" class="img">
+<img src="../../../imagenes/logo.jpeg" class="img">
 <div  class="titulo"><h2>Registrar empleados</h2></div>
-<form action="../Controller/registro.php" method="post">
+<form action="../../../../Controller/registro.php" method="post">
 	<b><label for="tipo_documento">Documento: </label></b>
 	<select id="opcion" name="tipo_documento">
 		<option value="CC">Cedula de ciudadania</option>
@@ -53,7 +53,7 @@ include("../Models/conexion.php");
 </form>
 <center><a href="../Views/pagina_tabla_empleado.php"><input type="submit" value="Volver"  name="volver "class="boton2" style="margin-top:-6%"></a></center>
 <?php
-include("../Controller/registro.php");
+include("../../../../Controller/Create/Admin/registro.php");
 ?>
 	
 	

@@ -1,5 +1,5 @@
 <?php
-include("../Models/conexion.php");
+include("../../../../Models/conexion.php");
 session_start();
 
 $correo=$_SESSION['correo'];
@@ -12,15 +12,15 @@ $correo=$_SESSION['correo'];
 <html>
 <head>
 	<title>Perfil - Hogar Vital</title>
-	 <link rel="stylesheet" href="css/estilo_pagina_editar_perfil.css">
-    <link rel="icon" type="imagenes/png" href="imagenes/logo_icon.ico">
+	 <link rel="stylesheet" href="../../../css/estilo_pagina_editar_perfil.css">
+    <link rel="icon" type="imagenes/png" href="../../../imagenes/logo_icon.ico">
     <meta charset="utf-8">
 </head>
 <body>
 <div class="perfil">
 	<div class="info"> 
 		<div class="info2">
-		<form action="../Controller/actualizar_perfil.php" method="post">
+		<form action="../../../../Controller/Update/Admin/actualizar_perfil.php" method="post">
 			<label for="documento">Numero Documento: </label>
 			<input type="text" name="id_usuario" class="input" value="<?php echo $filas['id_usuario']?>">
 			<br>
@@ -55,7 +55,7 @@ $correo=$_SESSION['correo'];
 			<input type="text" name="direccion" class="input5" value="<?php echo $filas['direccion']?>">
 			<input type="submit" name="enviar" value="Guardar" class="boton4">
 			</form>
-			<a href="../Views/pagina_perfil.php"><input type="submit" value="Cancelar" class="boton3"></a>
+			<a href="../../Perfil/Admin/pagina_perfil.php"><input type="submit" value="Cancelar" class="boton3"></a>
 		</div>
 	</div>
 </div>

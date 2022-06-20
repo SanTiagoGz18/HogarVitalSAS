@@ -22,7 +22,7 @@ if($filas['cargo_id']==1){
 	header("location:../Views/Html/pagina_inicial.html");
 	}
 else{
-    header("location:../Views/Html/nocorrecto.html");
+    header("location:../Views/Html/Verifications/nocorrecto.html");
 	?>
     <?php
     include("login.php");

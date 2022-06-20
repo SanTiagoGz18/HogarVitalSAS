@@ -1,6 +1,6 @@
 <?php
 
-include("../Models/conexion.php");
+include("../../../Models/conexion.php");
 
 if (isset($_POST['enviar'])){
     if(isset($_POST['id_usuario']) && ($_POST['nombre_usuario'])){
@@ -15,7 +15,7 @@ if (isset($_POST['enviar'])){
         $respuesta=mysqli_query($conexion,$update);
             
         if ($respuesta) {{}
-            header("location:../Views/Html/correcto_cambio_perfil.html");
+            header("location:../../../Views/Html/Verifications/VerificationsEmployee/correcto_cambio_perfil.html");
         }else{
             echo "La actualización no se efectuo";
         }
