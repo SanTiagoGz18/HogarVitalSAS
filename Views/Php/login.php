@@ -1,5 +1,5 @@
 <?php
-include ("../Models/conexion.php");
+include ("../../Models/conexion.php");
 if(empty($_SESSION)){
   
 ?>
