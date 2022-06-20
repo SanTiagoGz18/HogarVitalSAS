@@ -1,5 +1,5 @@
 <?php
-include("../Models/conexion.php");
+include("../../../../Models/conexion.php");
 session_start();
 ?>
 
@@ -7,15 +7,15 @@ session_start();
 <html>
 <head>
 	<title>Perfil - Hogar Vital</title>
-	 <link rel="stylesheet" href="../Views/css/estilo_pagina_perfil.css">
-    <link rel="icon" type="imagenes/png" href="../Views/imagenes/logo_icon.ico">
+	 <link rel="stylesheet" href="../../../css/estilo_pagina_perfil.css">
+    <link rel="icon" type="imagenes/png" href="../../../imagenes/logo_icon.ico">
     <meta charset="utf-8">
 </head>
 <body>
 <div class="perfil">
 	<div class="info"></div>
 	<div class="boy"><a href="pagina_editar_perfil.php"><input type="submit" value="Editar Perfil" class="boton3"></a></div>
-	<div class="boy2"><a href="../Views/Html/pagina_inicial.html"><input type="submit" value="Volver al Inicio" class="boton3"></a></div>
+	<div class="boy2"><a href="../../../Html/pagina_inicial.html"><input type="submit" value="Volver al Inicio" class="boton3"></a></div>
 </div>
 
 </body>
