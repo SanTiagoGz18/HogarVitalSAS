@@ -1,5 +1,5 @@
 <?php
-include("../Models/conexion.php");
+include("../../../../../Models/conexion.php");
 
 if(isset($_POST['modificar'])){
 
@@ -20,15 +20,15 @@ if(isset($_POST['modificar'])){
 <html>
 <head>
 	<title>Modificar Personal - Hogar Vital</title>
-	 <link rel="stylesheet" href="css/estilo_pagina_editar_perfil.css">
-    <link rel="icon" type="imagenes/png" href="imagenes/logo_icon.ico">
+	 <link rel="stylesheet" href="../../../../css/estilo_pagina_editar_perfil.css">
+    <link rel="icon" type="imagenes/png" href="../../../../imagenes/logo_icon.ico">
     <meta charset="utf-8">
 </head>
 <body>
 <div class="perfil">
 	<div class="info"> 
 		<div class="info2">
-		<form action="../Controller/modificar_personal_buscar.php" method="post">
+		<form action="../../../../../Controller/Update/Admin/modificar_personal_buscar.php" method="post">
 			<label for="documento">Numero Documento: </label>
 			<input type="text" name="id_usuario" class="input" value="<?php echo $filas['id_usuario']?>">
 			<br>
@@ -63,7 +63,7 @@ if(isset($_POST['modificar'])){
 			<input type="text" name="direccion" class="input5" value="<?php echo $filas['direccion']?>">
 			<input type="submit" name="modificado" value="Guardar" class="boton4">
 			</form>
-			<a href="../Views/pagina_inicial_buscador_empleado.php"><input type="submit" value="Cancelar" class="boton3"></a>
+			<a href="../../../Search/Admin/pagina_inicial_buscador_empleado.php"><input type="submit" value="Cancelar" class="boton3"></a>
 		</div>
 	</div>
 </div>

@@ -1,6 +1,6 @@
 <?php
 
-include("../Models/conexion.php");
+include("../../../Models/conexion.php");
 
 if (isset($_POST['modificado'])){
     if(isset($_POST['id_usuario']) && ($_POST['nombre_usuario'])){
@@ -13,7 +13,7 @@ if (isset($_POST['modificado'])){
         $verificar_documento=mysqli_query($conexion, "SELECT * FROM usuarios WHERE id_usuario='$id_usuario'");
 
 		if(mysqli_num_rows($verificar_documento)<1){
-			header("location:../Views/Html/no_existe.html");
+			header("location:../../../Views/Html/Verifications/no_existe_modificar_buscar.html");
 			exit();
 		}
 
@@ -22,7 +22,7 @@ if (isset($_POST['modificado'])){
         $respuesta=mysqli_query($conexion,$update);
             
         if ($respuesta) {{}
-            header("location:../Views/Html/correcto_modificar_personal_buscar.html");
+            header("location:../../../Views/Html/Verifications/VerificationsEmployee/correcto_modificar_personal_buscar.html");
         }else{
             echo "La actualización no se efectuo";
         }

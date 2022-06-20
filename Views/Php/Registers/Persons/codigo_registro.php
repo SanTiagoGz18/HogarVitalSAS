@@ -13,7 +13,7 @@ include("../../../../Models/conexion.php");
 <div class="contenido">
 <img src="../../../imagenes/logo.jpeg" class="img">
 <div  class="titulo"><h2>Registrar empleados</h2></div>
-<form action="../../../../Controller/registro.php" method="post">
+<form action="../../../../Controller/Create/Admin/registro.php" method="post">
 	<b><label for="tipo_documento">Documento: </label></b>
 	<select id="opcion" name="tipo_documento">
 		<option value="CC">Cedula de ciudadania</option>
@@ -51,12 +51,7 @@ include("../../../../Models/conexion.php");
 	<br>
 	<input type="submit" value="Registrar" class="boton" name="enviar">
 </form>
-<center><a href="../Views/pagina_tabla_empleado.php"><input type="submit" value="Volver"  name="volver "class="boton2" style="margin-top:-6%"></a></center>
-<?php
-include("../../../../Controller/Create/Admin/registro.php");
-?>
-	
-	
+<center><a href="../../Tables/Admin/pagina_tabla_empleado.php"><input type="submit" value="Volver"  name="volver "class="boton2" style="margin-top:-6%"></a></center>
 	
 </div>
 </body>

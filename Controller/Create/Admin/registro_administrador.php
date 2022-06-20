@@ -1,6 +1,6 @@
 <?php
 
-include("../Models/conexion.php");
+include("../../../Models/conexion.php");
 
 
 if (isset($_POST['enviar2'])){
@@ -17,7 +17,7 @@ if (isset($_POST['enviar2'])){
 		$verificar_documento_correo=mysqli_query($conexion, "SELECT * FROM usuarios WHERE id_usuario='$id_usuario' or correo='$correo'");
 
 		if(mysqli_num_rows($verificar_documento_correo)>0){
-			header("location:../Views/Html/repetido.html");
+			header("location:../../../Views/Html/Verifications/VerificationsEmployee/repetido_admin.html");
 			exit();
 		}
 
