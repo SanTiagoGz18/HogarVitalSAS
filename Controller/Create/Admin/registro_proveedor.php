@@ -1,6 +1,6 @@
 <?php
 
-include("../Models/conexion.php");
+include("../../../Models/conexion.php");
 
 
 if (isset($_POST['enviar'])){
@@ -10,7 +10,7 @@ if (isset($_POST['enviar'])){
 		$verificar_proveedor=mysqli_query($conexion, "SELECT * FROM proveedores WHERE nombre_proveedor='$nombre_proveedor'");
 
 		if(mysqli_num_rows($verificar_proveedor)>0){
-			header("location:../Views/Html/repetido.html");
+			header("location:../../../Views/Html/Verifications/repetido_proveedor.html");
 			exit();
 		}
 
@@ -19,7 +19,7 @@ if (isset($_POST['enviar'])){
 		$respuesta=mysqli_query($conexion,$insert);
 
 		if ($respuesta) {
-			header('Location:../Views/Html/correcto_registro_proveedor.html');
+			header('Location:../../../Views/Html/Verifications/VerificationsProducts/correcto_registro_proveedor.html');
 		}
 	}
 	

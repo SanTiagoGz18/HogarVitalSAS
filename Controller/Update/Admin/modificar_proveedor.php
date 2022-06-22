@@ -1,6 +1,6 @@
 <?php
 
-include("../Models/conexion.php");
+include("../../../Models/conexion.php");
 
 if (isset($_POST['modificado'])){
     if(isset($_POST['id_proveedor']) && ($_POST['nombre_proveedor'])){
@@ -10,7 +10,7 @@ if (isset($_POST['modificado'])){
         $verificar_proveedor=mysqli_query($conexion, "SELECT * FROM proveedores WHERE id_proveedor='$id_proveedor'");
 
 		if(mysqli_num_rows($verificar_proveedor)<1){
-			header("location:../Views/Html/no_existe_modificar_proveedor.html");
+			header("location:../../..//Views/Html/Verifications/VerificationsProducts/no_existe_modificar_proveedor.html");
 			exit();
 		}
 
@@ -19,7 +19,7 @@ if (isset($_POST['modificado'])){
         $respuesta=mysqli_query($conexion,$update);
             
         if ($respuesta) {{}
-            header("location:../Views/Html/correcto_modificar_proveedor.html");
+            header("location:../../../Views/Html/Verifications/VerificationsProducts/correcto_modificar_proveedor.html");
         }else{
             echo "La actualización no se efectuo";
         }

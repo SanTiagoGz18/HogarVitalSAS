@@ -12,7 +12,7 @@
 .imgp1 {
 	width: 60px;
 	height: 60px;
-  left: 17%;
+  left: 16%;
   position: relative;
 }
 .imgp2 {
@@ -33,6 +33,24 @@
 	height: 60px;
   left: 34%;
   top: -1%;
+  position: relative;
+}
+.imgM {
+	width: 40px;
+	height: 40px;
+  left: 1.5%;
+  position: relative;
+}
+.imgM2 {
+	width: 40px;
+	height: 40px;
+  left: 18%;
+  position: relative;
+}
+.imgM3 {
+	width: 40px;
+	height: 40px;
+  left: 35%;
   position: relative;
 }
 .titulo{
@@ -119,7 +137,7 @@ div table tr {
   outline: none;
   height: 40px;
   width: 190px;
-  left: 27.5%;
+  left: 26%;
   top: 2.5%;
   background: #232655;
   color: white;
@@ -137,7 +155,7 @@ div table tr {
   outline: none;
   height: 40px;
   width: 190px;
-  left: 70.5%;
+  left: 46.5%;
   top: 2.5%;
   background: #232655;
   color: white;
