@@ -1,5 +1,5 @@
 <?php
-include("../Models/conexion.php");
+include("../../../../Models/conexion.php");
 session_start();
 ?>
 
@@ -8,12 +8,12 @@ session_start();
 <head>
 	<title>Oficina - Hogar Vital</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/estilo_pagina_tablas_productos.css">
-	<link rel="icon" type="imagenes/logo.png" href="imagenes/logo_icon.ico">
+	<link rel="stylesheet" type="text/css" href="../../../css/estilo_pagina_tablas_productos.css">
+	<link rel="icon" type="imagenes/logo.png" href="../../../imagenes/logo_icon.ico">
 </head>
 <body>
 	<div class="icono">
-		<a href="../Views/Html/pagina_inicial_producto_director.html"><input type="image" id="home" alt="Volver" src="imagenes/home.png"></a><i class="fab fa-Volver"></i>
+		<a href="../../../Html/pagina_inicial_producto_director.html"><input type="image" id="home" alt="Volver" src="../../../imagenes/home.png"></a><i class="fab fa-Volver"></i>
 		<span>Volver</span>
 	</div>
 	<h1 class="titulo">OFICINA</h1>
@@ -46,7 +46,7 @@ while($fila=mysqli_fetch_array($resultado)){?>
 		<td><?php echo $fila['fecha_actualizacion_producto']?></td>
 		<td><?php echo $fila['nombre_categoria']?></td>
 		<td><?php echo $fila['nombre_marca']?></td>
-		<td><a href="../Views/Html/pagina_perfil_tabla_empleado.html"><img src="imagenes/detalles.png" alt="detalles" class="boton"></a></td>
+		<td><a href="../Views/Html/pagina_perfil_tabla_empleado.html"><img src="../../../imagenes/detalles.png" alt="detalles" class="boton"></a></td>
 	</tr>
 <?php } ?>
 </tbody>

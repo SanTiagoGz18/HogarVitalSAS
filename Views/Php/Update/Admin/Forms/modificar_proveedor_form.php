@@ -1,5 +1,5 @@
 <?php
-include("../Models/conexion.php");
+include("../../../../../Models/conexion.php");
 
 if(isset($_POST['modificar'])){
 
@@ -8,7 +8,7 @@ if(isset($_POST['modificar'])){
     $verificar_id_proveedor=mysqli_query($conexion, "SELECT * FROM proveedores WHERE id_proveedor='$id_proveedor'");
 
 	if(mysqli_num_rows($verificar_id_proveedor)<1){
-		header("location:../Views/Html/no_existe_modificar.html");
+		header("location:../../../../Html/Verifications/VerificationsProducts/no_existe_modificar_proveedor.html");
 		exit();
 	}
 
@@ -20,15 +20,15 @@ if(isset($_POST['modificar'])){
 <html>
 <head>
 	<title>Modificar Proveedor - Hogar Vital</title>
-	 <link rel="stylesheet" href="css/estilo_pagina_editar_perfil.css">
-    <link rel="icon" type="imagenes/png" href="imagenes/logo_icon.ico">
+	 <link rel="stylesheet" href="../../../../css/estilo_pagina_editar_perfil.css">
+    <link rel="icon" type="imagenes/png" href="../../../../imagenes/logo_icon.ico">
     <meta charset="utf-8">
 </head>
 <body>
 <div class="perfilP">
 	<div class="infoP"> 
 		<div class="info2P">
-		<form action="../Controller/modificar_proveedor.php" method="post">
+		<form action="../../../../../Controller/Update/Admin/modificar_proveedor.php" method="post">
 			<label for="id_proveedor">Codigo Proveedor: </label>
 			<input type="text" name="id_proveedor" class="input" value="<?php echo $filas['id_proveedor']?>">
 			<br>
@@ -38,7 +38,7 @@ if(isset($_POST['modificar'])){
 			<input type="text" name="nombre_proveedor" class="input4P" value="<?php echo $filas['nombre_proveedor']?>">
 			<input type="submit" name="modificado" value="Guardar" class="boton4P">
 			</form>
-			<a href="../Views/pagina_tabla_proveedor.php"><input type="submit" value="Cancelar" class="boton3P"></a>
+			<a href="../../../Tables/Admin/pagina_tabla_proveedor.php"><input type="submit" value="Cancelar" class="boton3P"></a>
 		</div>
 	</div>
 </div>

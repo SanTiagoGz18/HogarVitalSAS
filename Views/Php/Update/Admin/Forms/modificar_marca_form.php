@@ -1,5 +1,5 @@
 <?php
-include("../Models/conexion.php");
+include("../../../../../Models/conexion.php");
 
 if(isset($_POST['modificar'])){
 
@@ -8,7 +8,7 @@ if(isset($_POST['modificar'])){
     $verificar_id_marca=mysqli_query($conexion, "SELECT * FROM marca WHERE id_marca='$id_marca'");
 
 	if(mysqli_num_rows($verificar_id_marca)<1){
-		header("location:../Views/Html/no_existe_modificar_marca.html");
+		header("location:../../../../Html/Verifications/VerificationsProducts/no_existe_modificar_marca.html");
 		exit();
 	}
 
@@ -20,25 +20,25 @@ if(isset($_POST['modificar'])){
 <html>
 <head>
 	<title>Modificar Marca - Hogar Vital</title>
-	 <link rel="stylesheet" href="css/estilo_pagina_editar_perfil.css">
-    <link rel="icon" type="imagenes/png" href="imagenes/logo_icon.ico">
+	 <link rel="stylesheet" href="../../../../css/estilo_pagina_editar_perfil.css">
+    <link rel="icon" type="imagenes/png" href="../../../../imagenes/logo_icon.ico">
     <meta charset="utf-8">
 </head>
 <body>
 <div class="perfilP">
 	<div class="infoP"> 
 		<div class="info2P">
-		<form action="../Controller/modificar_marca.php" method="post">
+		<form action="../../../../../Controller/Update/Admin/modificar_marca.php" method="post">
 			<label for="id_marca">Codigo Marca: </label>
-			<input type="text" name="id_marca" class="input" value="<?php echo $filas['id_marca']?>">
+			<input type="text" name="id_marca" class="inputIM" value="<?php echo $filas['id_marca']?>">
 			<br>
 			<br>
 			<br>
 			<label for="nombre_marca">Nombre de la marca: </label>
-			<input type="text" name="nombre_marca" class="input4P" value="<?php echo $filas['nombre_marca']?>">
+			<input type="text" name="nombre_marca" class="inputNM" value="<?php echo $filas['nombre_marca']?>">
 			<input type="submit" name="modificado" value="Guardar" class="boton4P">
 			</form>
-			<a href="../Views/pagina_tabla_marca.php"><input type="submit" value="Cancelar" class="boton3P"></a>
+			<a href="../../../Tables/Admin/pagina_tabla_marca.php"><input type="submit" value="Cancelar" class="boton3P"></a>
 		</div>
 	</div>
 </div>

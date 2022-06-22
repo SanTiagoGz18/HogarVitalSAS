@@ -1,25 +1,28 @@
 <?php
-include ("../Models/conexion.php"); 
+include ("../../../../Models/conexion.php"); 
 ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
 	<title>Marca - Productos Hogar Vital</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/estilo_pagina_tablas.css">
-	<link rel="icon" type="imagenes/logo.png" href="imagenes/logo_icon.ico">
+	<link rel="stylesheet" type="text/css" href="../../../css/estilo_pagina_tablas.css">
+	<link rel="icon" type="imagenes/logo.png" href="../../../imagenes/logo_icon.ico">
 </head>
 <body>
 	<div>
-		<img src="imagenes/agregar_marca.png" class="imgp"> 
-		<a href="../Views/codigo_registro_marca.php"><input type="submit" id="boton" value="Agregar Marca"></a> 
+		<img src="../../../imagenes/agregar_marca.png" class="imgM"> 
+		<a href="../../../Php/Registers/Marca/codigo_registro_marca.php"><input type="submit" id="boton" value="Agregar Marca"></a> 
 		
-		<img src="imagenes/editar_marca.png" class="imgp1">
-		<a href="../Views/modificar_marca_confirm.php"><input type="submit" id="boton3" value="Modificar Marca"></a>
+		<img src="../../../imagenes/editar_marca.png" class="imgM2">
+		<a href="../../../Php/Update/Admin/Confirms/modificar_marca_confirm.php"><input type="submit" id="boton3" value="Modificar Marca"></a>
+
+		<img src="../../../imagenes/eliminar_marca.png" class="imgM3">
+		<a href="../../../Php/Delete/eliminar_marca_confirm.php"><input type="submit" id="boton4" value="Eliminar Marca"></a>
 
 	</div>
 	<div class="icono">
-			<a href="../Views/Html/pagina_inicial.html"><input type="image" id="home" alt="Volver" src="imagenes/home.png"></a><i class="fab fa-Volver"></i>
+			<a href="../../../Html/pagina_inicial.html"><input type="image" id="home" alt="Volver" src="../../../imagenes/home.png"></a><i class="fab fa-Volver"></i>
 			<span>Volver</span>
 		</div>
 	<h1 class="titulo">MARCAS</h1>

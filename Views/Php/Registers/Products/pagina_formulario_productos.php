@@ -7,14 +7,14 @@ include ("../../../../Models/conexion.php");
 <head>
 	<title>Agregados - Hogar Vital</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/estilo_pagina_formulario_productos.css">
-	<link rel="icon" type="imagenes/logo.png" href="imagenes/logo_icon.ico">
+	<link rel="stylesheet" type="text/css" href="../../../css/estilo_pagina_formulario_productos.css">
+	<link rel="icon" type="imagenes/logo.png" href="../../../imagenes/logo_icon.ico">
 </head>
 <body>
 <div class="contenido">
-<img src="imagenes/logo.jpeg" class="img">
+<img src="../../../imagenes/logo.jpeg" class="img">
 <div  class="titulo"><h2>Registro de productos</h2></div>
-<form action="../Controller/codigo_registro_productos.php" method="post">
+<form action="../../../../Controller/Create/Admin/codigo_registro_productos.php" method="post">
 	<b><label for="">* Codigo del Producto: </label></b>
 	<b><label for="" id="lnombre">* Nombre del Producto: </label></b>
 	<br>
@@ -36,6 +36,7 @@ include ("../../../../Models/conexion.php");
 	<br>
 	<input type="date" name="fecha_vencimiento" id="ifecharec" required="">
 	<select name="marca" id="imarca" required>
+	<option value="nombre_loteM">No Aplica</option>
 	<?php 
 	$marca="SELECT * FROM marca";
 	$resultado=mysqli_query($conexion,$marca);
@@ -50,6 +51,7 @@ include ("../../../../Models/conexion.php");
 	<b><label id="lcategoria">* Categoria: </label></b>
 	<br>
 	<select name="nombre_proveedor" id="opcion2" required>
+	<option value="nombre_loteM">No Aplica</option>
 	<?php 
 	$marca="SELECT * FROM proveedores";
 	$resultado=mysqli_query($conexion,$marca);
@@ -91,7 +93,11 @@ include ("../../../../Models/conexion.php");
 	</select>
 	<input name="enviar" type="submit" value="Agregar producto" class="boton">
 </form>
+<<<<<<< HEAD
 	<a href="../../../../Views/Html/pagina_inicial_producto_director.html"><input type="submit" value="Volver" class="boton2"></a>
+=======
+	<a href="../../../Html/pagina_inicial_producto_director.html"><input type="submit" value="Volver" class="boton2"></a>
+>>>>>>> c4dcbffc5e20ab26920b2aeaf47728022532a27b
 </div>
 </body>
 </html>

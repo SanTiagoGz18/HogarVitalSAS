@@ -413,3 +413,23 @@ body{
 	border-radius: 5px;
 	font-size: 16px;
 }
+.inputIM{
+	width: 70%;
+	height: 6%;
+	margin-left: 9%;
+	background: white;
+	position: relative;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+}
+.inputNM{
+	width: 70%;
+	height: 6%;
+	margin-left: 1%;
+	background: white;
+	position: relative;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+}
