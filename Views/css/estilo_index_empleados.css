@@ -7,11 +7,11 @@ body{
 	background-color: #232655;
 	color: white;
 	padding: 30px 30px;
-	top: 50%;
+	top: 30%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 320px;
-	height: 320px;
+  width: 220px;
+	height: 190px;
 	position: absolute;
 	border: 5px solid white;
 }
@@ -19,39 +19,32 @@ body{
 	background-color: #232655;
 	color: white;
 	padding: 30px 30px;
-	top: 50%;
-	left: 82%;
+	top: 30%;
+	left: 78%;
 	transform: translate(-50%, -50%);
-	width: 320px;
-	height: 320px;
+  width: 220px;
+	height: 190px;
 	position: absolute;
 	border: 5px solid white;
 }
 .perfil{
 	background-color: #232655;
 	color: white;
-	
-	top: 50%;
-	left: 18%;
-	width: 320px;
-	height: 320px;
-	position: absolute;
-	transform: translate(-50%, -50%);
 	padding: 30px 30px;
+	top: 30%;
+	left: 20%;
+	transform: translate(-50%, -50%);
+	width: 220px;
+	height: 190px;
+	position: absolute;
 	border: 5px solid white;
-
 }
-#img {
-	width: 230px;
-  	height: 230px;
-  	left:14%;
-  	position: relative;
-}
-#img2 {
-	width: 230px;
-  	height: 230px;
-  	left: 14%;
-  	position: relative;
+.img2 {
+	width: 200px;
+  height: 160px;
+  left: 8%;
+  top: -2%;
+  position: relative;
 }
 #boton{
 	border: none;
@@ -75,7 +68,8 @@ body{
 	outline: none;
 	height: 40px;
 	width: 260px;
-	left: 16%;
+	left: 5%;
+  top: 80%;
 	background: #437DA1;
 	color: white;
 	font-size: 18px;
@@ -143,3 +137,29 @@ span a{
   text-decoration: none;
   color: white;
 }
+
+.proveedor{
+	background-color: #232655;
+	  color: white;
+	  padding: 30px 30px;
+	  top: 75%;
+	  left: 35%;
+	  transform: translate(-50%, -50%);
+	  width: 220px;
+	  height: 190px;
+	  position: absolute;
+	  border: 5px solid white;
+  }
+  
+  .marca{
+	background-color: #232655;
+	  color: white;
+	  padding: 30px 30px;
+	  top: 75%;
+	  left: 65%;
+	  transform: translate(-50%, -50%);
+	  width: 220px;
+	  height: 190px;
+	  position: absolute;
+	  border: 5px solid white;
+  }

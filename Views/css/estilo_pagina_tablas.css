@@ -310,3 +310,29 @@ tr, td{
   color: white;
   background-color: #232655;
 }
+
+.proveedor{
+  background-color: #232655;
+	color: white;
+	padding: 30px 30px;
+	top: 75%;
+	left: 35%;
+	transform: translate(-50%, -50%);
+	width: 220px;
+	height: 190px;
+	position: absolute;
+	border: 5px solid white;
+}
+
+.marca{
+  background-color: #232655;
+	color: white;
+	padding: 30px 30px;
+	top: 75%;
+	left: 65%;
+	transform: translate(-50%, -50%);
+	width: 220px;
+	height: 190px;
+	position: absolute;
+	border: 5px solid white;
+}

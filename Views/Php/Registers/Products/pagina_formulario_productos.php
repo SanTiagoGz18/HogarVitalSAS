@@ -1,5 +1,5 @@
 <?php 
-include ("../Models/conexion.php");
+include ("../../../../Models/conexion.php");
 ?>
 
 <!DOCTYPE html>
@@ -91,7 +91,7 @@ include ("../Models/conexion.php");
 	</select>
 	<input name="enviar" type="submit" value="Agregar producto" class="boton">
 </form>
-	<a href="../Views/Html/pagina_inicial_producto_director.html"><input type="submit" value="Volver" class="boton2"></a>
+	<a href="../../../../Views/Html/pagina_inicial_producto_director.html"><input type="submit" value="Volver" class="boton2"></a>
 </div>
 </body>
 </html>
