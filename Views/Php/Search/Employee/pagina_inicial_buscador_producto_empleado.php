@@ -1,5 +1,5 @@
 <?php
-include("../Models/conexion.php");
+include("../../../../Models/conexion.php");
 ?>
 
 <!DOCTYPE html>
@@ -7,7 +7,7 @@ include("../Models/conexion.php");
 <head>
 	<title>Buscador producto - Hogar Vital</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/estilo_pagina_inicial_buscador.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/estilo_pagina_inicial_buscador.css">
 	<link rel="icon" type="imagenes/logo.png" href="imagenes/logo_icon.ico">
 </head>
 <body>
@@ -18,7 +18,7 @@ include("../Models/conexion.php");
 			<div class="contenido2">
 				<input type="text" name="busqueda" class="buscar" placeholder="Ingrese el producto a buscar...">
 				<div class="botona">
-						<a href=""><input type="image" name="enviar" id="boton" src="imagenes/lupa2.png"></a>
+						<a href=""><input type="image" name="enviar" id="boton" src="../../../imagenes/lupa2.png"></a>
 				</div>
 			</div>
 		</div>
@@ -41,7 +41,7 @@ include("../Models/conexion.php");
 	<div id="t4"><p>DETALLES</p></div>
 <table border="4" class="tabla">
 	<div class="icono">
-	<a href="../Views/Html/pagina_inicial_empleado.html"><input type="image" id="home" alt="Volver" src="imagenes/home.png"></a><i class="fab fa-Volver"></i>
+	<a href="../../../../Views/Html/pagina_inicial_empleado.html"><input type="image" id="home" alt="Volver" src="../../../imagenes/home.png"></a><i class="fab fa-Volver"></i>
 	<span>Volver</span>
 </div>
 </body>

@@ -15,11 +15,13 @@
         <br>
         <br>  
         <input name="modificar" type="submit" value="Modificar" class="boton_modifi">
+        <a href="../../../../Controller/Update/Employee/modificar_proveedor_empleado.php"></a>
         <img src="../../../imagenes/editar_proveedor.png" alt="detalles" class="imga">
         <br>
         <input name="modificar" type="submit" value="Eliminar" class="boton_elimi">
+        <img src="../../../imagenes/eliminar_proveedor.png" alt="detalles" class="imga2">
         <br>
-        <a href="pagina_tabla_proveedor.php"><input type="submit" value="Volver" class="boton3"></a>
+        <a href="pagina_tabla_proveedor_empleado.php"><input type="submit" value="Volver" class="boton3"></a>
     </div>
   </body>
 </html>

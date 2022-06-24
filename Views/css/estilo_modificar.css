@@ -104,8 +104,8 @@ p{
 }
 
 .contenedor1 {
-  width: 490px;
-  height: 260px;
+  width: 500px;
+  height: 350px;
   background: #232655;
   color: #fff;
   top: 50%;
@@ -122,6 +122,8 @@ p{
   padding: 0 0 20px;
   text-align: center;
   font-size: 22px;
+  bottom: 10%;
+  position: relative;
 }
 
 .contenedor1 label {
@@ -154,7 +156,7 @@ p{
   font-size: 18px;
   border-radius: 20px;
   right: 55%;
-  bottom: 15%;
+  bottom: 10%;
   position: fixed;
 }
 
@@ -174,7 +176,7 @@ p{
   font-size: 18px;
   border-radius: 20px;
   right: 5%;
-  bottom: 23%;
+  bottom: 16%;
   position: fixed;
 }
 
@@ -205,7 +207,17 @@ p{
 }
 
 .imga{
-  width: 100px;
-  height: 100px;
-  top: 10px;
+  width: 150px;
+  height: 150px;
+  bottom: 20%;
+  left: 5%;
+  position: relative;
+}
+
+.imga2{
+  width: 150px;
+  height: 150px;
+  bottom: 80%;
+  left: 64%;
+  position: relative;
 }

@@ -1,25 +1,25 @@
 <?php
-include ("../Models/conexion.php"); 
+include ("../../../../Models/conexion.php"); 
 ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
 	<title>Proveedor - Productos Hogar Vital</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/estilo_pagina_tablas.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/estilo_pagina_tablas.css">
 	<link rel="icon" type="imagenes/logo.png" href="imagenes/logo_icon.ico">
 </head>
 <body>
 	<div>
-		<img src="imagenes/agregar_proveedor.png" class="imgp">
-		<a href="../Views/codigo_registro_proveedor.php"><input type="submit" id="boton" value="Agregar Proveedor"></a> 
+		<img src="../../../imagenes/agregar_proveedor.png" class="imgp">
+		<a href="../../../../Views/codigo_registro_proveedor.php"><input type="submit" id="boton" value="Agregar Proveedor"></a> 
 		
-		<img src="imagenes/editar_proveedor.png" class="imgp1">
-		<a href="../Views/modificar_proveedor_confirm.php"><input type="submit" id="boton3" value="Modificar Proveedor"></a>
+		<img src="../../../imagenes/editar_proveedor.png" class="imgp1">
+		<a href="../../../../Views/modificar_proveedor_confirm.php"><input type="submit" id="boton3" value="Modificar Proveedor"></a>
 
 	</div>
 	<div class="icono">
-			<a href="../Views/Html/pagina_inicial.html"><input type="image" id="home" alt="Volver" src="imagenes/home.png"></a><i class="fab fa-Volver"></i>
+			<a href="../../../../Views/Html/pagina_inicial_producto_empleado.html"><input type="image" id="home" alt="Volver" src="../../../imagenes/home.png"></a><i class="fab fa-Volver"></i>
 			<span>Volver</span>
 		</div>
 	<h1 class="titulo">PROVEEDORES</h1>

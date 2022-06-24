@@ -1,5 +1,5 @@
 <?php
-include("../Models/conexion.php");
+include("../../../../Models/conexion.php");
 session_start();
 ?>
 
@@ -8,12 +8,12 @@ session_start();
 <head>
 	<title>Lavanderia - Hogar Vital</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/estilo_pagina_tablas_productos.css">
-	<link rel="icon" type="imagenes/logo.png" href="imagenes/logo_icon.ico">
+	<link rel="stylesheet" type="text/css" href="../../../css/estilo_pagina_tablas_productos.css">
+	<link rel="icon" type="imagenes/logo.png" href="../../../imagenes/logo_icon.ico">
 </head>
 <body>
 	<div class="icono">
-		<a href="../Views/Html/pagina_inicial_producto_empleado.html"><input type="image" id="home" alt="Volver" src="imagenes/home.png"></a><i class="fab fa-Volver"></i>
+		<a href="../../../../Views/Html/pagina_inicial_producto_empleado.html"><input type="image" id="home" alt="Volver" src="../../../imagenes/home.png"></a><i class="fab fa-Volver"></i>
 		<span>Volver</span>
 	</div>
 	<h1 class="titulo">LAVANDERIA</h1>
@@ -28,14 +28,14 @@ session_start();
 <table border="4" class="tabla">
 <tbody>
 <?php 
-$select="SELECT * FROM productos WHERE id_tipo_producto='3'";
+$select="SELECT * FROM productos WHERE categoria_id='3'";
 $resultado=mysqli_query($conexion,$select);
 while($fila=mysqli_fetch_array($resultado)){?>
 	<tr>
 		<td><?php echo $fila['id_producto']?> </td>
 		<td><?php echo $fila['nombre_producto']?></td>
 		<td><?php echo $fila['cantidad_producto']?></td>
-		<td><a href="../Views/Html/pagina_productos_detalle_empleados.html"><img src="imagenes/detalles.png" alt="detalles" class="boton"></a></td>
+		<td><a href="../Views/Html/pagina_productos_detalle_empleados.html"><img src="../../../imagenes/detalles.png" alt="detalles" class="boton"></a></td>
 		</td>
 	</tr>
 	
