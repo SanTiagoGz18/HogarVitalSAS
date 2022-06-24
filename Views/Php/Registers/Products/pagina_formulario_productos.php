@@ -32,17 +32,17 @@ include ("../../../../Models/conexion.php");
 	<br>
 	<br>
 	<b><label for=""> * Fecha Recepción: </label></b>
-	<b><label for="" id="lmarca">* Marca: </label></b>
+	<b><label for="marca" id="lmarca">* Marca: </label></b>
 	<br>
 	<input type="date" name="fecha_vencimiento" id="ifecharec" required="">
 	<select name="marca" id="imarca" required>
-	<option value="nombre_loteM">No Aplica</option>
-	<?php 
-	$marca="SELECT * FROM marca";
-	$resultado=mysqli_query($conexion,$marca);
-	while($fila=mysqli_fetch_array($resultado)){
-		echo "<option value='nombre_marca'>".$fila['nombre_marca']."</option>";
-	} ?>
+		<option value="no"></option>
+		<?php
+		$resultado=mysqli_query($conexion, "SELECT * FROM marca");
+		while($fila=mysqli_fetch_array($resultado)){?>
+			<option value="<?php echo $fila['id_marca'] ?>"><?php echo $fila['nombre_marca']?></option>
+			<?php
+		} ?>
 	</select>
 	<br>
 	<br>
@@ -51,12 +51,12 @@ include ("../../../../Models/conexion.php");
 	<b><label id="lcategoria">* Categoria: </label></b>
 	<br>
 	<select name="nombre_proveedor" id="opcion2" required>
-	<option value="nombre_loteM">No Aplica</option>
+	<option value="no"></option>
 	<?php 
-	$marca="SELECT * FROM proveedores";
-	$resultado=mysqli_query($conexion,$marca);
-	while($fila=mysqli_fetch_array($resultado)){
-		echo "<option value='nombre_proveedor'>".$fila['nombre_proveedor']."</option>";
+	$resultado=mysqli_query($conexion,"SELECT * FROM proveedores");
+	while($fila=mysqli_fetch_array($resultado)){?>
+		<option value="<?php echo $fila['id_proveedor'] ?>"><?php echo $fila['nombre_proveedor']?></option>";
+		<?php
 	} ?>
 	</select>
 	<select id="opcion" name="categoria" required>
@@ -65,7 +65,7 @@ include ("../../../../Models/conexion.php");
 		<option value="lavanderia">Lavanderia</option>
 		<option value="oficina">Oficina</option>
         <option value="aseo">Aseo</option>
-		<option value="comida">Alimento</option>
+		<option value="alimento">Alimento</option>
     </select>
     <br>
     <br>
@@ -74,16 +74,15 @@ include ("../../../../Models/conexion.php");
 	<b><label id="llotem">Lote Medicamento: </label></b>
 	<br>
 	<select name="loteA" id="opcion3">
-		<option value="nombre_loteA">No Aplica</option>
-		<?php 
-		$marca="SELECT * FROM lote_alimento";
-		$resultado=mysqli_query($conexion,$marca);
-		while($fila=mysqli_fetch_array($resultado)){
-		echo "<option value='nombre_loteA'>".$fila['nombre_loteA']."</option>";
+		<option value="no"></option>
+		<?php
+		$resultado=mysqli_query($conexion,"SELECT * FROM lote_alimento");
+		while($fila=mysqli_fetch_array($resultado)){?>
+		<option value="<?php echo $fila['nombre_loteA']?>><?php echo $fila['nombre_loteA']?></option><?php
 		} ?>
 	</select>
 	<select name="loteM" id="opcion4">
-		<option value="nombre_loteM">No Aplica</option>
+		<option value="no"></option>
 		<?php
 		$marca="SELECT * FROM lote_medicamento";
 		$resultado=mysqli_query($conexion,$marca);
