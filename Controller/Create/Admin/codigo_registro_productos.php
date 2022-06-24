@@ -9,7 +9,7 @@ if (isset($_POST['enviar'])){
 		$cantidad_producto_ingresada=$_POST["cantidad_producto"];
 		$fecha_vencimiento=$_POST["fecha_vencimiento"];
 		$marca=$_POST["marca"];
-		$nombre_proveedor=$_POST["nombre_proveedor"];
+		$nombre_proveedor=$_POST["proveedor"];
 		$categoria=$_POST["categoria"];
 		$loteA=$_POST["loteA"];
 		$loteM=$_POST["loteM"];
@@ -26,9 +26,27 @@ if (isset($_POST['enviar'])){
 
 			$res=mysqli_query($conexion,$update);
 			if($res){
-				header("location:../Views/Html/repetido_productos_director.html");
+				header("location:../../../Views/Html/Verifications/VerificationsProducts/repetido_productos_director.html");
 				exit();
 			}
+		}
+
+		if($_REQUEST['marca'] == 'no'){
+			header("location:../../../Views/Html/Verifications/VerificationsProducts/agregue_marca.html");
+			exit();
+		}
+		if($_REQUEST['proveedor'] == 'no'){
+			header("location:../../../Views/Html/Verifications/VerificationsProducts/agregue_proveedor.html");
+			exit();
+		}
+
+		if($_REQUEST['categoria'] == 'medicamentos' && $_REQUEST['loteM'] == 'no'){
+			header("location:../../../Views/Html/Verifications/VerificationsProducts/agregue_loteM.html");
+			exit();
+		}
+		if($_REQUEST['categoria'] == 'medicamentos' && isset($_POST['fecha_vencimiento'])){
+			header("location:../../../Views/Html/Verifications/VerificationsProducts/agregue_fecha.html");
+			exit();
 		}
 
 		if($_REQUEST['categoria'] == 'enseres'){

@@ -50,7 +50,7 @@ include ("../../../../Models/conexion.php");
 	<b><label for="">* Proveedor: </label></b>
 	<b><label id="lcategoria">* Categoria: </label></b>
 	<br>
-	<select name="nombre_proveedor" id="opcion2" required>
+	<select name="proveedor" id="opcion2" required>
 	<option value="no"></option>
 	<?php 
 	$resultado=mysqli_query($conexion,"SELECT * FROM proveedores");
@@ -70,24 +70,23 @@ include ("../../../../Models/conexion.php");
     <br>
     <br>
 	<br>
-	<b><label for="">Lote Alimento: </label></b>
-	<b><label id="llotem">Lote Medicamento: </label></b>
+	<b><label for="">Lote Medicamento: </label></b>
+	<b><label id="llotem">Lote Alimento: </label></b>
 	<br>
 	<select name="loteA" id="opcion3">
 		<option value="no"></option>
 		<?php
 		$resultado=mysqli_query($conexion,"SELECT * FROM lote_alimento");
 		while($fila=mysqli_fetch_array($resultado)){?>
-		<option value="<?php echo $fila['nombre_loteA']?>><?php echo $fila['nombre_loteA']?></option><?php
+		<option value="<?php echo $fila['nombre_loteA']?>"><?php echo $fila['nombre_loteA']?></option><?php
 		} ?>
 	</select>
 	<select name="loteM" id="opcion4">
 		<option value="no"></option>
 		<?php
-		$marca="SELECT * FROM lote_medicamento";
-		$resultado=mysqli_query($conexion,$marca);
-		while($fila=mysqli_fetch_array($resultado)){
-		echo "<option value='nombre_loteM'>".$fila['nombre_loteM']."</option>";
+		$resultado=mysqli_query($conexion,"SELECT * FROM lote_medicamento");
+		while($fila=mysqli_fetch_array($resultado)){?>
+		<option value="<?php echo $fila['nombre_loteM']?>"><?php echo $fila['nombre_loteM']?></option><?php
 		} ?>
 	</select>
 	<input name="enviar" type="submit" value="Agregar producto" class="boton">
