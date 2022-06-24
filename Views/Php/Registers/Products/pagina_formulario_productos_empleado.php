@@ -12,7 +12,7 @@ include ("../../../../Models/conexion.php");
 </head>
 <body>
 <div class="contenido">
-<img src="imagenes/logo.jpeg" class="img">
+<img src="../../../imagenes/logo.jpeg" class="img">
 <div  class="titulo"><h2>Registro de productos</h2></div>
 <form action="../Controller/codigo_registro_productos.php" method="post">
 	<b><label for="">* Codigo del Producto: </label></b>
