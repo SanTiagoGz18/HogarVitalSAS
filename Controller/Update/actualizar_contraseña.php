@@ -8,12 +8,16 @@ if (isset($_POST['cambiar'])){
 		$contrasena=$_POST["contrasena"];
 		$ncontrasena=$_POST["ncontrasena"];
 
-		$update="UPDATE usuarios SET contrasena = '".$contrasena."' WHERE id_usuario = '".$id_usuario."'";
+		if($contrasena==$ncontrasena){
+			$update="UPDATE usuarios SET contrasena = '".$contrasena."' WHERE id_usuario = '".$id_usuario."'";
+			
+			$respuesta=mysqli_query($conexion,$update);
 
-		$respuesta=mysqli_query($conexion,$update);
-
-		if ($respuesta) {
-			header("location:../../Views/Html/Verifications/correcto.html");
+			if ($respuesta) {
+				header("location:../../Views/Html/Verifications/correcto.html");
+			}
+		}else{
+			header("location:../../Views/Html/Verifications/no_correcto_contraseña.html");
 		}
 	}
 }
