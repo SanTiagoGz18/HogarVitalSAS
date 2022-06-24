@@ -93,11 +93,7 @@ include ("../../../../Models/conexion.php");
 	</select>
 	<input name="enviar" type="submit" value="Agregar producto" class="boton">
 </form>
-<<<<<<< HEAD
 	<a href="../../../../Views/Html/pagina_inicial_producto_director.html"><input type="submit" value="Volver" class="boton2"></a>
-=======
-	<a href="../../../Html/pagina_inicial_producto_director.html"><input type="submit" value="Volver" class="boton2"></a>
->>>>>>> c4dcbffc5e20ab26920b2aeaf47728022532a27b
 </div>
 </body>
 </html>
