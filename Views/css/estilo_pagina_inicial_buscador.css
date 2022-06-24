@@ -1,6 +1,6 @@
 body {
 	font-size: 22px;
-	font-family: sans-serif;
+	font-family: Verdana;
 	background: #437DA1;
 }
 #titulo {
@@ -69,24 +69,25 @@ body {
 #home {
 	width: 50px;
 	height: 50px;
-	left: 90%;
-	top: 5%;
-	position: fixed;
-}
-.icono i {
+	left: 92%;
+	top: 1.5%;
+	position: absolute;
+  }
+  .icono i {
 	color: #00acee;
 	font-size: 80px;
 	display: block;
 	text-align: center;
 	cursor: pointer;
-}
-.icono span{
-	position: fixed;
+  }
+  
+  .icono span{
+	position: absolute;
 	width: 120px;
 	background-color: #D4C163;
 	color: black;
-	left: 87.5%;
-	top: 14%;
+	left: 89.1%;
+	top: 10%;
 	padding: 5px 0px;
 	text-align: center;
 	display: block;
@@ -94,34 +95,37 @@ body {
 	margin: auto;
 	opacity: 0;
 	transition: 0.6% opacity;
-}
-.icono span:before{
+  }
+  
+  .icono span:before{
 	content: '';
 	width: 10px;
 	height: 10px;
-	position: fixed;
-	top: 13.3%;
+	position: absolute;
+	top: -11.3%;
 	background: #D4C163;
 	z-index: -1px;
-	left: 91.9%;
+	left: 52.9%;
 	transform: translate(-50%) rotate(45deg) ;
-}
-.icono:hover > span{
+  }
+  
+  .icono:hover > span{
 	opacity: 1;
-}
-span a{
+  }
+  
+  span a{
 	text-decoration: none;
 	color: white;
-} 
-.icono a{
+  }
+  
+  .icono a{
 	text-decoration: none;
 	color: white;
-}
+  }
 .contenido3 {
-	width: 65%;
+	width: 91%;
 	height: 85%;
-  	left: 12.5%;
-	top: 30%;
+  left: 0.5%;
 	padding: 40px 50px;
 	background: #232655;
 	position: relative;
@@ -130,58 +134,24 @@ span a{
 .tabla {
 	background: #437DA1;
 	color: white;
-	width: 100%;
-	height: 80%;
-	left: 20%;
-	top: 20%;
-	border: 4px solid #D4C163;
+	width: 105%;
+	height: 90%;
+	top: 5%;
+  	left: -2%;
+  	font-size: 13px;
+	border: 4px solid white;
 	border-collapse: collapse;
+  	position: relative;
 }
 div table tr {
 	text-align: center;
 }
-#t6{
-	position: absolute;
-	left: 7%;
-	top: 4.9%;	
-	color: white;
-	font-variant: small-caps;
-}
-#t1{
-	position: absolute;
-	left: 7%;
-	top: 4.9%;	
-	color: white;
-	font-variant: small-caps;
-}
-#t2{
-	position: absolute;
-	left: 29%;
-	top: 4.9%;
-	color: white;
-	font-variant: small-caps;
-}
-#t3{
-	position: absolute;
-	left: 44.2%;
-	top: 4.9%;
-	color: white;
-	font-variant: small-caps;
-}
-#t4{
-	position: absolute;
-	left: 61.4%;
-	top: 4.9%;
-	color: white;
-	font-variant: small-caps;
-}
-#t5{
-	position: absolute;
-	left: 80%;
-	top: 4.9%;
-	color: white;
-	font-variant: small-caps;
-}
 tr, td{
-	width: 20%;
-}
+	width: 5%;
+	height: 50%;
+  }
+  .tr{
+	font-size: 18px;
+	color: white;
+	background-color: #232655;
+  }

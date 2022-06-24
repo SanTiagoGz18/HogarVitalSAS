@@ -23,6 +23,10 @@ include("../../../../Models/conexion.php");
 			</div>
 		</div>
 	</form>
+	<div class="icono">
+		<a href="../../../Html/pagina_buscador_productos_director.html"><input type="image" id="home" alt="Volver" src="../../../imagenes/home.png"></a><i class="fab fa-Volver"></i>
+		<span>Volver</span>
+	</div>
 	<br>
 	<br>
 	<br>
@@ -32,19 +36,20 @@ include("../../../../Models/conexion.php");
 	<br>
 	<br>
 <div class="contenido3">
-<br>
-<br>
-<br>
-	<div id="t6"><p>DOCUMENTO</p></div>
-	<div id="t2"><p>TIPO</p></div>
-	<div id="t3"><p>NOMBRES</p></div>
-	<div id="t4"><p>APELLIDOS</p></div>
-	<div id="t5"><p>MODIFICAR</p></div>
 <table border="4" class="tabla">
-	<div class="icono">
-	<a href="../../../Html/pagina_buscador_productos_director.html"><input type="image" id="home" alt="Volver" src="../../../imagenes/home.png"></a><i class="fab fa-Volver"></i>
-	<span>Volver</span>
-</div>
+	<tr class="tr">
+		<td>DOCUMENTO</td>
+		<td>TIPO</td>
+		<td>NOMBRES</td>
+		<td>APELLIDOS</td>
+		<td>CORREO ELECTRONICO</td>
+		<td>TELEFONO</td>
+		<td>DIRECCIÓN</td>
+		<td>CARGO</td>
+		<td>FECHA REGISTRO</td>
+		<td>FECHA ACTUALIZADO</td>
+		<td>ACCIONES</td>
+	</tr>
 </body>
 </html>
 <tbody>
@@ -52,22 +57,21 @@ include("../../../../Models/conexion.php");
 
 if(isset($_POST['busqueda'])){
 	$busqueda=$_POST['busqueda'];
-	$resultado=mysqli_query($conexion,"SELECT * FROM usuarios WHERE id_usuario LIKE '%$busqueda%' OR nombre_usuario LIKE '%$busqueda%' OR apellido_usuario LIKE '%$busqueda%'");
+	$resultado=mysqli_query($conexion,"SELECT * FROM usuarios INNER JOIN cargo ON usuarios.cargo_id=cargo.id_cargo WHERE id_usuario LIKE '%$busqueda%' OR tipo_documento LIKE '%$busqueda%' OR nombre_usuario LIKE '%$busqueda%' OR apellido_usuario LIKE '%$busqueda%' OR correo LIKE '%$busqueda%' OR telefono LIKE '%$busqueda%' OR direccion LIKE '%$busqueda%' OR nombre_cargo LIKE '%$busqueda%' OR fecha_registro_usuario LIKE '%$busqueda%' OR fecha_actualizacion_usuario LIKE '%$busqueda%'");
 	
-	while($fila=mysqli_fetch_array($resultado)){
-		
-		$id_usuario = $fila['id_usuario'];
-		$tipo_documento = $fila['tipo_documento'];
-		$nombre_usuario  = $fila['nombre_usuario'];
-		$apellido_usuario = $fila['apellido_usuario'];
-
-		?>
+	while($fila=mysqli_fetch_array($resultado)){?>
 		<tr>
-			<td><?php echo $id_usuario?> </td>
-			<td><?php echo $tipo_documento?> </td>
-			<td><?php echo $nombre_usuario?></td>
-			<td><?php echo $apellido_usuario?></td>
-			<td><a href="../../Update/Admin/Confirms/modificar_personal_confirm_buscar.php"><img src="../../../imagenes/detalle_empleado.png" alt="detalles" class="botonad"></a></td>
+		<td><?php echo $fila['id_usuario'];?> </td>
+		<td><?php echo $fila['tipo_documento']?></td>
+		<td><?php echo $fila['nombre_usuario']?> </td>
+		<td><?php echo $fila['apellido_usuario']?> </td>
+		<td><?php echo $fila['correo']?> </td>
+		<td><?php echo $fila['telefono']?> </td>
+		<td><?php echo $fila['direccion']?> </td>
+		<td><?php echo $fila['nombre_cargo']?> </td>
+		<td><?php echo $fila['fecha_registro_usuario']?> </td>
+		<td><?php echo $fila['fecha_actualizacion_usuario']?> </td>
+		<td><a href="../../Update/Admin/Confirms/modificar_personal_confirm_buscar.php"><img src="../../../imagenes/detalle_empleado.png" alt="detalles" class="botonad"></a></td>
 		</tr>
 	</div>
 	</div>

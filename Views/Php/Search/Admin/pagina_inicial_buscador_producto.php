@@ -23,6 +23,10 @@ include("../../../../Models/conexion.php");
 			</div>
 		</div>
 	</form>
+	<div class="icono">
+		<a href="../../../Html/pagina_buscador_productos_director.html"><input type="image" id="home" alt="Volver" src="../../../imagenes/home.png"></a><i class="fab fa-Volver"></i>
+		<span>Volver</span>
+	</div>
 	<br>
 	<br>
 	<br>
@@ -32,17 +36,17 @@ include("../../../../Models/conexion.php");
 	<br>
 	<br>
 <div class="contenido3">
-<br>
-<br>
-<br>
-	<div id="t1"><p>CODIGO</p></div>
-	<div id="t2"><p>NOMBRE</p></div>
-	<div id="t3"><p>CANTIDAD</p></div>
-	<div id="t4"><p>DETALLES</p></div>
 <table border="4" class="tabla">
-	<div class="icono">
-	<a href="../../../Html/pagina_buscador_productos_director.html"><input type="image" id="home" alt="Volver" src="../../../imagenes/home.png"></a><i class="fab fa-Volver"></i>
-	<span>Volver</span>
+	<tr class="tr">
+		<td>CODIGO</td>
+		<td>NOMBRE</td>
+		<td>CANTIDAD</td>
+		<td>FECHA REGISTRO</td>
+		<td>FECHA EDITADO</td>
+		<td>CATEGORIA</td>
+		<td>MARCA</td>
+		<td>ACCIONES</td>
+	</tr>
 </div>
 </body>
 </html>
@@ -51,20 +55,19 @@ include("../../../../Models/conexion.php");
 
 if(isset($_POST['busqueda'])){
 	$busqueda=$_POST['busqueda'];
-	$resultado=mysqli_query($conexion,"SELECT * FROM productos WHERE nombre_producto LIKE '%$busqueda%'");
+	$resultado=mysqli_query($conexion,"SELECT * FROM ((productos INNER JOIN categoria ON productos.categoria_id=categoria.id_categoria)INNER JOIN marca ON productos.marca_id=marca.id_marca)WHERE id_producto LIKE '%$busqueda%' OR nombre_producto LIKE '%$busqueda%' OR nombre_categoria LIKE '%$busqueda%' OR nombre_marca LIKE '%$busqueda%' OR cantidad_producto LIKE '%$busqueda%' OR fecha_registro_producto LIKE '%$busqueda%' OR fecha_actualizacion_producto LIKE '%$busqueda%'");
 	
-	while($fila=mysqli_fetch_array($resultado)){
-		
-		$id = $fila['id_producto'];
-		$nombre  = $fila['nombre_producto'];
-		$cantidad = $fila['cantidad_producto'];
+	while($fila=mysqli_fetch_array($resultado)){?>
 
-		?>
 		<tr>
-			<td><?php echo $id?> </td>
-			<td><?php echo $nombre?></td>
-			<td><?php echo $cantidad?></td>
-				<td><a href="../Views/Html/pagina_productos_detalle.html"><img src="../../../imagenes/detalles.png" alt="detalles" class="boton"></a></td>
+			<td><?php echo $fila['id_producto']?> </td>
+			<td><?php echo $fila['nombre_producto']?></td>
+			<td><?php echo $fila['cantidad_producto']?></td>
+			<td><?php echo $fila['fecha_registro_producto']?></td>
+			<td><?php echo $fila['fecha_actualizacion_producto']?></td>
+			<td><?php echo $fila['nombre_categoria']?></td>
+			<td><?php echo $fila['nombre_marca']?></td>
+			<td><a href="../Views/Html/pagina_productos_detalle.html"><img src="../../../imagenes/detalles.png" alt="detalles" class="boton"></a></td>
 		</tr>
 	</div>
 	</div>

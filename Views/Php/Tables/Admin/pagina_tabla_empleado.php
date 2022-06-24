@@ -18,7 +18,7 @@ include ("../../../../Models/conexion.php");
 		<a href="../../Registers/Persons/codigo_registro_administrador.php"><input type="submit" id="boton3" value="Agregar Administrador"></a>
 		
 		<img src="../../../imagenes/eliminar_usuario.png" class="imgp3">
-		<a href="../../Delete/eliminar_personal_confirm.php"><input type="submit" id="boton4" value="Eliminar Personal"></a> 
+		<a href="../../Delete/eliminar_personal_confirm.php"><input type="submit" id="boton5" value="Eliminar Personal"></a> 
 
 		<img src="../../../imagenes/editar_usuario.png" class="imgp2">
 		<a href="../../Update/Admin/Confirms/modificar_personal_confirm.php"><input type="submit" id="boton2" value="Modificar Personal"></a> 
@@ -35,7 +35,7 @@ include ("../../../../Models/conexion.php");
 </html>
 <table border="4" class="tabla">
 <tbody>
-<tr class="tr">
+	<tr class="tr">
 		<td>DOCUMENTO</td>
 		<td>TIPO</td>
 		<td>NOMBRES</td>
@@ -62,7 +62,6 @@ while($fila=mysqli_fetch_array($resultado)){?>
 		<td><?php echo $fila['nombre_cargo']?> </td>
 		<td><?php echo $fila['fecha_registro_usuario']?> </td>
 		<td><?php echo $fila['fecha_actualizacion_usuario']?> </td>
-		</td>
 	</tr>
 	</div>
 <?php } ?>

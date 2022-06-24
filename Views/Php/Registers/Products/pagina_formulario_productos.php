@@ -36,7 +36,7 @@ include ("../../../../Models/conexion.php");
 	<br>
 	<input type="date" name="fecha_vencimiento" id="ifecharec" required="">
 	<select name="marca" id="imarca" required>
-	<option value="nombre_loteM">No Aplica</option>
+	<option value="no"></option>
 	<?php 
 	$marca="SELECT * FROM marca";
 	$resultado=mysqli_query($conexion,$marca);
@@ -51,7 +51,7 @@ include ("../../../../Models/conexion.php");
 	<b><label id="lcategoria">* Categoria: </label></b>
 	<br>
 	<select name="nombre_proveedor" id="opcion2" required>
-	<option value="nombre_loteM">No Aplica</option>
+	<option value="no"></option>
 	<?php 
 	$marca="SELECT * FROM proveedores";
 	$resultado=mysqli_query($conexion,$marca);
@@ -74,7 +74,7 @@ include ("../../../../Models/conexion.php");
 	<b><label id="llotem">Lote Medicamento: </label></b>
 	<br>
 	<select name="loteA" id="opcion3">
-		<option value="nombre_loteA">No Aplica</option>
+		<option value="no"></option>
 		<?php 
 		$marca="SELECT * FROM lote_alimento";
 		$resultado=mysqli_query($conexion,$marca);
@@ -83,7 +83,7 @@ include ("../../../../Models/conexion.php");
 		} ?>
 	</select>
 	<select name="loteM" id="opcion4">
-		<option value="nombre_loteM">No Aplica</option>
+		<option value="no"></option>
 		<?php
 		$marca="SELECT * FROM lote_medicamento";
 		$resultado=mysqli_query($conexion,$marca);
@@ -93,11 +93,7 @@ include ("../../../../Models/conexion.php");
 	</select>
 	<input name="enviar" type="submit" value="Agregar producto" class="boton">
 </form>
-<<<<<<< HEAD
 	<a href="../../../../Views/Html/pagina_inicial_producto_director.html"><input type="submit" value="Volver" class="boton2"></a>
-=======
-	<a href="../../../Html/pagina_inicial_producto_director.html"><input type="submit" value="Volver" class="boton2"></a>
->>>>>>> c4dcbffc5e20ab26920b2aeaf47728022532a27b
 </div>
 </body>
 </html>
