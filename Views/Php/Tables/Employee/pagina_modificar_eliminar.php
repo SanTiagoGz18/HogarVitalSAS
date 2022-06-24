@@ -11,13 +11,12 @@
   <body>
 
     <div class="contenedor">
-      <h1>Modificación de Productos</h1>
-        <b><p>Confirme el id del proveedor</p></b>
+      <h1>¿Qué desea hacer?</h1>
         <br>
         <br>
-        <label for="usuario">Id del proveedor:</label>
-        <input name="id_proveedor" type="text" placeholder="Ingrese el id del proveedor" class="campos" required>
         <input name="modificar" type="submit" value="Modificar el proveedor" class="boton">
+        <br>
+        <input name="modificar" type="submit" value="Eliminar el proveedor" class="boton">
         <br>
         <a href="pagina_tabla_proveedor.php"><input type="submit" value="Volver" class="boton2"></a>
     </div>
