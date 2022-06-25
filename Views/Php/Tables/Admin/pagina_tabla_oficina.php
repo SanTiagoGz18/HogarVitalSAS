@@ -30,12 +30,14 @@ session_start();
 		<td>CANTIDAD</td>
 		<td>FECHA REGISTRO</td>
 		<td>FECHA EDITADO</td>
+		<td>FECHA RECEPCIÓN</td>
+		<td>PROVEEDOR</td>
 		<td>CATEGORIA</td>
 		<td>MARCA</td>
-		<td>MODIFICAR ELIMINAR</td>
+		<td>ACCIONES</td>
 	</tr>
 <?php 
-$select="SELECT * FROM ((productos INNER JOIN categoria ON productos.categoria_id=categoria.id_categoria)INNER JOIN marca ON productos.marca_id=marca.id_marca)WHERE categoria_id='4'";
+$select="SELECT * FROM ((((productos INNER JOIN categoria ON productos.categoria_id=categoria.id_categoria)INNER JOIN marca ON productos.marca_id=marca.id_marca)INNER JOIN proveedores_productos ON productos.id_producto=proveedores_productos.producto_id)INNER JOIN proveedores ON proveedores_productos.proveedor_id=proveedores.id_proveedor)WHERE categoria_id='4'";
 $resultado=mysqli_query($conexion,$select);
 while($fila=mysqli_fetch_array($resultado)){?>
 	<tr>
@@ -44,6 +46,8 @@ while($fila=mysqli_fetch_array($resultado)){?>
 		<td><?php echo $fila['cantidad_producto']?></td>
 		<td><?php echo $fila['fecha_registro_producto']?></td>
 		<td><?php echo $fila['fecha_actualizacion_producto']?></td>
+		<td><?php echo $fila['fecha_proveedor']?></td>
+		<td><?php echo $fila['nombre_proveedor']?></td>
 		<td><?php echo $fila['nombre_categoria']?></td>
 		<td><?php echo $fila['nombre_marca']?></td>
 		<td><a href="../Views/Html/pagina_perfil_tabla_empleado.html"><img src="../../../imagenes/detalles.png" alt="detalles" class="boton"></a></td>

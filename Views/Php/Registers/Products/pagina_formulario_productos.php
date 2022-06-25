@@ -34,7 +34,7 @@ include ("../../../../Models/conexion.php");
 	<b><label for=""> * Fecha Recepción: </label></b>
 	<b><label for="marca" id="lmarca">* Marca: </label></b>
 	<br>
-	<input type="date" name="fecha_vencimiento" id="ifecharec" required="">
+	<input type="date" name="fecha_proveedor" id="ifecharec" required="">
 	<select name="marca" id="imarca" required>
 		<option value="no"></option>
 		<?php
@@ -51,13 +51,13 @@ include ("../../../../Models/conexion.php");
 	<b><label id="lcategoria">* Categoria: </label></b>
 	<br>
 	<select name="proveedor" id="opcion2" required>
-	<option value="no"></option>
-	<?php 
-	$resultado=mysqli_query($conexion,"SELECT * FROM proveedores");
-	while($fila=mysqli_fetch_array($resultado)){?>
+		<option value="no"></option>
+		<?php 
+		$resultado=mysqli_query($conexion,"SELECT * FROM proveedores");
+		while($fila=mysqli_fetch_array($resultado)){?>
 		<option value="<?php echo $fila['id_proveedor'] ?>"><?php echo $fila['nombre_proveedor']?></option>";
 		<?php
-	} ?>
+		} ?>
 	</select>
 	<select id="opcion" name="categoria" required>
         <option value="enseres">Enseres</option>
@@ -78,7 +78,7 @@ include ("../../../../Models/conexion.php");
 		<?php
 		$resultado=mysqli_query($conexion,"SELECT * FROM lote_alimento");
 		while($fila=mysqli_fetch_array($resultado)){?>
-		<option value="<?php echo $fila['nombre_loteA']?>"><?php echo $fila['nombre_loteA']?></option><?php
+		<option value="<?php echo $fila['id_loteA']?>"><?php echo $fila['nombre_loteA']?></option><?php
 		} ?>
 	</select>
 	<select name="loteM" id="opcion4">
@@ -86,7 +86,7 @@ include ("../../../../Models/conexion.php");
 		<?php
 		$resultado=mysqli_query($conexion,"SELECT * FROM lote_medicamento");
 		while($fila=mysqli_fetch_array($resultado)){?>
-		<option value="<?php echo $fila['nombre_loteM']?>"><?php echo $fila['nombre_loteM']?></option><?php
+		<option value="<?php echo $fila['id_loteM']?>"><?php echo $fila['nombre_loteM']?></option><?php
 		} ?>
 	</select>
 	<input name="enviar" type="submit" value="Agregar producto" class="boton">

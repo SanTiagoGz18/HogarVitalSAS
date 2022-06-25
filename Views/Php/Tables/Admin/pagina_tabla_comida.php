@@ -35,7 +35,7 @@ session_start();
 		<td>FECHA RECEPCIÓN</td>
 		<td>FECHA VENCIMIENTO</td>
 		<td>LOTE</td>
-		<td>MODIFICAR ELIMINAR</td>
+		<td>ACCIONES</td>
 	</tr>
 <?php 
 $select="SELECT * FROM ((((((productos
