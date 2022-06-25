@@ -39,6 +39,18 @@ body{
 	position: absolute;
 	border: 5px solid white;
 }
+.lote{
+	background-color: #232655;
+	  color: white;
+	  padding: 30px 30px;
+	  top: 75%;
+	  left: 78%;
+	  transform: translate(-50%, -50%);
+	  width: 220px;
+	  height: 190px;
+	  position: absolute;
+	  border: 5px solid white;
+  }
 .img2 {
 	width: 200px;
   height: 160px;
@@ -143,7 +155,7 @@ span a{
 	  color: white;
 	  padding: 30px 30px;
 	  top: 75%;
-	  left: 35%;
+	  left: 20%;
 	  transform: translate(-50%, -50%);
 	  width: 220px;
 	  height: 190px;
@@ -156,7 +168,7 @@ span a{
 	  color: white;
 	  padding: 30px 30px;
 	  top: 75%;
-	  left: 65%;
+	  left: 50%;
 	  transform: translate(-50%, -50%);
 	  width: 220px;
 	  height: 190px;
