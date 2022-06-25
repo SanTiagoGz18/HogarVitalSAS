@@ -54,7 +54,7 @@ if (isset($_POST['enviar'])){
 			header("location:../../../Views/Html/Verifications/VerificationsProducts/agregue_loteM.html");
 			exit();
 		}
-		if($_REQUEST['categoria'] == 'alimento' && isset($_POST['fecha_vencimiento'])){
+		if($_REQUEST['categoria'] == 'alimento' && empty($_POST['fecha_vencimiento'])){
 			header("location:../../../Views/Html/Verifications/VerificationsProducts/agregue_fecha.html");
 			exit();
 		}
