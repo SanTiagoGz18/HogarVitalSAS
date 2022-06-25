@@ -21,7 +21,7 @@
         <input name="modificar" type="submit" value="Eliminar" class="boton_elimi">
         <img src="../../../imagenes/eliminar_proveedor.png" alt="detalles" class="imga2">
         <br>
-        <a href="pagina_tabla_proveedor_empleado.php"><input type="submit" value="Volver" class="boton3"></a>
+        <a href="../../../../Views/Html/pagina_inicial_producto_empleado.html"><input type="submit" value="Volver" class="boton3"></a>
     </div>
   </body>
 </html>

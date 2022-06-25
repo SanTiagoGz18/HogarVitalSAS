@@ -45,7 +45,7 @@ while($fila=mysqli_fetch_array($resultado)){?>
 		<td><?php echo $fila['fecha_actualizacion_producto']?></td>
 		<td><?php echo $fila['nombre_categoria']?></td>
 		<td><?php echo $fila['nombre_marca']?></td>
-		<td><a href="../../../Html/pagina_perfil_tabla_empleado.html"><img src="../../../imagenes/detalles.png" alt="detalles" class="boton"></a></td>
+		<td><a href="../../Tables/Employee/pagina_modificar_eliminar.php"><img src="../../../imagenes/detalles.png" alt="detalles" class="boton"></a></td>
 	</tr>
 	</div>
 <?php } ?>
