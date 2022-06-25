@@ -13,7 +13,7 @@ if (isset($_POST['enviar'])){
         $verificar_documento=mysqli_query($conexion, "SELECT * FROM usuarios WHERE id_usuario='$id_usuario'");
 
 		if(mysqli_num_rows($verificar_documento)<1){
-			header("location:../../../Views/Html/Verifications/VerificationsEmployee/no_existe_perfil.html");
+			header("location:../../../Views/Html/Verifications/VerificationsEmployee/no_existe_perfil_employee.html");
 			exit();
 		}
 
