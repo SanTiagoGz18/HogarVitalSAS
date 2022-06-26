@@ -25,7 +25,7 @@ if (isset($_POST['eliminar'])){
         
         $respuesta=mysqli_query($conexion,$delete);
             
-        if ($respuesta) {{}
+        if ($respuesta) {
             header("location:../../../Views/Html/Verifications/VerificationsProducts/correcto_eliminar_marca.html");
         }else{
             echo "No se elimino el marca";
