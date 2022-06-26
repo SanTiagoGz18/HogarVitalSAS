@@ -71,7 +71,7 @@ if(isset($_POST['busqueda'])){
 		<td><?php echo $fila['nombre_cargo']?> </td>
 		<td><?php echo $fila['fecha_registro_usuario']?> </td>
 		<td><?php echo $fila['fecha_actualizacion_usuario']?> </td>
-		<td><a href="../../Update/Admin/Confirms/modificar_personal_confirm_buscar.php"><img src="../../../imagenes/detalle_empleado.png" alt="detalles" class="botonad"></a></td>
+		<td><a href="../../../Html/pagina_modificar_eliminar_buscador_empleado.html"><img src="../../../imagenes/detalle_empleado.png" alt="detalles" class="botonad"></a></td>
 		</tr>
 	</div>
 	</div>
