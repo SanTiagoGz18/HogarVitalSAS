@@ -16,7 +16,7 @@ if (isset($_POST['eliminar'])){
 
         $verificar_admin=mysqli_query($conexion, "SELECT * FROM usuarios WHERE id_usuario='$id_usuario' AND cargo_id=1");
 
-		if(mysqli_num_rows($verificar_admin)>1){
+		if(mysqli_num_rows($verificar_admin)>0){
 			header("location:../../../Views/Html/Verifications/VerificationsEmployee/eliminar_admin.html");
 			exit();
 		}

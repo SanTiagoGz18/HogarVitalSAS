@@ -8,7 +8,7 @@ if(isset($_POST['modificar'])){
     $verificar_documento=mysqli_query($conexion, "SELECT * FROM usuarios WHERE id_usuario='$id_usuario'");
 
 		if(mysqli_num_rows($verificar_documento)<1){
-			header("location:../Views/Html/no_existe_modificar_buscar.html");
+			header("location:../../../../Html/Verifications/VerificationsEmployee/no_existe_modificar_buscar.html");
 			exit();
 		}
 
