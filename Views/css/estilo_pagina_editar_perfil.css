@@ -433,3 +433,125 @@ body{
 	border-radius: 5px;
 	font-size: 16px;
 }
+.inputLA{
+	width: 70%;
+	height: 6%;
+	margin-left: 4.4%;
+	background: white;
+	position: relative;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+}
+.inputLM{
+	width: 70%;
+	height: 6%;
+	margin-left: 4.4%;
+	background: white;
+	position: relative;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+}
+.input2P{
+	width: 70%;
+	height: 6%;
+	background: white;
+	left: 9%;
+	position: relative;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+}
+.inputNP{
+	width: 70%;
+	height: 6%;
+	background: white;
+	left: 8%;
+	position: relative;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+}
+.inputCP{
+	width: 70%;
+	height: 6%;
+	background: white;
+	left: 7%;
+	position: relative;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+}
+.inputCTP{
+	width: 70%;
+	height: 6%;
+	background: white;
+	left: 7%;
+	position: relative;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+}
+.inputMP{
+	width: 70%;
+	height: 6%;
+	background: white;
+	left: 10.8%;
+	position: relative;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+}
+.inputPP{
+	width: 70%;
+	height: 6%;
+	background: white;
+	left: 6%;
+	position: relative;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+}
+#a1PR{
+	border-bottom:2px	solid	white;
+	top: 8%;
+	position: absolute;
+	width: 420px;
+	left: 1%;
+}
+#a2PR{
+	border-bottom:2px	solid	white;
+	top: 22%;
+	position: absolute;
+	width: 420px;
+	left: 1%;
+}
+#a3PR{
+	border-bottom:2px	solid	white;
+	top: 38%;
+	position: absolute;
+	width: 420px;
+	left: 1%;
+}
+#a4PR{
+	border-bottom:2px	solid	white;
+	top: 54%;
+	position: absolute;
+	width: 420px;
+	left: 1%;
+}
+#a5PR{
+	border-bottom:2px	solid	white;
+	top: 70%;
+	position: absolute;
+	width: 420px;
+	left: 1%;
+}
+#a6PR{
+	border-bottom:2px	solid	white;
+	top: 85%;
+	position: absolute;
+	width: 420px;
+	left: 1%;
+}

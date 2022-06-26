@@ -34,8 +34,8 @@ if(isset($_POST['modificar'])){
 			<br>
 			<br>
 			<br>
-			<label for="nombre_marca">Nombre del lote: </label>
-			<input type="text" name="nombre_loteM" class="inputNM" value="<?php echo $filas['nombre_loteM']?>">
+			<label for="">Nombre del lote: </label>
+			<input type="text" name="nombre_loteM" class="inputLM" value="<?php echo $filas['nombre_loteM']?>">
 			<input type="submit" name="modificado" value="Guardar" class="boton4P">
 			</form>
 			<a href="../../../Tables/Admin/pagina_tabla_lote_medicamento.php"><input type="submit" value="Cancelar" class="boton3P"></a>

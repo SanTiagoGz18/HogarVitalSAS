@@ -59,7 +59,7 @@ while($fila=mysqli_fetch_array($resultado)){?>
 		<td><?php echo $fila['fecha_proveedor']?></td>
 		<td><?php echo $fila['fecha_vencimientoA']?></td>
 		<td><?php echo $fila['nombre_loteA']?></td>
-		<td><a href="../Views/Html/pagina_perfil_tabla_empleado.html"><img src="../../../imagenes/detalles.png" alt="detalles" class="boton"></a></td>
+		<td><a href="../../../Html/pagina_modificar_eliminar_director.html"><img src="../../../imagenes/detalles.png" alt="detalles" class="boton"></a></td>
 	</tr>
 	</div>
 <?php } ?>
