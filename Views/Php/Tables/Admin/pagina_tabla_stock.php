@@ -6,7 +6,7 @@ session_start();
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Oficina - Hogar Vital</title>
+	<title>Stock - Hogar Vital</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../../../css/estilo_pagina_tablas_productos.css">
 	<link rel="icon" type="imagenes/logo.png" href="../../../imagenes/logo_icon.ico">
@@ -16,9 +16,8 @@ session_start();
 		<a href="../../../Php/pagina_inicial_producto_director.php"><input type="image" id="home" alt="Volver" src="../../../imagenes/home.png"></a><i class="fab fa-Volver"></i>
 		<span>Volver</span>
 	</div>
-	<h1 class="titulo">OFICINA</h1>
+	<h1 class="titulo">STOCK</h1>
 	<hr width="50%" size="5" color="white" style="top: 14%; position:absolute; left: 25%;">
-	<br>
 	<div class="contenido">
 </body>
 </html>
@@ -37,7 +36,7 @@ session_start();
 		<td>ACCIONES</td>
 	</tr>
 <?php 
-$select="SELECT * FROM ((((productos INNER JOIN categoria ON productos.categoria_id=categoria.id_categoria)INNER JOIN marca ON productos.marca_id=marca.id_marca)INNER JOIN proveedores_productos ON productos.id_producto=proveedores_productos.producto_id)INNER JOIN proveedores ON proveedores_productos.proveedor_id=proveedores.id_proveedor)WHERE categoria_id='4'";
+$select="SELECT * FROM ((((productos INNER JOIN categoria ON productos.categoria_id=categoria.id_categoria)INNER JOIN marca ON productos.marca_id=marca.id_marca)INNER JOIN proveedores_productos ON productos.id_producto=proveedores_productos.producto_id)INNER JOIN proveedores ON proveedores_productos.proveedor_id=proveedores.id_proveedor) GROUP BY id_producto";
 $resultado=mysqli_query($conexion,$select);
 while($fila=mysqli_fetch_array($resultado)){?>
 	<tr>
@@ -52,6 +51,7 @@ while($fila=mysqli_fetch_array($resultado)){?>
 		<td><?php echo $fila['nombre_marca']?></td>
 		<td><a href="../Views/Html/pagina_perfil_tabla_empleado.html"><img src="../../../imagenes/detalles.png" alt="detalles" class="boton"></a></td>
 	</tr>
+	</div>
 <?php } ?>
 </tbody>
 </table>

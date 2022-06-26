@@ -21,6 +21,51 @@ body{
 	position: absolute;
 	border: 5px solid white;
 }
+.stock{
+	background-color: #232655;
+	color: white;
+	padding: 16px 50px;
+	left: 38%;
+  top: 5%;
+	transform: translate(-50%, -50%);
+	width: 200px;
+	position: absolute;
+	border: 3px solid white;
+}
+#imgS {
+  width: 50px;
+  height: 50px;
+  left: 21%;
+  position: relative;
+}
+.lstock{
+  top: -48%;
+  left: 4%;
+  position: absolute;
+}
+#botonS{
+	border: none;
+  outline: none;
+  height: 25px;
+  width: 70px;
+  left: 74%;
+  top: 15%;
+  background: #437DA1;
+  color: white;
+  font-size: 18px;
+  border-radius: 20px;
+  position: absolute;
+}
+#botonS:hover{
+	cursor: pointer;
+  background: #D4C163;
+  color: black;
+}
+.nstock{
+  top: -48%;
+  left: 36%;
+  position: absolute;
+}
 .lavanderia{
 	background-color: #232655;
 	color: white;
@@ -86,11 +131,10 @@ body{
 
 }
 #img {
-	width: 200px;
-  	height: 140px;
-  	
-  	left:8%;
-  	position: relative;
+  width: 200px;
+  height: 140px;
+  left:8%;
+  position: relative;
 }
 #img2 {
 	width: 200px;
