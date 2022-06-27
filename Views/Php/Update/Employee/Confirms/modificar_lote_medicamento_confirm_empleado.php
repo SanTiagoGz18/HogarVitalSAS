@@ -12,7 +12,7 @@
 
     <div class="contenedor">
       <h1>Modificación de lote</h1>
-      <form action="../Forms/modificar_lote_medicamento_form.php" method="post">
+      <form action="../Forms/modificar_lote_medicamento_form_empleado.php" method="post">
         <b><p>Confirme el código del lote</p></b>
         <br>
         <br>

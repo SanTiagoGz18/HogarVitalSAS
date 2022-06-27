@@ -10,7 +10,7 @@ if (isset($_POST['modificado'])){
         $verificar_loteM=mysqli_query($conexion, "SELECT * FROM lote_medicamento WHERE id_loteM='$id_loteM'");
 
 		if(mysqli_num_rows($verificar_loteM)<1){
-			header("location:../../../Views/Html/Verifications/VerificationsProducts/no_existe_modificar_lote_medicamento.html");
+			header("location:../../../Views/Html/Verifications/VerificationsProducts/Employee/no_existe_modificar_lote_medicamento_empleado.html");
 			exit();
 		}
 
@@ -19,7 +19,7 @@ if (isset($_POST['modificado'])){
         $respuesta=mysqli_query($conexion,$update);
             
         if ($respuesta) {{}
-            header("location:../../../Views/Html/Verifications/VerificationsProducts/correcto_modificar_lote_medicamento.html");
+            header("location:../../../Views/Html/Verifications/VerificationsProducts/Employee/correcto_modificar_lote_medicamento_empleado.html");
         }else{
             echo "La actualización no se efectuo";
         }
