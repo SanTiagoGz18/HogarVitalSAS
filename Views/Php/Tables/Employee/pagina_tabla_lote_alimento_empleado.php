@@ -16,7 +16,7 @@ include ("../../../../Models/conexion.php");
 		<a href="../../../Php/Registers/Lotes/Employee/codigo_registro_lote_alimento_employee.php"><input type="submit" id="boton" value="Agregar Lote"></a> 
 		
 		<img src="../../../imagenes/editar_lote_alimento.png" class="imgM2">
-		<a href="../../../Php/Update/Employee/Confirms/modificar_lote_alimento_confirm_employee.php"><input type="submit" id="boton3" value="Modificar Lote"></a>
+		<a href="../../../Php/Update/Employee/Confirms/modificar_lote_alimento_confirm_empleado	.php"><input type="submit" id="boton3" value="Modificar Lote"></a>
 
 </div>
 	<div class="icono">
