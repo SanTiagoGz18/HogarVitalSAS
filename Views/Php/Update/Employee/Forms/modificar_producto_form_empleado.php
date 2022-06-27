@@ -8,7 +8,7 @@ if(isset($_POST['modificar'])){
     $verificar_codigo=mysqli_query($conexion, "SELECT * FROM productos WHERE id_producto='$id_producto'");
 
 		if(mysqli_num_rows($verificar_codigo)<1){
-			header("location:../../../../Html/Verifications/VerificationsProducts/no_existe_modificar_producto.html");
+			header("location:../../../../Html/Verifications/VerificationsProducts/Employee/no_existe_modificar_producto_empleado.html");
 			exit();
 		}
 
