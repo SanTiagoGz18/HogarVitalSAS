@@ -1,3 +1,13 @@
+<?php
+include("../../Models/conexion.php");
+
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -15,6 +25,17 @@
       <img src="../imagenes/agregar.png" class="imgp" />
       <a href="../Php/Registers/Products/pagina_formulario_productos_empleado.php"
         ><input type="submit" id="boton3" value="Agregar Productos"
+      /></a>
+      <img src="../imagenes/stock.png" id="imgS" />
+    </div>
+    <div class="stock">
+      <h3 class="lstock">STOCK:</h3>
+      <h3 class="nstock"><?php 
+$select="SELECT sum(productos.cantidad_producto) FROM productos;";
+$resultado=mysqli_query($conexion,$select);
+$fila=mysqli_fetch_array($resultado);
+echo $fila[0];?></h3>
+      <a href="../Php/Tables/Admin/pagina_tabla_stock.php"><input type="submit" value="Ver" id="botonS"
       /></a>
     </div>
     <div class="Medicamentos">

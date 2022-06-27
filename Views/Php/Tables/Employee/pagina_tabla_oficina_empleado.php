@@ -13,7 +13,7 @@ session_start();
 </head>
 <body>
 	<div class="icono">
-		<a href="../../../Html/pagina_inicial_producto_empleado.html"><input type="image" id="home" alt="Volver" src="../../../imagenes/home.png"></a><i class="fab fa-Volver"></i>
+		<a href="../../pagina_inicial_producto_empleado.php"><input type="image" id="home" alt="Volver" src="../../../imagenes/home.png"></a><i class="fab fa-Volver"></i>
 		<span>Volver</span>
 	</div>
 	<h1 class="titulo">OFICINA</h1>

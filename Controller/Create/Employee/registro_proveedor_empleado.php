@@ -10,7 +10,7 @@ if (isset($_POST['enviar'])){
 		$verificar_proveedor=mysqli_query($conexion, "SELECT * FROM proveedores WHERE nombre_proveedor='$nombre_proveedor'");
 
 		if(mysqli_num_rows($verificar_proveedor)>0){
-			header("location:../../../Views/Html/VerificationsEmployee/Employee/repetido_proveedor_empleado.html");
+			header("location:../../../Views/Html/Verifications/VerificationsEmployee/repetido_proveedor_empleado.html");
 			exit();
 		}
 
