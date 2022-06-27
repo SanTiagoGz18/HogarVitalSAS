@@ -19,17 +19,6 @@ if (isset($_POST['modificado'])){
 		}
 
         if($_REQUEST['categoria'] == 'no'){
-<<<<<<< HEAD
-			header("location:../../../Views/Html/Verifications/VerificationsProducts/Employee/modificar_agregue_categoria_empleado.html");
-			exit();
-		}
-        if($_REQUEST['marca'] == 'no'){
-			header("location:../../../Views/Html/Verifications/VerificationsProducts/Employee/modificar_agregue_marca_empleado.html");
-			exit();
-		}
-		if($_REQUEST['proveedor'] == 'no'){
-			header("location:../../../Views/Html/Verifications/VerificationsProducts/Employee/modificar_agregue_proveedor_empleado.html");
-=======
 			header("location:../../../Views/Html/Verifications/VerificationsProducts/Employee/agregue_categoria_empleado.html");
 			exit();
 		}
@@ -39,7 +28,6 @@ if (isset($_POST['modificado'])){
 		}
 		if($_REQUEST['proveedor'] == 'no'){
 			header("location:../../../Views/Html/Verifications/VerificationsProducts/Employee/agregue_proveedor_empleado.html");
->>>>>>> ab93f4d7938440e6ed86886b1821133669bc9107
 			exit();
 		}
 
