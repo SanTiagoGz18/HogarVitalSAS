@@ -21,7 +21,7 @@
         <input name="modificar" type="submit" value="Modificar el producto" class="boton">
         </form>
         <br>
-        <a href="../../../Search/Employee/pagina_inicial_buscador_producto.php"><input type="submit" value="Volver" class="boton2"></a>
+        <a href="../../../Search/Employee/pagina_inicial_buscador_producto_empleado.php"><input type="submit" value="Volver" class="boton2"></a>
     </div>
   </body>
 </html>
