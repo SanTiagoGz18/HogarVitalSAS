@@ -15,7 +15,7 @@ include ("../../../../Models/conexion.php");
 		<a href="../../../../Views/Php/Registers/Proveedor/employee/codigo_registro_proveedor_empleado.php"><input type="submit" id="boton" value="Agregar Proveedor"></a> 
 		
 		<img src="../../../imagenes/editar_proveedor.png" class="imgp1">
-		<a href="../../../../Views/modificar_proveedor_confirm.php"><input type="submit" id="boton3" value="Modificar Proveedor"></a>
+		<a href="../../Update/Employee/Confirms/modificar_proveedor_confirm_empleado.php"><input type="submit" id="boton3" value="Modificar Proveedor"></a>
 
 	</div>
 	<div class="icono">
