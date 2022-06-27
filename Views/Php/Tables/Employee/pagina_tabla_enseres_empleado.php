@@ -31,7 +31,7 @@ session_start();
 		<td>FECHA EDITADO</td>
 		<td>CATEGORIA</td>
 		<td>MARCA</td>
-		<td>MODIFICAR ELIMINAR</td>
+		<td>ACCIONES</td>
 	</tr>
 <?php 
 $select="SELECT * FROM ((productos INNER JOIN categoria ON productos.categoria_id=categoria.id_categoria)INNER JOIN marca ON productos.marca_id=marca.id_marca)WHERE categoria_id='1'";
