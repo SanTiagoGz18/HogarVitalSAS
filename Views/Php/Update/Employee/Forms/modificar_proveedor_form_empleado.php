@@ -8,7 +8,7 @@ if(isset($_POST['modificar'])){
     $verificar_id_proveedor=mysqli_query($conexion, "SELECT * FROM proveedores WHERE id_proveedor='$id_proveedor'");
 
 	if(mysqli_num_rows($verificar_id_proveedor)<1){
-		header("location:../../../../Html/Verifications/VerificationsProducts/no_existe_modificar_proveedor.html");
+		header("location:../../../../Html/Verifications/VerificationsProducts/Employee/no_existe_modificar_proveedor_empleado.html");
 		exit();
 	}
 

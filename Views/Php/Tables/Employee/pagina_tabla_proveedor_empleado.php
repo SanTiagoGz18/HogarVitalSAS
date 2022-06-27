@@ -7,7 +7,7 @@ include ("../../../../Models/conexion.php");
 	<title>Proveedor - Productos Hogar Vital</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../../../css/estilo_pagina_tablas.css">
-	<link rel="icon" type="imagenes/logo.png" href="../../../../imagenes/logo_icon.ico">
+	<link rel="icon" type="imagenes/logo.png" href="../../../imagenes/logo_icon.ico">
 </head>
 <body>
 	<div>
