@@ -14,20 +14,20 @@ if (isset($_POST['modificado'])){
         $verificar_producto=mysqli_query($conexion, "SELECT * FROM productos WHERE id_producto='$id_producto'");
 
 		if(mysqli_num_rows($verificar_producto)<1){
-			header("location:../../../Views/Html/Verifications/VerificationsProducts/no_existe_modificar_producto_buscar.html");
+			header("location:../../../Views/Html/Verifications/VerificationsProducts/Employee/no_existe_modificar_producto_empleado.html");
 			exit();
 		}
 
         if($_REQUEST['categoria'] == 'no'){
-			header("location:../../../Views/Html/Verifications/VerificationsProducts/modificar_agregue_categoria_buscar.html");
+			header("location:../../../Views/Html/Verifications/VerificationsProducts/Employee/agregue_categoria_empleado.html");
 			exit();
 		}
         if($_REQUEST['marca'] == 'no'){
-			header("location:../../../Views/Html/Verifications/VerificationsProducts/modificar_agregue_marca_buscar.html");
+			header("location:../../../Views/Html/Verifications/VerificationsProducts/Employee/agregue_marca_empleado.html");
 			exit();
 		}
 		if($_REQUEST['proveedor'] == 'no'){
-			header("location:../../../Views/Html/Verifications/VerificationsProducts/modificar_agregue_proveedor_buscar.html");
+			header("location:../../../Views/Html/Verifications/VerificationsProducts/Employee/agregue_proveedor_empleado.html");
 			exit();
 		}
 

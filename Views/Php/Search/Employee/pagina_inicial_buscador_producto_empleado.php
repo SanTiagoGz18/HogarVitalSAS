@@ -67,7 +67,7 @@ if(isset($_POST['busqueda'])){
 			<td><?php echo $fila['fecha_actualizacion_producto']?></td>
 			<td><?php echo $fila['nombre_categoria']?></td>
 			<td><?php echo $fila['nombre_marca']?></td>
-			<td><a href="../Views/Html/pagina_productos_detalle.html"><img src="../../../imagenes/detalles.png" alt="detalles" class="boton"></a></td>
+			<td><a href="../../Update/Employee/Forms/modificar_producto_form_buscar_empleado.php"><img src="../../../imagenes/detalles.png" alt="detalles" class="boton"></a></td>
 		</tr>
 	</div>
 	</div>
