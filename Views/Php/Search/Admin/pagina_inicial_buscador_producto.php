@@ -56,7 +56,7 @@ include("../../../../Models/conexion.php");
 
 if(isset($_POST['busqueda'])){
 	$busqueda=$_POST['busqueda'];
-	$resultado=mysqli_query($conexion,"SELECT * FROM ((((productos INNER JOIN categoria ON productos.categoria_id=categoria.id_categoria)INNER JOIN marca ON productos.marca_id=marca.id_marca)INNER JOIN proveedores_productos ON productos.id_producto=proveedores_productos.producto_id)INNER JOIN proveedores ON proveedores_productos.proveedor_id=proveedores.id_proveedor)WHERE id_producto LIKE '%$busqueda%' OR nombre_producto LIKE '%$busqueda%' OR nombre_categoria LIKE '%$busqueda%' OR nombre_marca LIKE '%$busqueda%' OR cantidad_producto LIKE '%$busqueda%' OR fecha_registro_producto LIKE '%$busqueda%' OR fecha_actualizacion_producto LIKE '%$busqueda%' GROUP BY id_producto");
+	$resultado=mysqli_query($conexion,"SELECT * FROM ((((productos INNER JOIN categoria ON productos.categoria_id=categoria.id_categoria)INNER JOIN marca ON productos.marca_id=marca.id_marca)INNER JOIN proveedores_productos ON productos.id_producto=proveedores_productos.producto_id)INNER JOIN proveedores ON proveedores_productos.proveedor_id=proveedores.id_proveedor)WHERE id_producto LIKE '%$busqueda%' OR nombre_producto LIKE '%$busqueda%' OR nombre_categoria LIKE '%$busqueda%' OR nombre_marca LIKE '%$busqueda%' OR cantidad_producto LIKE '%$busqueda%' OR fecha_registro_producto LIKE '%$busqueda%' OR fecha_actualizacion_producto LIKE '%$busqueda%' OR nombre_proveedor LIKE '%$busqueda%' GROUP BY id_producto");
 	
 	while($fila=mysqli_fetch_array($resultado)){?>
 
