@@ -12,7 +12,7 @@ include ("../../../../Models/conexion.php");
 <body>
 	<div>
 		<img src="../../../imagenes/agregar_lote_medicamento.png" class="imgM"> 
-		<a href="../../../Php/Registers/Lotes/codigo_registro_lote_medicamento.php"><input type="submit" id="boton" value="Agregar Lote"></a> 
+		<a href="../../../Php/Registers/Lotes/Employee/codigo_registro_lote_medicamento_employee.php"><input type="submit" id="boton" value="Agregar Lote"></a> 
 		
 		<img src="../../../imagenes/editar_lote_medicamento.png" class="imgM2">
 		<a href="../../../Php/Update/Admin/Confirms/modificar_lote_medicamento_confirm.php"><input type="submit" id="boton3" value="Modificar Lote"></a>
