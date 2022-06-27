@@ -35,7 +35,7 @@ $select="SELECT sum(productos.cantidad_producto) FROM productos;";
 $resultado=mysqli_query($conexion,$select);
 $fila=mysqli_fetch_array($resultado);
 echo $fila[0];?></h3>
-      <a href="../Php/Tables/Admin/pagina_tabla_stock.php"><input type="submit" value="Ver" id="botonS"
+      <a href="../Php/Tables/Employee/pagina_tabla_stock_empleado.php"><input type="submit" value="Ver" id="botonS"
       /></a>
     </div>
     <div class="Medicamentos">

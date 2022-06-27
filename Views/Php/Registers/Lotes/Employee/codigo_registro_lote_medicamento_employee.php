@@ -13,7 +13,7 @@ include("../../../../../Models/conexion.php");
 <div class="contenido2">
 <img src="../../../../imagenes/logo.jpeg" class="img">
 <div  class="titulo"><h2>Registrar Lotes Medicamentos</h2></div>
-<form action="../../../../Controller/Create/Employee/codigo_registro_lote_medicamento.php" method="post">
+<form action="../../../../../Controller/Create/Employee/codigo_registro_lote_medicamento_empleado.php" method="post">
 	<b><label for="marca" id="lmarca">Nombre del lote: </label></b>
 	<br>
 	<input type="text" name="nombre_loteM" placeholder="Ingrese el nombre del lote..." id="imarca" required="">
