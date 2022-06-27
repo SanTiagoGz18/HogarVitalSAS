@@ -13,7 +13,7 @@ session_start();
 </head>
 <body>
 <div class="icono">
-		<a href="../../pagina_inicial_producto_empleado.php"><input type="image" id="home" alt="Volver" src="../../../imagenes/home.png"></a><i class="fab fa-Volver"></i>
+		<a href="../../../Php/pagina_inicial_producto_empleado.php"><input type="image" id="home" alt="Volver" src="../../../imagenes/home.png"></a><i class="fab fa-Volver"></i>
 		<span>Volver</span>
 	</div>
 	<h1 class="titulo">ASEO</h1>
@@ -45,7 +45,7 @@ while($fila=mysqli_fetch_array($resultado)){?>
 		<td><?php echo $fila['fecha_actualizacion_producto']?></td>
 		<td><?php echo $fila['nombre_categoria']?></td>
 		<td><?php echo $fila['nombre_marca']?></td>
-		<td><a href="../../Tables/Employee/pagina_modificar_eliminar.php"><img src="../../../imagenes/detalles.png" alt="detalles" class="boton"></a></td>
+		<td><a href="../../../Html/pagina_modificar_eliminar_empleado.html"><img src="../../../imagenes/detalles.png" alt="detalles" class="boton"></a></td>
 	</tr>
 	</div>
 <?php } ?>

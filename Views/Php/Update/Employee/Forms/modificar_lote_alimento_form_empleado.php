@@ -38,7 +38,7 @@ if(isset($_POST['modificar'])){
 			<input type="text" name="nombre_loteA" class="inputLA" value="<?php echo $filas['nombre_loteA']?>">
 			<input type="submit" name="modificado" value="Guardar" class="boton4P">
 			</form>
-			<a href="../../../Tables/Admin/pagina_tabla_lote_alimento.php"><input type="submit" value="Cancelar" class="boton3P"></a>
+			<a href="../../../Tables/Employee/pagina_tabla_lote_alimento_empleado.php"><input type="submit" value="Cancelar" class="boton3P"></a>
 		</div>
 	</div>
 </div>
