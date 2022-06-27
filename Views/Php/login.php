@@ -28,7 +28,7 @@ if(empty($_SESSION)){
         <input type="submit" value="Iniciar Sesión" class="boton" name="enviar">
       </form>
  
-      <a href="../Html/index.html"><input type="submit" value="Volver" class="boton2"></a>
+      <a href="../../index.html"><input type="submit" value="Volver" class="boton2"></a>
       <center>
       <a href="contraseña.php">¿Has olvidado tu contraseña?</a><br>
       </center>
