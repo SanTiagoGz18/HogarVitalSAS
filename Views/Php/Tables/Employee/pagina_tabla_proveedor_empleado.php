@@ -7,12 +7,12 @@ include ("../../../../Models/conexion.php");
 	<title>Proveedor - Productos Hogar Vital</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../../../css/estilo_pagina_tablas.css">
-	<link rel="icon" type="imagenes/logo.png" href="imagenes/logo_icon.ico">
+	<link rel="icon" type="imagenes/logo.png" href="../../../../imagenes/logo_icon.ico">
 </head>
 <body>
 	<div>
 		<img src="../../../imagenes/agregar_proveedor.png" class="imgp">
-		<a href="../../../../Views/codigo_registro_proveedor.php"><input type="submit" id="boton" value="Agregar Proveedor"></a> 
+		<a href="../../../../Views/Php/Registers/Proveedor/employee/codigo_registro_proveedor_empleado.php"><input type="submit" id="boton" value="Agregar Proveedor"></a> 
 		
 		<img src="../../../imagenes/editar_proveedor.png" class="imgp1">
 		<a href="../../../../Views/modificar_proveedor_confirm.php"><input type="submit" id="boton3" value="Modificar Proveedor"></a>
