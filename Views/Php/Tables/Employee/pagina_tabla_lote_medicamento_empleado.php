@@ -18,7 +18,7 @@ include ("../../../../Models/conexion.php");
 		<a href="../../../Php/Update/Admin/Confirms/modificar_lote_medicamento_confirm.php"><input type="submit" id="boton3" value="Modificar Lote"></a>
 	</div>
 	<div class="icono">
-			<a href="../../../Html/pagina_lotes.html"><input type="image" id="home" alt="Volver" src="../../../imagenes/home.png"></a><i class="fab fa-Volver"></i>
+			<a href="../../../Html/pagina_lotes_empleado.html"><input type="image" id="home" alt="Volver" src="../../../imagenes/home.png"></a><i class="fab fa-Volver"></i>
 			<span>Volver</span>
 		</div>
 	<h1 class="titulo">LOTES MEDICAMENTOS</h1>
