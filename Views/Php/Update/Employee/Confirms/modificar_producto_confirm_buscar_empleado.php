@@ -12,7 +12,7 @@
 
     <div class="contenedor">
       <h1>Modificación de Productos</h1>
-      <form action="../Forms/modificar_producto_form_buscar.php" method="post">
+      <form action="../Forms/modificar_producto_form_buscar_empleado.php" method="post">
         <b><p>Confirme el codigo del producto</p></b>
         <br>
         <br>
