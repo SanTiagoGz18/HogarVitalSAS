@@ -28,7 +28,7 @@ if(isset($_POST['modificar'])){
 <div class="perfilP">
 	<div class="infoP"> 
 		<div class="info2P">
-		<form action="../../../../../Controller/Update/Admin/modificar_proveedor.php" method="post">
+		<form action="../../../../../Controller/Update/Employee/modificar_proveedor_empleado.php" method="post">
 			<label for="id_proveedor">Codigo Proveedor: </label>
 			<input type="text" name="id_proveedor" class="input" value="<?php echo $filas['id_proveedor']?>">
 			<br>

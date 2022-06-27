@@ -12,10 +12,10 @@ include ("../../../../Models/conexion.php");
 <body>
 	<div>
 		<img src="../../../imagenes/agregar_marca.png" class="imgM"> 
-		<a href="../../../Php/Registers/Marca/codigo_registro_marca.php"><input type="submit" id="boton" value="Agregar Marca"></a> 
+		<a href="../../../Php/Registers/Marca/Employee/codigo_registro_marca_empleado.php"><input type="submit" id="boton" value="Agregar Marca"></a> 
 		
 		<img src="../../../imagenes/editar_marca.png" class="imgM2">
-		<a href="../../../Php/Update/Admin/Confirms/modificar_marca_confirm.php"><input type="submit" id="boton3" value="Modificar Marca"></a>
+		<a href="../../../Php/Update/Employee/Confirms/modificar_marca_confirm_empleado.php"><input type="submit" id="boton3" value="Modificar Marca"></a>
 	</div>
 	<div class="icono">
 			<a href="../../../Html/pagina_inicial_empleado.html"><input type="image" id="home" alt="Volver" src="../../../imagenes/home.png"></a><i class="fab fa-Volver"></i>
