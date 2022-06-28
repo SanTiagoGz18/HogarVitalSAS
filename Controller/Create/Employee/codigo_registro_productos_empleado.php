@@ -85,7 +85,7 @@ if (isset($_POST['enviar'])){
 			if($_REQUEST['categoria'] == 'alimento'){
 				$respuesta3=mysqli_query($conexion,$insert4);
 			}
-			header("location:../Views/Html/correcto_productos_empleado.html");
+			header("location:../../../Views/Html/Verifications/VerificationsProducts/Employee/correcto_productos_empleado.html");
 		}else{
 			echo "mal";
 		}
