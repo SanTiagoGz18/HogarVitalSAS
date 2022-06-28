@@ -14,7 +14,7 @@ include ("../../../../Models/conexion.php");
 <div class="contenido">
 <img src="../../../imagenes/logo.jpeg" class="img">
 <div  class="titulo"><h2>Registro de productos</h2></div>
-<form action="../Controller/codigo_registro_productos.php" method="post">
+<form action="../../../../Controller/Create/Employee/codigo_registro_productos_empleado.php" method="post">
 	<b><label for="">* Codigo del Producto: </label></b>
 	<b><label for="" id="lnombre">* Nombre del Producto: </label></b>
 	<br>
@@ -34,7 +34,7 @@ include ("../../../../Models/conexion.php");
 	<b><label for=""> * Fecha Recepción: </label></b>
 	<b><label for="" id="lmarca">* Marca: </label></b>
 	<br>
-	<input type="date" name="fecha_vencimiento" id="ifecharec" required="">
+	<input type="date" name="fecha_proveedor" id="ifecharec" required="">
 	<select name="marca" id="imarca" required>
 	<?php 
 	$marca="SELECT * FROM marca";
@@ -49,7 +49,7 @@ include ("../../../../Models/conexion.php");
 	<b><label for="">* Proveedor: </label></b>
 	<b><label id="lcategoria">* Categoria: </label></b>
 	<br>
-	<select name="nombre_proveedor" id="opcion2" required>
+	<select name="proveedor" id="opcion2" required>
 	<?php 
 	$marca="SELECT * FROM proveedores";
 	$resultado=mysqli_query($conexion,$marca);
@@ -91,7 +91,7 @@ include ("../../../../Models/conexion.php");
 	</select>
 	<input name="enviar" type="submit" value="Agregar producto" class="boton">
 </form>
-	<a href="../../pagina_inicial_producto_empleado.php"><input type="submit" value="Volver" class="boton2"></a>
+	<a href="../../../../Views/Php/pagina_inicial_producto_empleado.php"><input type="submit" value="Volver" class="boton2"></a>
 </div>
 </body>
 </html>
